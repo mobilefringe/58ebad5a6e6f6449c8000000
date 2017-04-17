@@ -367,12 +367,13 @@
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/fdl-mall-info' target='_self' data-i18n="nav.subnav.mall_info"></a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/fdl-accessibility' target='_self' data-i18n="nav.subnav.leasing">Accessibilité</a>
+                                <a class="site_map_submenu" href='/pages/fdl-accessibility' target='_self'>Accessibilité</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/sugarloaf-leasing' target='_self' data-i18n="nav.subnav.leasing"></a>
+                                <a class="site_map_submenu" href='pages/fdl-contact-us' target='_self'>Nous joindre</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/sugarloaf-leasing' target='_self' data-i18n="nav.subnav.leasing"></a>
-                                
+                                <a class="site_map_submenu" href='/pages/fdl-carte-cadeau' target='_self'>Carte-Cadeau</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/fdl-carte-cadeau' target='_self'>Location</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/sugarloaf-contact-us' target='_self' data-i18n="nav.subnav.contact"></a>
                             </div>
