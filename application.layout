@@ -56,7 +56,7 @@
     <script src="/application.js" type="text/javascript"></script>
 
     <script>
-        setEndPoint('//sugarloaf.mallmaverick.com/api/v3/sugarloaf/all.json');
+        setEndPoint('//fdl.mallmaverick.com/api/v3/fdl/all.json');
         
         sessionStorage.setItem('primary_locale', 'fr-CA');
         sessionStorage.setItem('secondary_locale', 'en-CA');
