@@ -373,9 +373,9 @@
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/fdl-carte-cadeau' target='_self'>Carte-Cadeau</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/fdl-carte-cadeau' target='_self'>Location</a>
+                                <a class="site_map_submenu" href='/pages/fdl-location' target='_self'>Location</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/sugarloaf-contact-us' target='_self' data-i18n="nav.subnav.contact"></a>
+                                <a class="site_map_submenu" href='/pages/fdl-point-de-depot-de-produits-electroniques' target='_self'>Espace vert</a>
                             </div>
                         </div>
                     </div>
