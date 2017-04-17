@@ -104,7 +104,7 @@
                             <a href='/events' data-i18n="nav.events"></a>
                         </li>
                         <li class="mobile_menu_header" >
-                            <a href='/pages/sugarloaf-guest-services' data-i18n="nav.services"></a>
+                            <a href='/pages/fdl-guest-services' data-i18n="nav.services"></a>
                         </li>      
                         <li class="mobile_menu_header" >
                             <a href='/jobs' data-i18n="nav.careers"></a>
@@ -116,13 +116,13 @@
                             <a href='/hours' data-i18n="nav.subnav.hours"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/sugarloaf-leasing' data-i18n="nav.subnav.leasing"></a>
+                            <a href='/pages/fdl-leasing' data-i18n="nav.subnav.leasing"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/sugarloaf-mall-information' data-i18n="nav.subnav.mall_info"></a>
+                            <a href='/pages/fdl-mall-information' data-i18n="nav.subnav.mall_info"></a>
                         </li>
                         <li class="mobile_menu_item">
-                          <a href='/pages/sugarloaf-contact-us' data-i18n="nav.subnav.contact"></a>
+                          <a href='/pages/fdl-contact-us' data-i18n="nav.subnav.contact"></a>
                         </li>
                     </ul>
                     <a id="mobile_logo" href="/">
@@ -182,7 +182,7 @@
                         <button class="btn-nav" onclick="window.location.href='/events'" data-i18n="nav.events"></button>
                     </li>
                     <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/pages/sugarloaf-guest-services'" data-i18n="nav.services"></button>
+                        <button class="btn-nav" onclick="window.location.href='/pages/fdl-guest-services'" data-i18n="nav.services"></button>
                     </li>            
                     <li>                        
                         <button class="btn-nav" onclick="window.location.href='/jobs'" data-i18n="nav.careers"></button>
@@ -194,13 +194,13 @@
                                 <a class="nav_a" href='/hours' target='_self'><span data-i18n="nav.subnav.hours"></span></a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/sugarloaf-leasing' target='_self'><span data-i18n="nav.subnav.leasing"></span></a>
+                                <a class="nav_a" href='/pages/fdl-leasing' target='_self'><span data-i18n="nav.subnav.leasing"></span></a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/sugarloaf-mall-information' target='_self'><span data-i18n="nav.subnav.mall_info"></span></a>
+                                <a class="nav_a" href='/pages/fdl-mall-information' target='_self'><span data-i18n="nav.subnav.mall_info"></span></a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/sugarloaf-contact-us' target='_self'><span data-i18n="nav.subnav.contact"></span></a> 
+                                <a class="nav_a" href='/pages/fdl-contact-us' target='_self'><span data-i18n="nav.subnav.contact"></span></a> 
                             </li>
                         </ul>
                     </li>
@@ -352,7 +352,7 @@
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
-                                    <a href="/pages/sugarloaf-guest-services" data-i18n="nav.services"></a>                                
+                                    <a href="/pages/fdl-guest-services" data-i18n="nav.services"></a>                                
                                 </span>
                             </div>
                             <div class="nav_sitemap_item">
@@ -385,7 +385,7 @@
         </div>
         <div class="footer trim_screen">
             <span>
-                &copy; 2017 FLEUR DE LYS CENTRE COMMERCIAL | <a href="/pages/sugarloaf-privacy-policy" target="_blank" data-i18n="footer.privacy"></a> | <a data-i18n="footer.power"></a><a href="http://www.mallmaverick.com/" target="_blank">Mall Maverick</a>     
+                &copy; 2017 FLEUR DE LYS CENTRE COMMERCIAL | <a href="/pages/fdl-privacy-policy" target="_blank" data-i18n="footer.privacy"></a> | <a data-i18n="footer.power"></a><a href="http://www.mallmaverick.com/" target="_blank">Mall Maverick</a>     
             </span>
             <a href="//www.20vic.com/" target="_blank">
                 <img ALT="20vic_logo" class="pull-right immostar"src="//codecloud.cdn.speedyrails.net/sites/58b449586e6f646b91000000/image/png/1488308546000/LOGO-IMMOSTAR-BLANC.png" />
