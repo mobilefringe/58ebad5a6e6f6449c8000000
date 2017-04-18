@@ -236,6 +236,7 @@ function renderHomeHours(container, template, collection){
     item_list.push(today_hours);    
     $.each(item_list, function(key, val) {
         val.day = moment().date();
+        console.log(val.day)
         var d = moment();
         val.month = moment().month();
         val.weekday = moment().format("dddd");
