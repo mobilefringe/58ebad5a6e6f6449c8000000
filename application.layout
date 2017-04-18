@@ -203,7 +203,7 @@
                                 <a class="nav_a" href='/hours' target='_self'>Heures</a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/fdl-mall-information' target='_self'>A propos du centre</a>
+                                <a class="nav_a" href='/pages/fdl-mall-info' target='_self'>A propos du centre</a>
                             </li>
                             <li>
                                 <a class="nav_a" href='/pages/fdl-accessibility' target='_self'>Accessibilité</a>
