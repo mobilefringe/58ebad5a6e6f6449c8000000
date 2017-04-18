@@ -108,21 +108,21 @@ function init() {
             event.stopPropagation();
         });
         
-        // var newsletter_img = $("#social_270 img").attr("src");
-        // $("#social_270 img").hover(function(){
-        //     $(this).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/679/original/socialicon_newletter_clicked_2.png?1393873885");
-        //     },
-        //     function(){             
-        //         $(this).attr("src", newsletter_img)                
-        //     }
-        // });
+        var newsletter_img = $("#social_270 img").attr("src");
+        $("#social_270 img").hover(function(){
+            $(this).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/679/original/socialicon_newletter_clicked_2.png?1393873885");
+            },
+            function(){             
+                $(this).attr("src", newsletter_img)                
+            }
+        });
         
-        // $( "#subscribe_letter_btn_img" ).hover(function() {
-        //     $( this ).attr( "src", "https://www.mallmaverick.com/system/site_images/photos/000/001/877/original/submit_clicked.png?1393866516" );
+        $( "#subscribe_letter_btn_img" ).hover(function() {
+            $( this ).attr( "src", "https://www.mallmaverick.com/system/site_images/photos/000/001/877/original/submit_clicked.png?1393866516" );
             
-        // }, function() {
-        //     $( this ).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" );
-        // });
+        }, function() {
+            $( this ).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" );
+        });
     
     function validate_pop_up(){
         if($('#subscribe_newsletter_popup').is(":checked"))
