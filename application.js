@@ -281,7 +281,7 @@ function renderJobs(container, template, collection){
         }
         
         if(val.job_type === "Full Time") {
-            val.type === "TEMPS PLEIN"
+            val.job_type === "TEMPS PLEIN"
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
