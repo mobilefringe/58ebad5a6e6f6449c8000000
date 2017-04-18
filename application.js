@@ -278,8 +278,9 @@ function renderJobs(container, template, collection){
         }
         console.log(val.job_type);
         if(val.job_type == "Full Time") {
-            console.log("yes!")
-            val.position == "TEMPS PLEIN";
+            
+            val.job_type == "TEMPS PLEIN";
+            console.log(val.job_type)
         }
         if(val.job_type == "Part Time") {
             console.log("oui!")
