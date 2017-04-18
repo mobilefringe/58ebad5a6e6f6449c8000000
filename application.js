@@ -223,7 +223,6 @@ function renderHours(container, template, collection, type){
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
-    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
@@ -235,17 +234,12 @@ function renderHomeHours(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(today_hours);    
     $.each(item_list, function(key, val) {
-        // val.day = moment().date();
-        
-        // var d = moment();
-        // val.month = moment().month();
         var weekday = moment().locale('fr-ca');
         val.weekday = weekday.format("dddd");
         if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
             var open_time = moment(val.open_time).tz(getPropertyTimeZone());
             var close_time = moment(val.close_time).tz(getPropertyTimeZone());
             val.h = open_time.format("H") + "h" + open_time.format("mm") + " à " + close_time.format("H") + "h" + close_time.format("mm");
-            // val.close_time = close_time.format("h:mma");
         } else {
             val.h = "Fermé";
         }
