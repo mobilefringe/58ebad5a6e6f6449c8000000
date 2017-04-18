@@ -1,0 +1,52 @@
+<style>
+    #error_msg {
+        text-align: center;
+    }
+</style>
+<div class="page_body">
+    <h1 class="page_title" id="page_title"></h1>
+    <hr>
+    <div id="contact_us" class="hidden_now">
+        <div id="map_container">
+            <script id="map_template" type="x-tmpl-mustache/text">
+                <iframe class="hidden-xs" src="https://maps.google.nl/maps?q={{name}} {{address1}}, {{city}}, {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}}, {{city}}, {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed" width="100%" height="405" frameborder="0" style="border:0" allowfullscreen></iframe> 
+                <iframe class="visible-xs-inline-block" src="https://maps.google.nl/maps?q={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="line_break"></div>
+            </script>
+        </div>
+    </div>
+    <div id="page_body"></div>
+</div>
+<div class="mobile_line_break"></div>
+<script>
+$(document).ready(function(){
+    function renderAll(){
+        init();
+        
+        var prop_details = getPropertyDetails();
+        renderPropertyDetails('#map_container', '#map_template', prop_details);
+            
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        var pages_json = "//www.fdlcentrecommercial.com/pages/" + slug + ".json"
+        $.getJSON(pages_json).done(function(data) {
+            if(sessionStorage.current_locale == "en-CA"){
+                $('#page_title').html(data.title_2);
+                $('#page_body').html(data.body_2);
+            }
+            if(sessionStorage.current_locale == "fr-CA"){
+                $('#page_title').html(data.title);
+                $('#page_body').html(data.body);
+            }
+            if(slug === "sugarloaf-contact-us") {
+                $("#contact_us").show();
+            }
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+                $("#error_msg").fadeIn("fast");
+            }
+        }); 
+    }
+    loadMallDataCached(renderAll); 
+})
+</script>
