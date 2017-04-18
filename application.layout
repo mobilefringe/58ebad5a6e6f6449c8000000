@@ -200,16 +200,25 @@
                         <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.about"></button>                                              
                         <ul class="dropdown-menu" style="right:0px; left:auto;">                            
                             <li>
-                                <a class="nav_a" href='/hours' target='_self'><span data-i18n="nav.subnav.hours"></span></a>
+                                <a class="nav_a" href='/hours' target='_self'>Heures</a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/fdl-leasing' target='_self'><span data-i18n="nav.subnav.leasing"></span></a>
+                                <a class="nav_a" href='/pages/fdl-mall-information' target='_self'>A propos du centre</a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/fdl-mall-information' target='_self'><span data-i18n="nav.subnav.mall_info"></span></a>
+                                <a class="nav_a" href='/pages/fdl-accessibility' target='_self'>Accessibilité</a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/fdl-contact-us' target='_self'><span data-i18n="nav.subnav.contact"></span></a> 
+                                <a class="nav_a" href='pages/fdl-contact-us' target='_self'>Nous joindre</a>
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/fdl-carte-cadeau' target='_self'>Carte-Cadeau</a>
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/fdl-location' target='_self'>Location</a>
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/fdl-point-de-depot-de-produits-electroniques' target='_self'>Espace vert</a> 
                             </li>
                         </ul>
                     </li>
