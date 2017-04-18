@@ -1,3 +1,4 @@
+<!-- POP UP -->
 <div class="popup_bg" >    
     <div class="popup_newsletter">
         <a class="popup_close">X</a>
@@ -22,8 +23,7 @@
         </div>        
     </div>
 </div>
-
-
+<!-- -->
 <div class="flexslider trim_screen">
     <ul class="slides" id="home_banner">            
         <script id="home_banner_template" type="x-tmpl-mustache/text">
