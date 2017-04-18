@@ -427,10 +427,10 @@ function renderPromotions(container, template, collection){
         var french_start = moment(start).locale('fr-ca');
         var french_end = moment(end).locale('fr-ca');
         if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("DD MMM")
+            val.dates = french_start.format("DD MMM")
         }
         else{
-            val.dates = start.format("DD MMM") + " - " + end.format("DD MMM")
+            val.dates = french_start.format("DD MMM") + " - " + french_end.format("DD MMM")
         }
         
         var rendered = Mustache.render(template_html,val);
