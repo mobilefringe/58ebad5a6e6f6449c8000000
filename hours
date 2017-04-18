@@ -1,0 +1,35 @@
+<div class="hours_page">
+    <h1 class="page_title">HEURES</h1> <!-- Hours Title -->    
+    <hr>
+	<div class="hour_table" id="reg_hours_container">
+	    <script id="reg_hours_template" type="x-tmpl-mustache/text">
+            <div class="hour_row">
+                <span class="hour_time pull-right">{{h}}</span>
+                <span class="hour_date">{{day}}</span>            
+            </div>
+        </script>
+    </div>
+	<div class="line_break"></div>
+    <h1 class="page_title">HORAIRES DES FÉRIÉS</h1> <!-- Holiday Hours Title -->
+    <hr>
+    <div class="hour_table" id="holiday_hours_container">
+        <script id="holiday_hours_template" type="x-tmpl-mustache/text">
+            <div class="hour_row">    
+                <span class="hour_time pull-right">{{h}}</span>
+                <span class="hour_date">{{holiday_name}}, <span class="lowercase">{{formatted_date}}</span></span>  
+            </div>
+        </script>
+    </div>
+</div>
+<div class="mobile_line_break"></div>
+<script>
+    $(document).ready(function(){
+        function renderAll(){
+            init();
+            var hours = getPropertyHours();
+            renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+            renderHours('#holiday_hours_container','#holiday_hours_template', hours, 'holiday_hours');
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
