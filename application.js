@@ -425,10 +425,10 @@ function renderPromotions(container, template, collection){
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("MMM D")
+            val.dates = start.format("DD MMM")
         }
         else{
-            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
+            val.dates = start.format("DD MMM") + " - " + end.format("DD MMM")
         }
         
         var rendered = Mustache.render(template_html,val);
