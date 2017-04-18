@@ -3,7 +3,7 @@
         <div class="row-fluid">
             <div class="map">
             	<div class="demo1">
-                    <img src="" class="imgMap" id="map_image" />        		
+                    <img src="//codecloud.cdn.speedyrails.net/sites/58ebad5a6e6f6449c8000000/image/jpeg/1492524265000/FDL_Plan_2016_Web_2016_850X700.jpg" class="imgMap" id="map_image" />        		
             		<div class="marker" id='scroll_to_marker' data-coords="{{map_x_coordinate}}, {{map_y_coordinate}}">{{name}}</div>	
             	</div>
             </div>
