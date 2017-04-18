@@ -47,7 +47,7 @@
     <script src="//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/text/javascript/1485895011000/moment-with-locales.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
     <script src="//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     
     
     <!--MallMaverick SDK-->
