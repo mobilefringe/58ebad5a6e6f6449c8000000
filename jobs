@@ -15,7 +15,7 @@
                     </div>
                     <div id="collapse{{id}}" class="accordion-body collapse">
                         <div class="accordion-inner">                        
-                            <h2>{{position}}</h2>
+                            <h2>{{job_type}}</h2>
                             <p>{{{rich_description}}}</p>
                             {{#contact_name}}
                             <p><strong>Nom du contact:</strong> {{contact_name}}</p>
