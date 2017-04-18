@@ -155,8 +155,8 @@
             var dimension = (store_details.x_coordinate - 460)  + " " + (store_details.y_coordinate - 230);
     		$('.demo1').craftmap({
                 image: {
-        			width: 1000,
-    				height: 801,
+        			width: 850,
+    				height: 700,
     				name: 'imgMap'
     			},
     			map: {
