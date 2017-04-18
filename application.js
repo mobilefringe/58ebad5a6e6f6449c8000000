@@ -276,7 +276,7 @@ function renderJobs(container, template, collection){
         else{
             val.dates = start.format("MMM D") + " - " + end.format("MMM D");
         }
-        console.log(job_type);
+        console.log(val.job_type);
         if(val.job_type === "Full Time") {
             val.position_type === "TEMPS PLEIN"
         }
