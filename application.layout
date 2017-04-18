@@ -411,8 +411,8 @@
             <span>
                 &copy; 2017 FLEUR DE LYS CENTRE COMMERCIAL | <a href="/pages/fdl-privacy-policy" target="_blank" data-i18n="footer.privacy"></a> | <a data-i18n="footer.power"></a><a href="http://www.mallmaverick.com/" target="_blank"> Mall Maverick</a>     
             </span>
-            <a href="//www.20vic.com/" target="_blank">
-                <img ALT="20vic_logo" class="pull-right immostar"src="//codecloud.cdn.speedyrails.net/sites/58b449586e6f646b91000000/image/png/1488308546000/LOGO-IMMOSTAR-BLANC.png" />
+            <a href="http://www.20vic.com/" target="_blank">
+                <img ALT="20vic_logo" class="pull-right" src="/system/site_images/photos/000/000/775/original/20vic_logo.png?1381341465" />
             </a>
         </div>
     </footer>
