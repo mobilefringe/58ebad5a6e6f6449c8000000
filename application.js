@@ -272,7 +272,6 @@ function renderJobs(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         var french_start = moment(start).locale('fr-ca');
         var french_end = moment(end).locale('fr-ca');
-        
         val.end_date = french_end.format("DD MMM");
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D");
