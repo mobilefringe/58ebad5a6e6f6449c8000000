@@ -415,7 +415,6 @@ function renderPromotions(container, template, collection){
         }
         else{
             val.store_name = mall_name;
-            // val.image_url = "";
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
