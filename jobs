@@ -18,13 +18,13 @@
                             <h2>{{job_type}}</h2>
                             <p>{{{rich_description}}}</p>
                             {{#contact_name}}
-                            <p><strong>Contact Name:</strong> {{contact_name}}</p>
+                            <p><strong>Nom du contact:</strong> {{contact_name}}</p>
                             {{/contact_name}}
                             {{#contact_phone}}
-                            <p><strong>Contact Phone:</strong> {{contact_phone}}</p>
+                            <p><strong>Numéro du contact:</strong> {{contact_phone}}</p>
                             {{/contact_phone}}
                             {{#contact_email}}
-                            <p><strong>Contact Email:</strong> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
+                            <p><strong>Email du contact:</strong> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
                             {{/contact_email}}
                         </div>
                     </div>
@@ -49,13 +49,13 @@
                             <h2>{{job_type}}</h2>
                             <p>{{{rich_description}}}</p>
                             {{#contact_name}}
-                            <p><strong>Contact Name:</strong> {{contact_name}}</p>
+                            <p><strong>Nom du contact:</strong> {{contact_name}}</p>
                             {{/contact_name}}
                             {{#contact_phone}}
-                            <p><strong>Contact Phone:</strong> {{contact_phone}}</p>
+                            <p><strong>Numéro du contact:</strong> {{contact_phone}}</p>
                             {{/contact_phone}}
                             {{#contact_email}}
-                            <p><strong>Contact Email:</strong> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
+                            <p><strong>Email du contact:</strong> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
                             {{/contact_email}}
                             {{#store_slug}}
                             <strong><a href="{{store_slug}}">Localisation de la boutique: {{store_name}}</a></strong>
