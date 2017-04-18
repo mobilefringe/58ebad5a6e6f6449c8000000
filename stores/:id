@@ -1,0 +1,170 @@
+<div id="map_container">
+    <script id="map_template" type="x-tmpl-mustache/text">
+        <div class="row-fluid">
+            <div class="map">
+            	<div class="demo1">
+                    <img src="" class="imgMap" id="map_image" />        		
+            		<div class="marker" id='scroll_to_marker' data-coords="{{map_x_coordinate}}, {{map_y_coordinate}}">{{name}}</div>	
+            	</div>
+            </div>
+        </div>
+    </script>
+</div>
+<div class="line_break"></div>
+
+<div class="store_details">
+    <div id="store_details_container">
+        <script id="store_details_template" type="x-tmpl-mustache/text">
+            <div class="row-fluid">
+                <h1 class="store_page">
+                    <a href="/stores" class="back_to">
+                        <img src="//www.mallmaverick.com/system/site_images/photos/000/000/769/original/back_btn.png?1381264220" />
+                    </a>
+                    {{name}} 
+                    <a href="#promo" class="pull-right" id="promo">
+                        <img src="//www.mallmaverick.com/system/site_images/photos/000/000/771/original/btn_promo.png?1381264332" />
+                    </a>
+                    <a href="#job" class="pull-right" id="job">
+                        <img src="//www.mallmaverick.com/system/site_images/photos/000/000/770/original/btn_job.png?1381264320" />
+                    </a> 
+                </h1>
+                <hr>
+                <div>
+                    <span class="store_btn hidden-xs">{{phone}}</span>    
+                    <a href="tel:{{phone}}" class="store_btn visible-xs-inline-block">{{phone}}</a> 
+                    <a href="http://{{website}}" class="store_btn" target="_blank" data-i18n="pages.storedetail_website"></a> <!-- Website -->    
+                </div>
+                <div class="store_desc"><p>{{{rich_description}}}</p></div>
+            </div>
+        </script>
+    </div>
+
+    <a id="promo"></a>
+    <div id="promotions">
+        <h1 data-i18n="pages.storedetail_promos"></h1> <!-- Store Promotions -->
+        <hr>
+        <div class="store_promo" id="promos_container">
+            <script id="promos_template" type="x-tmpl-mustache/text">
+                <div class="row-fluid">
+                    <div class="col-sm-3">
+                        <a  href="{{promo_image_url_abs}}" data-lightbox="{{name}}">
+                            <img src="{{promo_image_url_abs}}">
+                        </a>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="promo_info">                   
+                            <p><h2>{{name}}</h2></p>
+                            <span class="promo_date">{{dates}}</span>
+                            <p>{{{rich_description}}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line_break"></div>
+            </script>
+        </div>
+    </div>
+    
+    <a id="job"></a>
+    <div id="employment">
+        <h1 data-i18n="pages.storedetail_jobs"></h1> <!-- Careers -->
+        <hr>
+        <div class="accordion" id="accordion2">
+            <div id="jobs_container">
+                <script id="jobs_template" type="x-tmpl-mustache/text">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">            
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{id}}" href="#collapse{{id}}">
+                                <img ALT="arrow_down" class="pull-right" src="//mallmaverick.com/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994" />
+                                <h2 class="job_title"><span class="store_name">{{store_name}}</span> - {{name}}</h2>
+                                <h2 class="job_close_date">Closing Date: {{end_date}}</h2>
+                            </div>
+                        </div>
+                        <div id="collapse{{id}}" class="accordion-body collapse">
+                            <div class="accordion-inner">                        
+                                <h2>{{job_type}}</h2>
+                                <p>&nbsp;</p>
+                                <p>{{{rich_description}}}</p>
+                                {{#contact_name}}
+                                <p><strong>Contact Name:</strong> {{contact_name}}</p>
+                                {{/contact_name}}
+                                {{#contact_phone}}
+                                <p><strong>Contact Phone:</strong> {{contact_phone}}</p>
+                                {{/contact_phone}}
+                                {{#contact_email}}
+                                <p><strong>Contact Email:</strong> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
+                                {{/contact_email}}
+                                {{#store_slug}}
+                                <strong><a href="{{store_slug}}">View Store: {{store_name}}</a></strong>
+                                {{/store_slug}}
+                            </div>
+                        </div>
+                    </div> 
+                </script>
+            </div>
+        </div>
+    </div>
+</div> 
+<script src="//s3.amazonaws.com/kodekloud/sites/5841df6b6e6f640488010000/text/javascript/1479491696000/craftmap.js"></script>
+<script>
+    $(document).ready(function(){
+        function renderAll(){
+            init();
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var store_details = getStoreDetailsBySlug(slug);
+            
+            renderStoreDetails("#store_details_container","#store_details_template", store_details, slug);
+            renderStoreDetails("#map_container","#map_template", store_details, slug);
+            
+            var store_promo_ids = store_details.promotions
+            var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
+            var published_promos = [];
+            $.each( store_promos , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos.push(val);
+                } 
+            });
+            if( published_promos.length > 0){
+                renderPromotions("#promos_container","#promos_template", published_promos);
+                $('#promo').show();
+            }
+            else{
+                $('#promotions').hide();
+            }
+            
+            var store_job_ids = store_details.jobs
+            var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
+            var published_jobs = [];
+            $.each(store_jobs , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_jobs.push(val);
+                } 
+            });
+            if( published_jobs.length > 0){
+                renderJobs('#jobs_container', '#jobs_template', published_jobs);
+                $('#job').show();
+            }
+            else{
+                $('#employment').hide();
+            }
+
+            var dimension = (store_details.x_coordinate - 460)  + " " + (store_details.y_coordinate - 230);
+    		$('.demo1').craftmap({
+                image: {
+        			width: 1000,
+    				height: 801,
+    				name: 'imgMap'
+    			},
+    			map: {
+    				position: dimension
+    			}
+    		});
+          	$("#scroll_to_marker").click();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
