@@ -279,11 +279,11 @@ function renderJobs(container, template, collection){
         console.log(val.job_type);
         if(val.job_type == "Full Time") {
             console.log("yes!")
-            val.position_type == "TEMPS PLEIN";
+            val.position == "TEMPS PLEIN";
         }
         if(val.job_type == "Part Time") {
             console.log("oui!")
-            val.position_type == "TEMPS PARTIEL";
+            val.position == "TEMPS PARTIEL";
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
