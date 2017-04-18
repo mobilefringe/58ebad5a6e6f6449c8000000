@@ -419,7 +419,7 @@ function renderPromotions(container, template, collection){
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
-            val.promo_image_url_abs  = "//codecloud.cdn.speedyarils.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
+            val.promo_image_url_abs  = "//codecloud.cdn.speedyarils.net/sites/58ebad5a6e6f6449c8000000/image/png/1491841221000/fleurdelys.png";
         }
         
         var show_date = moment(val.show_on_web_date);
