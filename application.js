@@ -109,7 +109,10 @@ function init() {
     $(".popup_bg .popup_newsletter").click(function(event){            
         event.stopPropagation();
     });
-        
+    
+    $("#popup_btn").click(function(){    
+        subscribe_email_popup();
+    });
         // var newsletter_img = $("#social_270 img").attr("src");
         // $("#social_270 img").hover(function(){
         //     $(this).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/679/original/socialicon_newletter_clicked_2.png?1393873885");
