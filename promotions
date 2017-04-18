@@ -23,7 +23,7 @@
             </script>
         </div>
         <div class="line_break"></div>
-        <h1 class="page_title" id="store_promos" data-i18n="pages.promotions_store_title"></h1> <!-- Store Promotions -->
+        <h1 class="page_title" id="store_promos">PROMOTIONS</h1> <!-- Store Promotions -->
         <hr>
         <h3 id="store_promo" class="hidden_now" data-i18n="pages.promotions_store_none"></h3> <!-- No Store Promotions Message -->
         <div id="store_promo_container"> 
