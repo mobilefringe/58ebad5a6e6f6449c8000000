@@ -313,7 +313,7 @@
     <footer>
         <div class="bottom_nav trim_screen">
         	<div class="row-fluid">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="hidden-xs special_box">
                         <div>
                             <label for="facebook_image_id">                     
@@ -329,7 +329,31 @@
                         </a>
                     </div>
                 </div>
-        		<div class="col-sm-6">   
+                <div class="col-sm-4">
+                    <div class="newsletter_box">
+                        <form action=http://mobilefringe.createsend.com/t/d/s/ykblt/ method="post" id="subForm">
+                            <label for="newsletter_box_id">
+                                <img id="newsletter_box_id" ALT="newsletter_box" src="https://www.mallmaverick.com/system/site_images/photos/000/000/867/original/icon_subscription.png?1382641709" />
+                                Abonnez-vous et obtenez des nouvelles de nous!
+                            </label>                
+                            <span>
+                                Abonnez-vous à notre lettre de nouvelles et obtenez des offres exclusives que vous trouverez nulle part ailleurs, directement dans votre boîte de réception.
+                            </span>
+                            <label for="fieldEmail" style="display:none"> subscribe email </label>
+                            <input id="fieldEmail" name=cm-ykblt-ykblt type="email" required placeholder="Votre Courriel" />  
+                            <span>
+                                <label style="display:none" for="agree_terms">Subscribe</label>
+                                    <input type="checkbox" class="info_check" id="agree_terms" /> J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial
+                                
+                            </span>
+            				<br />						
+                            <button class="btn"/>Abonnez-vous</button>                      
+                            <br />
+            				<span id="success_subscribe">Merci de votre abonnement à notre lettre de nouvelles.</span>
+                        </form>
+                    </div>
+                </div>
+        		<div class="col-sm-4">   
                     <div class="nav_site_map pull-right hidden-xs">
                         <label for="nav_site_map_link_id" >NAVIGATION</label>
                         <div class="site_map_cols">
