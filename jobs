@@ -1,0 +1,104 @@
+<div>
+    <h1 class="page_title">CARRIÈRE</h1> <!-- Careers Title -->
+    <hr>
+    <h3 id="no_jobs" class="hidden_now" data-i18n="pages.jobs_none"></h3> <!-- No Jobs Message -->
+    <div class="accordion" id="accordion2">
+        <div id="mall_jobs_container">
+            <script id="mall_jobs_template" type="x-tmpl-mustache/text">
+                <div class="accordion-group">
+                    <div class="accordion-heading">            
+                        <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{id}}" href="#collapse{{id}}">
+                            <img ALT="arrow_down" class="pull-right" src="//mallmaverick.com/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994" />
+                            <h2 class="job_title"><span class="store_name">{{store_name}}</span> - {{name}}</h2>
+                            <h2 class="job_close_date">Closing Date: {{end_date}}</h2>
+                        </div>
+                    </div>
+                    <div id="collapse{{id}}" class="accordion-body collapse">
+                        <div class="accordion-inner">                        
+                            <h2>{{job_type}}</h2>
+                            <p>{{{rich_description}}}</p>
+                            {{#contact_name}}
+                            <p><strong>Contact Name:</strong> {{contact_name}}</p>
+                            {{/contact_name}}
+                            {{#contact_phone}}
+                            <p><strong>Contact Phone:</strong> {{contact_phone}}</p>
+                            {{/contact_phone}}
+                            {{#contact_email}}
+                            <p><strong>Contact Email:</strong> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
+                            {{/contact_email}}
+                        </div>
+                    </div>
+                </div> 
+            </script>
+        </div>
+    </div>
+    
+    <div class="accordion" id="accordion2">
+        <div id="store_jobs_container">
+            <script id="store_jobs_template" type="x-tmpl-mustache/text">
+                <div class="accordion-group">
+                    <div class="accordion-heading">            
+                        <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{id}}" href="#collapse{{id}}">
+                            <img ALT="arrow_down" class="pull-right" src="//mallmaverick.com/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994" />
+                            <h2 class="job_title"><span class="store_name">{{store_name}}</span> - {{name}}</h2>
+                            <h2 class="job_close_date">Closing Date: {{end_date}}</h2>
+                        </div>
+                    </div>
+                    <div id="collapse{{id}}" class="accordion-body collapse">
+                        <div class="accordion-inner">                        
+                            <h2>{{job_type}}</h2>
+                            <p>{{{rich_description}}}</p>
+                            {{#contact_name}}
+                            <p><strong>Contact Name:</strong> {{contact_name}}</p>
+                            {{/contact_name}}
+                            {{#contact_phone}}
+                            <p><strong>Contact Phone:</strong> {{contact_phone}}</p>
+                            {{/contact_phone}}
+                            {{#contact_email}}
+                            <p><strong>Contact Email:</strong> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
+                            {{/contact_email}}
+                            {{#store_slug}}
+                            <strong><a href="{{store_slug}}">View Store: {{store_name}}</a></strong>
+                            {{/store_slug}}
+                        </div>
+                    </div>
+                </div> 
+            </script>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        function renderAll(){
+            init();
+            var jobs = getJobsList();
+            var mall_published_jobs = [];
+            var store_published_jobs = [];
+            $.each(jobs, function(key, val){
+                if(val.jobable_type == "Property"){
+                    today = moment();
+                    webDate = moment(val.show_on_web_date)
+                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        mall_published_jobs.push(val);
+                    }
+                } else {
+                    today = moment();
+                    webDate = moment(val.show_on_web_date);
+                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        store_published_jobs.push(val);
+                    }
+                    val.store_name = getStoreDetailsByID(val.jobable_id).name;
+                }
+            });
+            if(mall_published_jobs.length > 0 || store_published_jobs.length > 0 ){
+                renderJobs('#mall_jobs_container', '#mall_jobs_template', mall_published_jobs);
+                var sorted_store_jobs = store_published_jobs.sortBy(function(o){ return o.store_name});
+                renderJobs('#store_jobs_container', '#store_jobs_template', sorted_store_jobs);
+            }
+            else {
+                $('#no_jobs').show();
+            }
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
