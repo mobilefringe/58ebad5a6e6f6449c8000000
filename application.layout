@@ -333,7 +333,7 @@
                     <div class="newsletter_box">
                         <form action=http://mobilefringe.createsend.com/t/d/s/ykblt/ method="post" id="subForm">
                             <label for="newsletter_box_id">
-                                <img id="newsletter_box_id" ALT="newsletter_box" src="https://www.mallmaverick.com/system/site_images/photos/000/000/867/original/icon_subscription.png?1382641709" />
+                                <img id="newsletter_box_id" ALT="newsletter_box" src="//www.mallmaverick.com/system/site_images/photos/000/000/867/original/icon_subscription.png?1382641709" />
                                 Abonnez-vous et obtenez des nouvelles de nous!
                             </label>                
                             <span>
@@ -343,8 +343,8 @@
                             <input id="fieldEmail" name=cm-ykblt-ykblt type="email" required placeholder="Votre Courriel" />  
                             <span>
                                 <label style="display:none" for="agree_terms">Subscribe</label>
-                                    <input type="checkbox" class="info_check" id="agree_terms" /> J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial
-                                
+                                    <input type="checkbox" class="info_check" id="agree_terms" /> 
+                                    J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial
                             </span>
             				<br />						
                             <button class="btn"/>Abonnez-vous</button>                      
