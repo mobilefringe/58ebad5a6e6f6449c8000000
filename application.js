@@ -360,10 +360,8 @@ function renderJobs(container, template, collection){
 
         if(val.job_type === "Full Time") {
             val.position = "TEMPS PLEIN";
-            console.log(val.position)
         }
-        if(val.job_type == "Part Time") {
-            console.log("oui!")
+        if(val.job_type === "Part Time") {
             val.position = "TEMPS PARTIEL";
         }
         var rendered = Mustache.render(template_html,val);
