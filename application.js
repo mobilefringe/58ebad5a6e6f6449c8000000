@@ -364,6 +364,9 @@ function renderJobs(container, template, collection){
         if(val.job_type === "Part Time") {
             val.position = "TEMPS PARTIEL";
         }
+        if(val.job_type === "Part Time/Full Time") {
+            val.position = "Hello Mate!"
+        }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
