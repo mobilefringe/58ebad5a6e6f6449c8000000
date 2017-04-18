@@ -345,11 +345,13 @@ function renderEvents(container, template, collection){
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
+        var french_start = moment(start).locale('fr-ca');
+        var french_end = moment(end).locale('fr-ca');
         if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("MMM D")
+            val.dates = french_start.format("DD MMM")
         }
         else{
-            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
+            val.dates = french_start.format("DD MMM") + " - " + french_end.format("DD MMM");
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
