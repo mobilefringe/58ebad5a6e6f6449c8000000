@@ -88,11 +88,6 @@
                         store_published_jobs.push(val);
                     }
                     val.store_name = getStoreDetailsByID(val.jobable_id).name;
-                    
-                    if(val.job_type == "Full Time") {
-                        val.job_type == "TEMPS PLEIN";
-                        console.log(val.job_type)
-                    }
                 }
             });
             if(mall_published_jobs.length > 0 || store_published_jobs.length > 0 ){
