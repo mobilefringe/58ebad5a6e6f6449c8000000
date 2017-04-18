@@ -87,13 +87,13 @@ function init() {
         $(".popup_newsletter .subscribe p").show();
         $(".popup_bg").show();            
     }
-        $("#hide_popup").click(function(){
-            if ($(this).is(":checked")){
-                $(".popup_bg").fadeOut();    
-                $.cookie('toc_show_popup', 'yes'); 
-                $.cookie('toc_show_popup', 'yes', { expires: 1, path: '/' });        
-            }
-        });
+    $("#hide_popup").click(function(){
+        if ($(this).is(":checked")){
+            $(".popup_bg").fadeOut();    
+            $.cookie('toc_show_popup', 'yes'); 
+            $.cookie('toc_show_popup', 'yes', { expires: 1, path: '/' });        
+        }
+    });
         
         
         $(".popup_bg").click(function(event){            
