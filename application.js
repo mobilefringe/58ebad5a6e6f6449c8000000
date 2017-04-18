@@ -78,7 +78,7 @@ function init() {
         }, 500)
     });
     
-    $(".blog_preview").show();
+    // *** POP UP *** //
     $("#success_subscribe_popup").hide();
         
     $(".popup_close").click(function(){
@@ -97,19 +97,18 @@ function init() {
             $.cookie('toc_show_popup', 'yes', { expires: 1, path: '/' });        
         }
     });
-        
-        
-        $(".popup_bg").click(function(event){            
-            if( !$( event.target).is('.popup_newsletter') ) {
-               close_popup();
-            } else {
-                event.stopPropagation();
-            }
-        });
-        
-        $(".popup_bg .popup_newsletter").click(function(event){            
+    
+    $(".popup_bg").click(function(event){            
+        if( !$( event.target).is('.popup_newsletter') ) {
+            $(".popup_bg").fadeOut();
+        } else {
             event.stopPropagation();
-        });
+        }
+    });
+        
+    $(".popup_bg .popup_newsletter").click(function(event){            
+        event.stopPropagation();
+    });
         
         // var newsletter_img = $("#social_270 img").attr("src");
         // $("#social_270 img").hover(function(){
