@@ -359,14 +359,14 @@ function renderJobs(container, template, collection){
             val.dates = start.format("MMM D") + " - " + end.format("MMM D");
         }
 
-        // if(val.job_type == "Full Time") {
-        //     val.job_type == "TEMPS PLEIN";
-        //     console.log(val.job_type)
-        // }
-        // if(val.job_type == "Part Time") {
-        //     console.log("oui!")
-        //     val.position == "TEMPS PARTIEL";
-        // }
+        if(val.job_type == "Full Time") {
+            val.position == "TEMPS PLEIN";
+            console.log(val.position)
+        }
+        if(val.job_type == "Part Time") {
+            console.log("oui!")
+            val.position == "TEMPS PARTIEL";
+        }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
