@@ -239,7 +239,8 @@ function renderHomeHours(container, template, collection){
         
         var d = moment();
         val.month = moment().month();
-        val.weekday = moment().format("dddd");
+        var weekday = moment().format("dddd");
+        val.weekday = moment(weekday).locale('fr-ca');
         console.log(val.weekday)
         if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
             var open_time = moment(val.open_time).tz(getPropertyTimeZone());
