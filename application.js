@@ -81,7 +81,11 @@ function init() {
     $(".blog_preview").show();
     $("#success_subscribe_popup").hide();
         
-        
+    $(".popup_close").click(function(){
+        $(".popup_bg").fadeOut();
+        $(".popup_newsletter").fadeOut();
+    });
+    
     var toc_show_popup = $.cookie("toc_show_popup");
     if (toc_show_popup == null) {
         $(".popup_newsletter .subscribe p").show();
@@ -133,9 +137,7 @@ function init() {
         }
     }
     
-    function close_popup(){
-        $(".popup_bg").fadeOut();
-    }
+    
 }
 
       
