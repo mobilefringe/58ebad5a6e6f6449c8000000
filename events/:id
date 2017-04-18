@@ -1,0 +1,36 @@
+<div class="promo_page">
+    <div class="row-fluid">
+        <h1 class="page_title promo_header">EVENT LISTING</h1>
+        <span class="promo_back"> <a href="/events">back</a> </span>    
+    </div>
+    <hr/>
+    <div class="row-fluid social-links" style="margin-top:10px; margin-bottom:10px;">
+        <div class="addthis_sharing_toolbox"></div>
+    </div>  
+    
+    <div id="event_details_container">
+        <script id="event_details_template" type="x-tmpl-mustache/text">
+    	    <div class="media-body">
+		        <h2>{{name}}</h2>
+                <span class="promo_date">{{dates}}</span>
+				<p>{{{rich_description}}}</p>
+		    </div>
+            <img class="promo_img" alt="Promo Image" src="{{event_image_url_abs}}" />   		
+        </script>
+    </div>
+</div>
+<div class="mobile_line_break"></div>
+<!--Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-542d67e01c08fca8" async></script>
+<script>
+    $(document).ready(function(){
+        function renderAll(){
+            init();
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            event_details = getEventDetailsBySlug(slug);
+            renderEventDetails('#event_details_container', '#event_details_template', event_details)
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
