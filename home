@@ -89,14 +89,13 @@ $(document).ready(function(){
             }
         );
         
-        $( "#subscribe_letter_btn_img" ).hover(
-          function() {
+        $( "#subscribe_letter_btn_img" ).hover(function() {
             $( this ).attr( "src", "https://www.mallmaverick.com/system/site_images/photos/000/001/877/original/submit_clicked.png?1393866516" );
-          }, function() {
+            
+        }, function() {
             $( this ).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" );
-          }
-        );
-    })
+        });
+    });
     
     function validate_pop_up(){
         if($('#subscribe_newsletter_popup').is(":checked"))
