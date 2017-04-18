@@ -190,7 +190,7 @@ function renderHours(container, template, collection, type){
                 if (val.open_time && val.close_time && val.is_closed == false){
                     var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                     var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    val.h = open_time.format("h") + "h" + open_time.format("mm") + " à " + close_time.format("h:mma")
+                    val.h = open_time.format("h") + "h" + open_time.format("mm") + " à " + close_time.format("hh") + "h" + close_time.format("mma");
                 } else {
                     "Fermé";
                 }
