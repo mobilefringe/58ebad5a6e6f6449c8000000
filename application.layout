@@ -116,13 +116,22 @@
                             <a href='/hours' data-i18n="nav.subnav.hours"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/fdl-leasing' data-i18n="nav.subnav.leasing"></a>
+                            <a href='/pages/fdl-mall-info' data-i18n="nav.subnav.mall_info"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/fdl-mall-information' data-i18n="nav.subnav.mall_info"></a>
+                            <a href='/pages/fdl-accessibility'>Accessibilité</a>
                         </li>
                         <li class="mobile_menu_item">
-                          <a href='/pages/fdl-contact-us' data-i18n="nav.subnav.contact"></a>
+                            <a href='pages/fdl-contact-us'>Nous joindre</a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/pages/fdl-carte-cadeau'>Carte-Cadeau</a>
+                        </li>
+                        <li class="mobile_menu_item">
+                          <a href='/pages/fdl-location'>Location</a>
+                        </li>
+                        <li class="mobile_menu_item">
+                          <a href='/pages/fdl-point-de-depot-de-produits-electroniques'>Espace vert</a>
                         </li>
                     </ul>
                     <a id="mobile_logo" href="/">
