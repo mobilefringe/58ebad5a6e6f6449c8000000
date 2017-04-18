@@ -1,6 +1,6 @@
 <div class="popup_bg" >    
     <div class="popup_newsletter">
-        <a href="" class="popup_close">X</a>
+        <a class="popup_close">X</a>
         <h1>INSCRIVEZ-VOUS<br>À NOTRE<br>INFOLETTRE</h1>
         <p>
            Inscrivez-vous pour ne rien manquer des offres exclusives, promotions, événements et autres concours tout aussi excitants!
