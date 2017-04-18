@@ -153,7 +153,6 @@ function init() {
                     } else { // 200
                         $("#success_subscribe_popup").fadeIn();
                     }
-                }
             });    
         } else {
             alert("Veuillez entrez un courriel valide.")
