@@ -1,0 +1,90 @@
+<div class="promo_page">
+    <div>
+        <h1 class="page_title">PROMOTIONS DU CENTRE</h1>
+        <hr>
+        <h3 id="mall_promos" class="hidden_now" data-i18n="pages.promotions_mall_none"></h3> <!-- No Mall Promotions Message -->
+        <div id="mall_promo_container">
+            <script id="mall_promo_template" type="x-tmpl-mustache/text">
+                <div class="row-fluid store_promo">
+                    <div class="col-sm-3">
+                        <a  href="{{promo_image_url_abs}}" data-lightbox="{{name}}">
+                            <img src="{{promo_image_url_abs}}">
+                        </a> 
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="promo_info">
+                            <a href="/promotions/{{slug}}"><h2>{{name}}</h2></a>
+                            <span class="promo_date">{{dates}}</span>
+                            <div><p>{{{rich_description}}}</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line_break"></div>
+            </script>
+        </div>
+        <div class="line_break"></div>
+        <h1 class="page_title" id="store_promos" data-i18n="pages.promotions_store_title"></h1> <!-- Store Promotions -->
+        <hr>
+        <h3 id="store_promo" class="hidden_now" data-i18n="pages.promotions_store_none"></h3> <!-- No Store Promotions Message -->
+        <div id="store_promo_container"> 
+            <script id="store_promo_template" type="x-tmpl-mustache/text">
+                <div class="row-fluid store_promo">
+                    <div class="col-sm-3">
+                        <a  href="{{promo_image_url_abs}}" data-lightbox="{{name}}">
+                            <img src="{{promo_image_url_abs}}">
+                        </a>     
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="promo_info">
+                            <a href="/promotions/{{slug}}"><h2>{{name}}</h2></a>
+                            <a href="/stores/{{store_detail_btn}}"><h2>{{store_name}}</h2></a>
+                            <span class="promo_date">{{dates}}</span>
+                            <div><p>{{{rich_description}}}</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line_break"></div>
+            </script>
+        </div>
+        <div class="line_break"></div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        function renderAll(){
+                init();
+            var promotions = getPromotionsList().sortBy(function(o){ return o.show_on_web_date});
+            var mall_published_promos = [];
+            var store_published_promos = [];
+            $.each(promotions, function(key, val){
+                if(val.promotionable_type == "Property"){
+                    today = moment();
+                    webDate = moment(val.show_on_web_date)
+                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        mall_published_promos.push(val);
+                    }
+                } else {
+                    today = moment();
+                    webDate = moment(val.show_on_web_date)
+                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        store_published_promos.push(val);
+                    }     
+                } 
+            });
+            if(mall_published_promos.length > 0){
+                renderPromotions("#mall_promo_container","#mall_promo_template", mall_published_promos);
+            }
+            else{
+                $("#mall_promos").show();
+            }
+            if(store_published_promos.length > 0){
+                renderPromotions("#store_promo_container","#store_promo_template", store_published_promos);
+            }
+            else{
+                $("#store_promo").show();
+            }
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
