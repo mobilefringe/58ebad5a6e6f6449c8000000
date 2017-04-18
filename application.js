@@ -368,7 +368,7 @@ function renderJobs(container, template, collection){
             val.position = "TEMPS PARTIEL/TEMPS PLEIN";
         }
         if(val.job_type === "Seasonal") {
-            val.position = "";
+            val.position = "SAISONNIER";
         }
         
         var rendered = Mustache.render(template_html,val);
