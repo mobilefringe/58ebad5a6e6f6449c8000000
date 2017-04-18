@@ -276,7 +276,7 @@
                         <div class="feature_box" id="feature_item_fr">
                             <script id="feature_item_template_fr" type="x-tmpl-mustache/text">
                                 {%raw%}
-                                <span class="feature_label">{{name_2}}</span>
+                                <span class="feature_label">{{name}}</span>
                                 <a href="{{url}}">
                                     <img alt="feature_image" src="{{image_url}}" />
                                 </a>
