@@ -40,7 +40,7 @@
     </div>
 
     <a id="promo"></a>
-    <div id="promotions">
+    <div id="promotions" class="hidden_now">
         <h1 data-i18n="pages.storedetail_promos"></h1> <!-- Store Promotions -->
         <hr>
         <div class="store_promo" id="promos_container">
@@ -65,7 +65,7 @@
     </div>
     
     <a id="job"></a>
-    <div id="employment">
+    <div id="employment" class="hidden_now">
         <h1 data-i18n="pages.storedetail_jobs"></h1> <!-- Careers -->
         <hr>
         <div class="accordion" id="accordion2">
@@ -128,10 +128,7 @@
             });
             if( published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
-                $('#promo').show();
-            }
-            else{
-                $('#promotions').hide();
+                $('#promotions').show();
             }
             
             var store_job_ids = store_details.jobs
@@ -146,10 +143,7 @@
             });
             if( published_jobs.length > 0){
                 renderJobs('#jobs_container', '#jobs_template', published_jobs);
-                $('#job').show();
-            }
-            else{
-                $('#employment').hide();
+                $('#employment').show();
             }
 
             var dimension = (store_details.x_coordinate - 460)  + " " + (store_details.y_coordinate - 230);
