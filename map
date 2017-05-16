@@ -19,10 +19,10 @@
             init();
             var stores = getStoresList();
             renderStoreList('#store_select_container','#store_select_template', stores, "stores");
-            if(sessionStorage.current_locale == "en-CA"){
+            if(getStorage().current_locale == "en-CA"){
                 $(".mapper").prepend("<option selected>Select a Store</option>");
             }
-            if(sessionStorage.current_locale == "fr-CA"){
+            if(getStorage().current_locale == "fr-CA"){
                 $(".mapper").prepend("<option selected>Sélectionnez un magasin</option>"); 
             }
 
