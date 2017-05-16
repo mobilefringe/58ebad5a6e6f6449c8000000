@@ -31,11 +31,11 @@ $(document).ready(function(){
         prefix = get_prefix();
         var pages_json = prefix + "/pages/" + slug + ".json"
         $.getJSON(pages_json).done(function(data) {
-            if(getStorage().current_locale == "en-CA"){
+            if(Cookies.get('current_locale') == "en-CA"){
                 $('#page_title').html(data.title_2);
                 $('#page_body').html(data.body_2);
             }
-            if(getStorage().current_locale == "fr-CA"){
+            if(Cookies.get('current_locale') == "fr-CA"){
                 $('#page_title').html(data.title);
                 $('#page_body').html(data.body);
             }
