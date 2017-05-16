@@ -30,11 +30,11 @@ function init() {
         window.location.href = "?locale=" + $(this).val();    
     }); 
     
-    if(sessionStorage.current_locale == "en-CA"){
+    if(Cookies.get('current_locale') == "en-CA"){
         $("#brand_select").prepend("<option selected>Brands</option>");   
         $("#locale_select").val("en");
     }
-    if(sessionStorage.current_locale == "fr-CA"){
+    if(Cookies.get('current_locale') == "fr-CA"){
         $("#brand_select").prepend("<option selected>Boutiques</option>"); 
         $("#locale_select").val("fr");
     }
