@@ -28,7 +28,8 @@ $(document).ready(function(){
             
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
-        var pages_json = "//www.fdlcentrecommercial.com/pages/" + slug + ".json"
+        prefix = get_prefix();
+        var pages_json = prefix + "/pages/" + slug + ".json"
         $.getJSON(pages_json).done(function(data) {
             if(getStorage().current_locale == "en-CA"){
                 $('#page_title').html(data.title_2);
