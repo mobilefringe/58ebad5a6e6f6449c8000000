@@ -47,11 +47,11 @@ function init() {
     var feature_items = getFeatureList();
     var one_item = feature_items.slice(0,1);
     var two_items = feature_items.slice(1,3);
-    if(sessionStorage.current_locale == "en-CA"){
+    if(Cookies.get('current_locale') == "en-CA"){
         renderFeatureItems('#feature_item','#feature_item_template', one_item);
         renderFeatureItems('#home_feature','#home_feature_template', two_items);            
     }
-    if(sessionStorage.current_locale == "fr-CA"){
+    if(Cookies.get('current_locale') == "fr-CA"){
         renderFeatureItems('#feature_item_fr','#feature_item_template_fr', one_item);
         renderFeatureItems('#home_feature_fr','#home_feature_template_fr', two_items);   
     }
