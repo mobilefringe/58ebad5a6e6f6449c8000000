@@ -159,6 +159,50 @@ function init() {
             alert("Veuillez entrez un courriel valide.")
         }
     }
+    
+    //Campaign Monitor Sign Up
+    $('#subForm').submit(function (e) {
+        if ($("#agree_terms").prop("checked") != true){
+            alert("Please agree to the term and conditions.");
+            $("#agree_terms").focus();
+            return false;
+        }
+        e.preventDefault();
+        $.getJSON(
+            this.action + "?callback=?",
+            $(this).serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    alert("Please try again later.");
+                } else { // 200
+                    $('#subForm').trigger('reset');
+                    $("#success_subscribe").fadeIn();
+                    
+                }
+        });
+    });
+    
+    function submitToMailChimp(){
+        $("#mce-EMAIL").val($('#fieldEmail').val())
+        $.ajax({
+            type: $("#mc-embedded-subscribe-form").attr('method'),
+            url: $("#mc-embedded-subscribe-form").attr('action'),
+            data: $("#mc-embedded-subscribe-form").serialize(),
+            cache       : false,
+            dataType    : 'json',
+            contentType: "application/json; charset=utf-8",
+            error       : function(err) { alert("Could not connect to the registration server. Please try again later.") },
+            success     : function(data) {
+           
+                if (data.result != "success") {
+                    $("#success_subscribe").fadeIn();
+                } else {
+                    $("#success_subscribe").fadeIn();
+                }
+            }
+        })
+    }
+
 }
 
       
