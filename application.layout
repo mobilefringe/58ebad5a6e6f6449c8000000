@@ -58,17 +58,7 @@
 
     <script>
         setEndPoint('//fdl.mallmaverick.com/api/v3/fdl/all.json');
-        
-        sessionStorage.setItem('primary_locale', 'fr-CA');
-        sessionStorage.setItem('secondary_locale', 'en-CA');
-        
-        if(getRequestParam('locale') == 'fr'){
-            sessionStorage.setItem('current_locale',sessionStorage.primary_locale);
-        }else if(getRequestParam('locale') == 'en'){
-            sessionStorage.setItem('current_locale',sessionStorage.secondary_locale);
-        }
-        
-        
+
         Cookies.set('primary_locale', 'fr-CA');
         Cookies.set('secondary_locale', 'en-CA');
 
