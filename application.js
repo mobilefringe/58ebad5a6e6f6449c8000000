@@ -790,24 +790,29 @@ function show_png_pin(trigger, map){
 
 
 function setPrimaryLanguage(){
-    i18n.setLng(sessionStorage.primary_locale, function(t) {
+    i18n.setLng(Cookies.get('primary_locale'), function(t) {
         $(document).i18n();
     });
-    sessionStorage.setItem('current_locale', sessionStorage.primary_locale);
+    Cookies.set('current_locale', Cookies.get('primary_locale'))
     $('.primary-locale').show(); // Shows
     $('.secondary-locale').hide();
-    window.dispatchEvent(new Event('resize'));
+    $("#search_input").attr("placeholder", "Search Site");
+    $("#search_input_mobile").attr("placeholder", "Search Site");
+    // window.dispatchEvent(new Event('resize'));
 }
 
 function setSecondaryLanguage(){
-    i18n.setLng(sessionStorage.secondary_locale, function(t) {
+    i18n.setLng(Cookies.get('secondary_locale'), function(t) {
         $(document).i18n();
     });
-    sessionStorage.setItem('current_locale', sessionStorage.secondary_locale);
-    $('.primary-locale').hide(); // Shows
+    Cookies.set('current_locale', Cookies.get('secondary_locale'))
     $('.secondary-locale').show();
-    window.dispatchEvent(new Event('resize'));
+    $('.primary-locale').hide();
+    $("#search_input").attr("placeholder", "Rechercher dans le site");
+    $("#search_input_mobile").attr("placeholder", "Rechercher dans le site");
+    // window.dispatchEvent(new Event('resize'));
 }
+
 function getUrlParameter(sParam){
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('#');
