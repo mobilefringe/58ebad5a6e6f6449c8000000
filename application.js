@@ -86,79 +86,64 @@ function init() {
         $(".popup_bg").fadeOut();
     });
     
-    var toc_show_popup = $.cookie("toc_show_popup");
-    if (toc_show_popup == null) {
-        $(".popup_newsletter .subscribe p").show();
-        $(".popup_bg").show();            
-    }
-    $("#hide_popup").click(function(){
-        if ($(this).is(":checked")){
-            $(".popup_bg").fadeOut();    
-            $.cookie('toc_show_popup', 'yes'); 
-            $.cookie('toc_show_popup', 'yes', { expires: 1, path: '/' });        
-        }
-    });
+    // var toc_show_popup = $.cookie("toc_show_popup");
+    // if (toc_show_popup == null) {
+    //     $(".popup_newsletter .subscribe p").show();
+    //     $(".popup_bg").show();            
+    // }
+    // $("#hide_popup").click(function(){
+    //     if ($(this).is(":checked")){
+    //         $(".popup_bg").fadeOut();    
+    //         $.cookie('toc_show_popup', 'yes'); 
+    //         $.cookie('toc_show_popup', 'yes', { expires: 1, path: '/' });        
+    //     }
+    // });
     
-    $(".popup_bg").click(function(event){            
-        if( !$( event.target).is('.popup_newsletter') ) {
-            $(".popup_bg").fadeOut();
-        } else {
-            event.stopPropagation();
-        }
-    });
+    // $(".popup_bg").click(function(event){            
+    //     if( !$( event.target).is('.popup_newsletter') ) {
+    //         $(".popup_bg").fadeOut();
+    //     } else {
+    //         event.stopPropagation();
+    //     }
+    // });
         
-    $(".popup_bg .popup_newsletter").click(function(event){            
-        event.stopPropagation();
-    });
+    // $(".popup_bg .popup_newsletter").click(function(event){            
+    //     event.stopPropagation();
+    // });
     
-    $("#popup_btn").click(function(){    
-        subscribe_email_popup();
-    });
-        // var newsletter_img = $("#social_270 img").attr("src");
-        // $("#social_270 img").hover(function(){
-        //     $(this).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/679/original/socialicon_newletter_clicked_2.png?1393873885");
-        //     },
-        //     function(){             
-        //         $(this).attr("src", newsletter_img)                
-        //     }
-        // });
-        
-        // $( "#subscribe_letter_btn_img" ).hover(function() {
-        //     $( this ).attr( "src", "https://www.mallmaverick.com/system/site_images/photos/000/001/877/original/submit_clicked.png?1393866516" );
-            
-        // }, function() {
-        //     $( this ).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" );
-        // });
+    // $("#popup_btn").click(function(){    
+    //     subscribe_email_popup();
+    // });
     
-    function validate_pop_up(){
-        if($('#subscribe_newsletter_popup').is(":checked"))
-        return true;
-        else{
-            alert("Please check the 'Subscribe to recieve newsletter' checkbox")
-            return false;
-        }
-    }
+    // function validate_pop_up(){
+    //     if($('#subscribe_newsletter_popup').is(":checked"))
+    //     return true;
+    //     else{
+    //         alert("Please check the 'Subscribe to recieve newsletter' checkbox")
+    //         return false;
+    //     }
+    // }
     
-    function subscribe_email_popup(){ 
-        if (isValidEmailAddress($("#subscribe_email_popup").val())){   
-            var action="http://mobilefringe.createsend.com/t/d/s/ykblt/"
-            var data = {}
-            data["cm-ykblt-ykblt"] = $("#subscribe_email_popup").val();
-            data["cm-name"] = $("#subscribe_first_name").val() + " " + $("#subscribe_last_name").val();
-            $.getJSON(
-                action + "?callback=?",
-                data,
-                function (data) {
-                    if (data.Status === 400) {
-                        alert("Veuillez essayer de nouveau s’il vous plaît.");
-                    } else { // 200
-                        $("#success_subscribe_popup").fadeIn();
-                    }
-            });    
-        } else {
-            alert("Veuillez entrez un courriel valide.")
-        }
-    }
+    // function subscribe_email_popup(){ 
+    //     if (isValidEmailAddress($("#subscribe_email_popup").val())){   
+    //         var action="http://mobilefringe.createsend.com/t/d/s/ykblt/"
+    //         var data = {}
+    //         data["cm-ykblt-ykblt"] = $("#subscribe_email_popup").val();
+    //         data["cm-name"] = $("#subscribe_first_name").val() + " " + $("#subscribe_last_name").val();
+    //         $.getJSON(
+    //             action + "?callback=?",
+    //             data,
+    //             function (data) {
+    //                 if (data.Status === 400) {
+    //                     alert("Veuillez essayer de nouveau s’il vous plaît.");
+    //                 } else { // 200
+    //                     $("#success_subscribe_popup").fadeIn();
+    //                 }
+    //         });    
+    //     } else {
+    //         alert("Veuillez entrez un courriel valide.")
+    //     }
+    // }
     
     //Campaign Monitor Sign Up
     $('#subForm').submit(function (e) {
@@ -182,26 +167,26 @@ function init() {
         });
     });
     
-    function submitToMailChimp(){
-        $("#mce-EMAIL").val($('#fieldEmail').val())
-        $.ajax({
-            type: $("#mc-embedded-subscribe-form").attr('method'),
-            url: $("#mc-embedded-subscribe-form").attr('action'),
-            data: $("#mc-embedded-subscribe-form").serialize(),
-            cache       : false,
-            dataType    : 'json',
-            contentType: "application/json; charset=utf-8",
-            error       : function(err) { alert("Could not connect to the registration server. Please try again later.") },
-            success     : function(data) {
+    // function submitToMailChimp(){
+    //     $("#mce-EMAIL").val($('#fieldEmail').val())
+    //     $.ajax({
+    //         type: $("#mc-embedded-subscribe-form").attr('method'),
+    //         url: $("#mc-embedded-subscribe-form").attr('action'),
+    //         data: $("#mc-embedded-subscribe-form").serialize(),
+    //         cache       : false,
+    //         dataType    : 'json',
+    //         contentType: "application/json; charset=utf-8",
+    //         error       : function(err) { alert("Could not connect to the registration server. Please try again later.") },
+    //         success     : function(data) {
            
-                if (data.result != "success") {
-                    $("#success_subscribe").fadeIn();
-                } else {
-                    $("#success_subscribe").fadeIn();
-                }
-            }
-        })
-    }
+    //             if (data.result != "success") {
+    //                 $("#success_subscribe").fadeIn();
+    //             } else {
+    //                 $("#success_subscribe").fadeIn();
+    //             }
+    //         }
+    //     })
+    // }
 
 }
 
