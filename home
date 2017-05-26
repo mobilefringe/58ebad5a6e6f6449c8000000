@@ -1,5 +1,5 @@
 <!-- POP UP -->
-<div class="popup_bg hidden_now" >    
+<div class="popup_bg" >    
     <div class="popup_newsletter">
         <a class="popup_close">X</a>
         <h1>INSCRIVEZ-VOUS<br>À NOTRE<br>INFOLETTRE</h1>
@@ -56,13 +56,16 @@ $(document).ready(function(){
             //     $.cookie("popup_viewed", "true", { expires: 1 });
                 var popup = getPopups()[0];
                 if (popup != undefined){
-                    if (popup.use_form != true) {
-                        $('.homepop_up_container').hide();
-                    }
-                    $('.popup_home a').attr('href', popup.photo_link)
-                    $('.popup_home img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
-                    $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
-                    $('.popup_bg').show()
+                    // if (popup.use_form != true) {
+                    //     $('.homepop_up_container').hide();
+                    // }
+                    // $('.popup_home a').attr('href', popup.photo_link)
+                    // $('.popup_home img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
+                    // $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+                    // $('.popup_home').show()
+                    
+                    $(".popup_newsletter .subscribe p").show();
+                    $(".popup_bg").show();  
                 }
             // }
         }
