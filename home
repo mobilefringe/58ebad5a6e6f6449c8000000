@@ -7,19 +7,26 @@
            Inscrivez-vous pour ne rien manquer des offres exclusives, promotions, événements et autres concours tout aussi excitants!
         </p>
         <div class="subscribe">
-            <input title="PRÉNOM" type="text" placeholder="PRÉNOM" id="subscribe_first_name">
-            <input title="NOM" type="text" placeholder="NOM" id="subscribe_last_name">                            
-            <input title="COURRIEL" type="text" placeholder="COURRIEL" id="subscribe_email_popup">
-            <a id="popup_btn" class="btn"> 
-                <img alt="popup image" id="subscribe_letter_btn_img" src="https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" /> 
-            </a>
-            
-            <span id="success_subscribe_popup">Merci de votre inscription!</span>
-            
-            <p style="display: block;padding-right: 0px;padding-top: 10px;">
-                <input title="checkbox " type="checkbox" id="hide_popup" />
-                Ne plus afficher ce message aujourd'hui
-            </p>
+            <form action=http://mobilefringe.createsend.com/t/d/s/ykblt/ method="post" id="popupForm">
+                <input title="PRÉNOM" type="text" placeholder="PRÉNOM" id="subscribe_first_name">
+                <input title="NOM" type="text" placeholder="NOM" id="subscribe_last_name">      
+                
+                <label for="fieldEmail" style="display:none"></label>
+                <input id="fieldEmail" name=cm-ykblt-ykblt type="email" required placeholder="COURRIEL"/>  
+                            
+                <input title="COURRIEL" type="text" placeholder="COURRIEL" id="subscribe_email_popup">
+                
+                <a id="popup_btn" class="btn"> 
+                    <img alt="popup image" id="subscribe_letter_btn_img" src="https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" /> 
+                </a>
+                
+                <span id="success_subscribe_popup">Merci de votre inscription!</span>
+                
+                <p style="display: block;padding-right: 0px;padding-top: 10px;">
+                    <input title="checkbox " type="checkbox" id="hide_popup" />
+                    Ne plus afficher ce message aujourd'hui
+                </p>
+            </form>
         </div>        
     </div>
 </div>
