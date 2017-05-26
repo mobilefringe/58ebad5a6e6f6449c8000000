@@ -145,6 +145,28 @@ function init() {
     //     }
     // }
     
+    //Pop Up Validation
+    $('#popupForm').submit(function (e) {
+        if ($("#agree_terms").prop("checked") != true){
+            alert("Please agree to the term and conditions.");
+            $("#agree_terms").focus();
+            return false;
+        }
+        e.preventDefault();
+        $.getJSON(
+            this.action + "?callback=?",
+            $(this).serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    alert("Veuillez essayer de nouveau s’il vous plaît.");
+                } else { // 200
+                    $('#popupForm').trigger('reset');
+                    $("#success_subscribe").fadeIn();
+                    
+                }
+        });
+    });
+    
     //Campaign Monitor Sign Up
     $('#subForm').submit(function (e) {
         if ($("#agree_terms").prop("checked") != true){
