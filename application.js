@@ -86,11 +86,11 @@ function init() {
         $(".popup_bg").fadeOut();
     });
     
-    var toc_show_popup = $.cookie("toc_show_popup");
-    if (toc_show_popup == null) {
+    // var toc_show_popup = $.cookie("toc_show_popup");
+    // if (toc_show_popup == null) {
         $(".popup_newsletter .subscribe p").show();
         $(".popup_bg").show();            
-    }
+    // }
     $("#hide_popup").click(function(){
         if ($(this).is(":checked")){
             $(".popup_bg").fadeOut();    
