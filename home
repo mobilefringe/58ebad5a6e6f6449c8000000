@@ -13,10 +13,7 @@
                 
                 <label for="fieldEmail" style="display:none"></label>
                 <input id="fieldEmail" name=cm-ykblt-ykblt type="email" required placeholder="COURRIEL"/>  
-                
-                <a id="popup_btn" class="btn"> 
-                    <img alt="popup image" id="subscribe_letter_btn_img" src="https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" /> 
-                </a>
+
                 <button class="popup_button"/></button> 
                 <span id="success_subscribe_popup">Merci de votre inscription!</span>
                 
