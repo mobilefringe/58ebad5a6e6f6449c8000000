@@ -23,14 +23,18 @@
 <!--Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-542d67e01c08fca8" async></script>
 <script>
-    $(document).ready(function(){
-        function renderAll(){
-            init();
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            event_details = getEventDetailsBySlug(slug);
-            renderEventDetails('#event_details_container', '#event_details_template', event_details)
-        }
-        loadMallDataCached(renderAll); 
-    })
+$(document).ready(function(){
+    init();
+    function renderAll(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        event_details = getEventDetailsBySlug(slug);
+        renderEventDetails('#event_details_container', '#event_details_template', event_details);
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
+    }
+    loadMallDataCached(renderAll); 
+})
 </script>
