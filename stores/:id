@@ -21,10 +21,10 @@
                         <img src="//www.mallmaverick.com/system/site_images/photos/000/000/769/original/back_btn.png?1381264220" />
                     </a>
                     {{name}} 
-                    <a href="#promo" class="pull-right" id="promo">
+                    <a href="#promo" class="pull-right hidden_now" id="promo_show">
                         <img src="//www.mallmaverick.com/system/site_images/photos/000/000/771/original/btn_promo.png?1381264332" />
                     </a>
-                    <a href="#job" class="pull-right" id="job">
+                    <a href="#job" class="pull-right hidden_now" id="job_show">
                         <img src="//www.mallmaverick.com/system/site_images/photos/000/000/770/original/btn_job.png?1381264320" />
                     </a> 
                 </h1>
@@ -141,7 +141,7 @@ $(document).ready(function(e){
         });
         if( published_jobs.length > 0){
             renderJobs('#jobs_container', '#jobs_template', published_jobs);
-            $('#jobs_show').show();
+            $('#job_show').show();
             $('#employment').show();
         }
         
