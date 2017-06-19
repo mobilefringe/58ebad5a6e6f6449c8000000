@@ -1,209 +1,4 @@
-function init() {
-    //Using i18n for localization, for more info please visit http://i18next.com/
-    i18n.init({preload: [getStorage().primary_locale,getStorage().secondary_locale],resGetPath: '../__lng__.json',fallbackLng: false }, function(t) {
-        var current_locale = "";
-        if(typeof(Cookies.get('current_locale')) != 'undefined' ){
-            current_locale = Cookies.get('current_locale')
-        }
-        if(current_locale == Cookies.get('primary_locale')){
-            setPrimaryLanguage();
-        }else{
-            setSecondaryLanguage();
-        }
-    });
-    
-    // If there is no language set it to the primary locale.
-    // log(Cookies.get('current_locale'))
-    if (!Cookies.get('current_locale')) {
-        setPrimaryLanguage();
-    }
-    
-    var header_stores = getStoresList();
-    renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
-    $("#brand_select").on('change', function() {            
-        if ($(this).val() != ""){
-            window.location = "/stores/" + $(this).val();    
-        }
-    });  
 
-    $("#locale_select").on('change', function() {                        
-        window.location.href = "?locale=" + $(this).val();    
-    }); 
-    
-    if(Cookies.get('current_locale') == "en-CA"){
-        $("#brand_select").prepend("<option selected>Brands</option>");   
-        $("#locale_select").val("en");
-    }
-    if(Cookies.get('current_locale') == "fr-CA"){
-        $("#brand_select").prepend("<option selected>Boutiques</option>"); 
-        $("#locale_select").val("fr");
-    }
-    
-    renderHomeHours();
-    
-    var prop_details = getPropertyDetails();
-    renderPropertyDetails('#prop_phone_container', '#prop_phone_template', prop_details);
-    
-    var feature_items = getFeatureList();
-    var one_item = feature_items.slice(0,1);
-    var two_items = feature_items.slice(1,3);
-    if(Cookies.get('current_locale') == "en-CA"){
-        renderFeatureItems('#feature_item','#feature_item_template', one_item);
-        renderFeatureItems('#home_feature','#home_feature_template', two_items);            
-    }
-    if(Cookies.get('current_locale') == "fr-CA"){
-        renderFeatureItems('#feature_item_fr','#feature_item_template_fr', one_item);
-        renderFeatureItems('#home_feature_fr','#home_feature_template_fr', two_items);   
-    }
-    
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-        var fbds = document.createElement('script');
-        fbds.async = true;
-        fbds.src = '//connect.facebook.net/en_US/fbds.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(fbds, s);
-        _fbq.loaded = true;
-      }
-    _fbq.push(['addPixelId', '548352815262916']);
-    window._fbq = window._fbq || [];
-    window._fbq.push(['track', 'PixelInitialized', {}]);
-    
-    $(".long_feature_box").hover(function() {
-        $(this).find(".long_feature_label").animate({
-            "top": "-=81%"
-        }, 500)
-    }, function() {
-        $(this).find(".long_feature_label").animate({
-            "top": "+=81%"
-        }, 500)
-    });
-    
-    // *** POP UP *** //
-    $("#success_subscribe_popup").hide();
-        
-    $(".popup_close").click(function(){
-        $(".popup_bg").fadeOut();
-    });
-    
-    var toc_show_popup = $.cookie("toc_show_popup");
-    // if (toc_show_popup == null) {
-        $(".popup_newsletter .subscribe p").show();
-        $(".popup_bg").show();            
-    // }
-    $("#hide_popup").click(function(){
-        if ($(this).is(":checked")){
-            $(".popup_bg").fadeOut();    
-            $.cookie('toc_show_popup', 'yes'); 
-            $.cookie('toc_show_popup', 'yes', { expires: 1, path: '/' });        
-        }
-    });
-    
-    $(".popup_bg").click(function(event){            
-        if( !$( event.target).is('.popup_newsletter') ) {
-            $(".popup_bg").fadeOut();
-        } else {
-            event.stopPropagation();
-        }
-    });
-        
-    $(".popup_bg .popup_newsletter").click(function(event){            
-        event.stopPropagation();
-    });
-    
-    $("#popup_btn").click(function(){    
-        subscribe_email_popup();
-    });
-        // var newsletter_img = $("#social_270 img").attr("src");
-        // $("#social_270 img").hover(function(){
-        //     $(this).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/679/original/socialicon_newletter_clicked_2.png?1393873885");
-        //     },
-        //     function(){             
-        //         $(this).attr("src", newsletter_img)                
-        //     }
-        // });
-        
-        // $( "#subscribe_letter_btn_img" ).hover(function() {
-        //     $( this ).attr( "src", "https://www.mallmaverick.com/system/site_images/photos/000/001/877/original/submit_clicked.png?1393866516" );
-            
-        // }, function() {
-        //     $( this ).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" );
-        // });
-    
-    function validate_pop_up(){
-        if($('#subscribe_newsletter_popup').is(":checked"))
-        return true;
-        else{
-            alert("Please check the 'Subscribe to recieve newsletter' checkbox")
-            return false;
-        }
-    }
-    
-    function subscribe_email_popup(){ 
-        if (isValidEmailAddress($("#subscribe_email_popup").val())){   
-            var action="http://mobilefringe.createsend.com/t/d/s/ykblt/"
-            var data = {}
-            data["cm-ykblt-ykblt"] = $("#subscribe_email_popup").val();
-            data["cm-name"] = $("#subscribe_first_name").val() + " " + $("#subscribe_last_name").val();
-            $.getJSON(
-                action + "?callback=?",
-                data,
-                function (data) {
-                    if (data.Status === 400) {
-                        alert("Veuillez essayer de nouveau s’il vous plaît.");
-                    } else { // 200
-                        $("#success_subscribe_popup").fadeIn();
-                    }
-            });    
-        } else {
-            alert("Veuillez entrez un courriel valide.")
-        }
-    }
-    
-    //Campaign Monitor Sign Up
-    $('#subForm').submit(function (e) {
-        if ($("#agree_terms").prop("checked") != true){
-            alert("Please agree to the term and conditions.");
-            $("#agree_terms").focus();
-            return false;
-        }
-        e.preventDefault();
-        $.getJSON(
-            this.action + "?callback=?",
-            $(this).serialize(),
-            function (data) {
-                if (data.Status === 400) {
-                    alert("Please try again later.");
-                } else { // 200
-                    $('#subForm').trigger('reset');
-                    $("#success_subscribe").fadeIn();
-                    
-                }
-        });
-    });
-    
-    // function submitToMailChimp(){
-    //     $("#mce-EMAIL").val($('#fieldEmail').val())
-    //     $.ajax({
-    //         type: $("#mc-embedded-subscribe-form").attr('method'),
-    //         url: $("#mc-embedded-subscribe-form").attr('action'),
-    //         data: $("#mc-embedded-subscribe-form").serialize(),
-    //         cache       : false,
-    //         dataType    : 'json',
-    //         contentType: "application/json; charset=utf-8",
-    //         error       : function(err) { alert("Could not connect to the registration server. Please try again later.") },
-    //         success     : function(data) {
-           
-    //             if (data.result != "success") {
-    //                 $("#success_subscribe").fadeIn();
-    //             } else {
-    //                 $("#success_subscribe").fadeIn();
-    //             }
-    //         }
-    //     })
-    // }
-
-}
 
       
 function renderGeneral(container, template, collection){
@@ -675,7 +470,7 @@ function renderStoreList(container, template, collection, type){
                 val.alt_store_front_url = getImageURL(val.store_front_url);    
             }
         }
-        //var categories = getStoreCategories();
+
         var current_initial = val.name[0];
         val.cat_list = val.categories.join(',')
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
@@ -687,36 +482,23 @@ function renderStoreList(container, template, collection, type){
             store_initial = current_initial;
             val.show = "display:block;";
         }
-        if(val.is_coming_soon_store == true){
-            val.coming_soon_store = "display:inline";
-        }
-        else{
-            val.coming_soon_store = "display:none";
-        }
-        if(val.is_new_store == true){
-            val.new_store = "display:inline";
-        }
-        else{
-            val.new_store = "display:none";
-        }
-        if (val.promotions.length > 0){
+        
+        if (val.total_published_promos > 0){
             val.promotion_exist = "display:inline";
-            var store_promo = getPromotionsForIds(val.promotions).sortBy(function(o){ return o.start_date })[0];
-            if (store_promo != undefined){
-                val.promo_btn = "/promotions/" + store_promo.slug;
-            }
-        }
-        else{
+        } else {
             val.promotion_exist = "display:none";
         }
+        
         if(val.phone.length < 1){
             val.phone_exist = "display:none";
         }
+        
         val.block = current_initial + '-block';
         var rendered = Mustache.render(template_html,val);
         var upper_current_initial = current_initial.toUpperCase();
         item_rendered.push(rendered);
     });
+    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
