@@ -20,9 +20,8 @@
 <div class="mobile_line_break"></div>
 <script>
 $(document).ready(function(){
+    init();
     function renderAll(){
-        init();
-        
         var prop_details = getPropertyDetails();
         renderPropertyDetails('#map_container', '#map_template', prop_details);
             
@@ -47,6 +46,10 @@ $(document).ready(function(){
                 $("#error_msg").fadeIn("fast");
             }
         }); 
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
     }
     loadMallDataCached(renderAll); 
 })
