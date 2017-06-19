@@ -40,14 +40,18 @@
 
 <script>
 $(document).ready(function(){
+    init();
     function renderAll(){
-        init();
         var banners = getBanners();
         renderBanner('#home_banner_template','#home_banner', banners);
 
         $('.flexslider').flexslider({
             animation: "slide",
         });
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
     }
     loadMallData(renderAll);
 });
