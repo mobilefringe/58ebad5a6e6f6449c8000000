@@ -1,0 +1,31 @@
+<div>
+    <h1 class="page_title">Blog</h1>
+    <hr>
+    <div id="blog_container">
+        <script id="blog_template" type="x-tmpl-mustache/text">
+            <div class="blogpost">
+                <h2><a href='/posts/{{slug}}'>{{title}}</a></h2>
+                <p>{{publish_date}} + {{author}}</p>
+                <a href='/posts/{{slug}}'><img src="{{image_url}}"/></a>
+                <p class="blogpost_content">{{body}}</p>
+                <a href='/posts/{{slug}}' class="readmore">Read More</a>
+            </div>
+            <div class="line_break"></div>
+        </script>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        init();
+        function renderAll(){
+            var blog = getBlogDataBySlug('');
+            var posts = blog.posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
+            renderPosts('#blog_container', '#blog_template', posts);
+            
+            setTimeout(function() {
+                show_content();
+            }, 500);
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
