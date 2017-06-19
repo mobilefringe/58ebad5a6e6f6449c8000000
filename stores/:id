@@ -93,9 +93,6 @@
                                 {{#contact_email}}
                                 <p><strong>Contact Email:</strong> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
                                 {{/contact_email}}
-                                {{#store_slug}}
-                                <strong><a href="{{store_slug}}">View Store: {{store_name}}</a></strong>
-                                {{/store_slug}}
                             </div>
                         </div>
                     </div> 
