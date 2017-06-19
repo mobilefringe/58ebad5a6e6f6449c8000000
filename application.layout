@@ -34,7 +34,9 @@
     <link href="//codecloud.cdn.speedyrails.net/sites/582e04fa6e6f644b9c000000/text/css/1432640222000/smoothzoom.css" rel="stylesheet">
     <link href="/application.css" rel="stylesheet">
     
-    
+    <!--Javascript-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body>
