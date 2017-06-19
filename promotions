@@ -51,40 +51,44 @@
 </div>
 
 <script>
-    $(document).ready(function(){
-        function renderAll(){
-                init();
-            var promotions = getPromotionsList().sortBy(function(o){ return o.show_on_web_date});
-            var mall_published_promos = [];
-            var store_published_promos = [];
-            $.each(promotions, function(key, val){
-                if(val.promotionable_type == "Property"){
-                    today = moment();
-                    webDate = moment(val.show_on_web_date)
-                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                        mall_published_promos.push(val);
-                    }
-                } else {
-                    today = moment();
-                    webDate = moment(val.show_on_web_date)
-                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                        store_published_promos.push(val);
-                    }     
-                } 
-            });
-            if(mall_published_promos.length > 0){
-                renderPromotions("#mall_promo_container","#mall_promo_template", mall_published_promos);
-            }
-            else{
-                $("#mall_promos").show();
-            }
-            if(store_published_promos.length > 0){
-                renderPromotions("#store_promo_container","#store_promo_template", store_published_promos);
-            }
-            else{
-                $("#store_promo").show();
-            }
+$(document).ready(function(){
+    init();
+    function renderAll(){
+        var promotions = getPromotionsList().sortBy(function(o){ return o.show_on_web_date});
+        var mall_published_promos = [];
+        var store_published_promos = [];
+        $.each(promotions, function(key, val){
+            if(val.promotionable_type == "Property"){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    mall_published_promos.push(val);
+                }
+            } else {
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    store_published_promos.push(val);
+                }     
+            } 
+        });
+        if(mall_published_promos.length > 0){
+            renderPromotions("#mall_promo_container","#mall_promo_template", mall_published_promos);
         }
-        loadMallDataCached(renderAll); 
-    })
+        else{
+            $("#mall_promos").show();
+        }
+        if(store_published_promos.length > 0){
+            renderPromotions("#store_promo_container","#store_promo_template", store_published_promos);
+        }
+        else{
+            $("#store_promo").show();
+        }
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
+    }
+    loadMallDataCached(renderAll); 
+})
 </script>
