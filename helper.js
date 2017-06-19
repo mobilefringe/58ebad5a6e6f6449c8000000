@@ -207,4 +207,4 @@ function show_content(){
         renderFeatureItems('#feature_item_fr','#feature_item_template_fr', one_item);
         renderFeatureItems('#home_feature_fr','#home_feature_template_fr', two_items);   
     }
-    
+}
