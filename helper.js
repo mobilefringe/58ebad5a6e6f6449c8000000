@@ -26,11 +26,7 @@ function init() {
     $("#locale_select").on('change', function() {                        
         window.location.href = "?locale=" + $(this).val();    
     }); 
-    
-    
-    
-    
-    
+
     // var _fbq = window._fbq || (window._fbq = []);
     // if (!_fbq.loaded) {
     //     var fbds = document.createElement('script');
