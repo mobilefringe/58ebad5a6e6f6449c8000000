@@ -113,6 +113,7 @@ $(document).ready(function(e){
         renderStoreDetails("#store_details_container","#store_details_template", store_details, slug);
         renderStoreDetails("#map_container","#map_template", store_details, slug);
         
+        // PROMOS//
         var store_promo_ids = store_details.promotions
         var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
         var published_promos = [];
@@ -129,6 +130,7 @@ $(document).ready(function(e){
             $('#promotions').show();
         }
         
+        // JOBS //
         var store_job_ids = store_details.jobs
         var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
         var published_jobs = [];
