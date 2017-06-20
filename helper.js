@@ -85,7 +85,8 @@ function init() {
     }
     
     function subscribe_email_popup(){ 
-        if (isValidEmailAddress($("#subscribe_email_popup").val())){   
+        validate();
+        // if (isValidEmailAddress($("#subscribe_email_popup").val())){   
             var action="http://mobilefringe.createsend.com/t/d/s/ykblt/"
             var data = {}
             data["cm-ykblt-ykblt"] = $("#subscribe_email_popup").val();
@@ -100,9 +101,9 @@ function init() {
                         $("#success_subscribe_popup").fadeIn();
                     }
             });    
-        } else {
-            alert("Veuillez entrez un courriel valide.")
-        }
+        // } else {
+        //     alert("Veuillez entrez un courriel valide.")
+        // }
     }
     
     //Campaign Monitor Sign Up
