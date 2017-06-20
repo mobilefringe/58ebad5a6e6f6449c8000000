@@ -271,13 +271,6 @@ function renderEvents(container, template, collection){
         } else {
             val.event_image_url = "//codecloud.cdn.speedyrails.net/sites/58ebad5a6e6f6449c8000000/image/png/1491841221000/fleurdelys.png";
         }
-        //     if(val.image_url.indexOf('missing.png') < 0){
-        //         val.logo = val.image_url;
-        //     }
-        //     else{
-        //         val.logo = "";
-        //     }
-        // }
         
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
