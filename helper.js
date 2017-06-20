@@ -28,19 +28,6 @@ function init() {
     $("#locale_select").on('change', function() {                        
         window.location.href = "?locale=" + $(this).val();    
     }); 
-
-    // var _fbq = window._fbq || (window._fbq = []);
-    // if (!_fbq.loaded) {
-    //     var fbds = document.createElement('script');
-    //     fbds.async = true;
-    //     fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    //     var s = document.getElementsByTagName('script')[0];
-    //     s.parentNode.insertBefore(fbds, s);
-    //     _fbq.loaded = true;
-    //   }
-    // _fbq.push(['addPixelId', '548352815262916']);
-    // window._fbq = window._fbq || [];
-    // window._fbq.push(['track', 'PixelInitialized', {}]);
     
     $(".long_feature_box").hover(function() {
         $(this).find(".long_feature_label").animate({
@@ -72,66 +59,51 @@ function init() {
         }
     });
     
-    $(".popup_bg").click(function(event){            
-        if( !$( event.target).is('.popup_newsletter') ) {
-            $(".popup_bg").fadeOut();
-        } else {
-            event.stopPropagation();
-        }
-    });
+    // $(".popup_bg").click(function(event){            
+    //     if( !$( event.target).is('.popup_newsletter') ) {
+    //         $(".popup_bg").fadeOut();
+    //     } else {
+    //         event.stopPropagation();
+    //     }
+    // });
         
-    $(".popup_bg .popup_newsletter").click(function(event){            
-        event.stopPropagation();
-    });
+    // $(".popup_bg .popup_newsletter").click(function(event){            
+    //     event.stopPropagation();
+    // });
     
-    $("#popup_btn").click(function(){    
-        subscribe_email_popup();
-    });
-        // var newsletter_img = $("#social_270 img").attr("src");
-        // $("#social_270 img").hover(function(){
-        //     $(this).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/679/original/socialicon_newletter_clicked_2.png?1393873885");
-        //     },
-        //     function(){             
-        //         $(this).attr("src", newsletter_img)                
-        //     }
-        // });
-        
-        // $( "#subscribe_letter_btn_img" ).hover(function() {
-        //     $( this ).attr( "src", "https://www.mallmaverick.com/system/site_images/photos/000/001/877/original/submit_clicked.png?1393866516" );
-            
-        // }, function() {
-        //     $( this ).attr("src", "https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" );
-        // });
+    // $("#popup_btn").click(function(){    
+    //     subscribe_email_popup();
+    // });
     
-    function validate_pop_up(){
-        if($('#subscribe_newsletter_popup').is(":checked"))
-        return true;
-        else{
-            alert("Please check the 'Subscribe to recieve newsletter' checkbox")
-            return false;
-        }
-    }
+    // function validate_pop_up(){
+    //     if($('#subscribe_newsletter_popup').is(":checked"))
+    //     return true;
+    //     else{
+    //         alert("Please check the 'Subscribe to recieve newsletter' checkbox")
+    //         return false;
+    //     }
+    // }
     
-    function subscribe_email_popup(){ 
-        if (isValidEmailAddress($("#subscribe_email_popup").val())){   
-            var action="http://mobilefringe.createsend.com/t/d/s/ykblt/"
-            var data = {}
-            data["cm-ykblt-ykblt"] = $("#subscribe_email_popup").val();
-            data["cm-name"] = $("#subscribe_first_name").val() + " " + $("#subscribe_last_name").val();
-            $.getJSON(
-                action + "?callback=?",
-                data,
-                function (data) {
-                    if (data.Status === 400) {
-                        alert("Veuillez essayer de nouveau s’il vous plaît.");
-                    } else { // 200
-                        $("#success_subscribe_popup").fadeIn();
-                    }
-            });    
-        } else {
-            alert("Veuillez entrez un courriel valide.")
-        }
-    }
+    // function subscribe_email_popup(){ 
+    //     if (isValidEmailAddress($("#subscribe_email_popup").val())){   
+    //         var action="http://mobilefringe.createsend.com/t/d/s/ykblt/"
+    //         var data = {}
+    //         data["cm-ykblt-ykblt"] = $("#subscribe_email_popup").val();
+    //         data["cm-name"] = $("#subscribe_first_name").val() + " " + $("#subscribe_last_name").val();
+    //         $.getJSON(
+    //             action + "?callback=?",
+    //             data,
+    //             function (data) {
+    //                 if (data.Status === 400) {
+    //                     alert("Veuillez essayer de nouveau s’il vous plaît.");
+    //                 } else { // 200
+    //                     $("#success_subscribe_popup").fadeIn();
+    //                 }
+    //         });    
+    //     } else {
+    //         alert("Veuillez entrez un courriel valide.")
+    //     }
+    // }
     
     //Campaign Monitor Sign Up
     $('#subForm').submit(function (e) {
