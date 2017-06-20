@@ -8,13 +8,7 @@
         </p>
         <div class="subscribe">
             <form action=http://mobilefringe.createsend.com/t/d/s/ykblt/ method="post" id="subForm">
-                <label for="newsletter_box_id">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    ABONNEZ-VOUS ET OBTENEZ DES NOUVELLES DE NOUS!
-                </label>                
-                <span>
-                    Abonnez-vous à notre lettre de nouvelles et obtenez des offres exclusives que vous trouverez nulle part ailleurs, directement dans votre boîte de réception.
-                </span>
+
                 <label for="fieldEmail" style="display:none"> subscribe email </label>
                 <input id="fieldEmail" name=cm-ykblt-ykblt type="email" required placeholder="Votre Courriel" />  
                 <span>
