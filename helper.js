@@ -75,6 +75,7 @@ function init() {
         subscribe_email_popup();
     });
     
+    
     function validate_pop_up(){
         if($('#subscribe_newsletter_popup').is(":checked"))
         return true;
@@ -84,9 +85,14 @@ function init() {
         }
     }
     
+    function isValidEmailAddress(emailAddress) {
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        return pattern.test(emailAddress);
+    }
+
+
     function subscribe_email_popup(){ 
-        $.validate();
-        // if (isValidEmailAddress($("#subscribe_email_popup").val())){   
+        if (isValidEmailAddress($("#subscribe_email_popup").val())){   
             var action="http://mobilefringe.createsend.com/t/d/s/ykblt/"
             var data = {}
             data["cm-ykblt-ykblt"] = $("#subscribe_email_popup").val();
@@ -101,9 +107,9 @@ function init() {
                         $("#success_subscribe_popup").fadeIn();
                     }
             });    
-        // } else {
-        //     alert("Veuillez entrez un courriel valide.")
-        // }
+        } else {
+            alert("Veuillez entrez un courriel valide.")
+        }
     }
     
     //Campaign Monitor Sign Up
