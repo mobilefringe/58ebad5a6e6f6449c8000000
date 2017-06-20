@@ -59,51 +59,51 @@ function init() {
         }
     });
     
-    // $(".popup_bg").click(function(event){            
-    //     if( !$( event.target).is('.popup_newsletter') ) {
-    //         $(".popup_bg").fadeOut();
-    //     } else {
-    //         event.stopPropagation();
-    //     }
-    // });
+    $(".popup_bg").click(function(event){            
+        if( !$( event.target).is('.popup_newsletter') ) {
+            $(".popup_bg").fadeOut();
+        } else {
+            event.stopPropagation();
+        }
+    });
         
-    // $(".popup_bg .popup_newsletter").click(function(event){            
-    //     event.stopPropagation();
-    // });
+    $(".popup_bg .popup_newsletter").click(function(event){            
+        event.stopPropagation();
+    });
     
-    // $("#popup_btn").click(function(){    
-    //     subscribe_email_popup();
-    // });
+    $("#popup_btn").click(function(){    
+        subscribe_email_popup();
+    });
     
-    // function validate_pop_up(){
-    //     if($('#subscribe_newsletter_popup').is(":checked"))
-    //     return true;
-    //     else{
-    //         alert("Please check the 'Subscribe to recieve newsletter' checkbox")
-    //         return false;
-    //     }
-    // }
+    function validate_pop_up(){
+        if($('#subscribe_newsletter_popup').is(":checked"))
+        return true;
+        else{
+            alert("Please check the 'Subscribe to recieve newsletter' checkbox")
+            return false;
+        }
+    }
     
-    // function subscribe_email_popup(){ 
-    //     if (isValidEmailAddress($("#subscribe_email_popup").val())){   
-    //         var action="http://mobilefringe.createsend.com/t/d/s/ykblt/"
-    //         var data = {}
-    //         data["cm-ykblt-ykblt"] = $("#subscribe_email_popup").val();
-    //         data["cm-name"] = $("#subscribe_first_name").val() + " " + $("#subscribe_last_name").val();
-    //         $.getJSON(
-    //             action + "?callback=?",
-    //             data,
-    //             function (data) {
-    //                 if (data.Status === 400) {
-    //                     alert("Veuillez essayer de nouveau s’il vous plaît.");
-    //                 } else { // 200
-    //                     $("#success_subscribe_popup").fadeIn();
-    //                 }
-    //         });    
-    //     } else {
-    //         alert("Veuillez entrez un courriel valide.")
-    //     }
-    // }
+    function subscribe_email_popup(){ 
+        if (isValidEmailAddress($("#subscribe_email_popup").val())){   
+            var action="http://mobilefringe.createsend.com/t/d/s/ykblt/"
+            var data = {}
+            data["cm-ykblt-ykblt"] = $("#subscribe_email_popup").val();
+            data["cm-name"] = $("#subscribe_first_name").val() + " " + $("#subscribe_last_name").val();
+            $.getJSON(
+                action + "?callback=?",
+                data,
+                function (data) {
+                    if (data.Status === 400) {
+                        alert("Veuillez essayer de nouveau s’il vous plaît.");
+                    } else { // 200
+                        $("#success_subscribe_popup").fadeIn();
+                    }
+            });    
+        } else {
+            alert("Veuillez entrez un courriel valide.")
+        }
+    }
     
     //Campaign Monitor Sign Up
     $('#subForm').submit(function (e) {
