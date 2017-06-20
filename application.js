@@ -264,19 +264,19 @@ function renderEvents(container, template, collection){
         }
         else {
             val.store_name = mall_name;
-            // val.event_image_url = val.event_image_url_abs;
         }
-        if(val.event_image_url.indexOf('missing.png') < 0){
-            val.event_image_url = val.logo;
+        
+        if(val.event_image_url.indexOf('missing.png') > 0){
+            val.event_image_url = val.event_image_url_abs;
         }
-        else{
-            if(val.image_url.indexOf('missing.png') < 0){
-                val.logo = val.image_url;
-            }
-            else{
-                val.logo = "";
-            }
-        }
+        // else{
+        //     if(val.image_url.indexOf('missing.png') < 0){
+        //         val.logo = val.image_url;
+        //     }
+        //     else{
+        //         val.logo = "";
+        //     }
+        // }
         
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
