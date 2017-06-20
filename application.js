@@ -256,15 +256,15 @@ function renderEvents(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
-        if (val.eventable_type == "Store") {
-            var store_details = getStoreDetailsByID(val.eventable_id);
-            val.store_detail_btn = store_details.slug ;
-            val.store_name = store_details.name;
-            val.event_image_url = store_details.store_front_url_abs;
-        }
-        else {
+        // if (val.eventable_type == "Store") {
+        //     var store_details = getStoreDetailsByID(val.eventable_id);
+        //     val.store_detail_btn = store_details.slug ;
+        //     val.store_name = store_details.name;
+        //     val.event_image_url = store_details.store_front_url_abs;
+        // }
+        // else {
             val.store_name = mall_name;
-        }
+        // }
         if(val.event_image_url.indexOf('missing.png') < 0){
             val.event_image_url = val.logo;
         }
