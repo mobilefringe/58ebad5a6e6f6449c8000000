@@ -265,11 +265,11 @@ function renderEvents(container, template, collection){
         // else {
             val.store_name = mall_name;
         // }
-        if(val.event_image_url.indexOf('missing.png') < 0){
+        if(val.event_image_url.indexOf('missing.png') > 0){
             val.event_image_url = val.logo;
         }
         else{
-            if(val.image_url.indexOf('missing.png') < 0){
+            if(val.image_url.indexOf('missing.png') > 0){
                 val.logo = val.image_url;
             }
             else{
