@@ -7,19 +7,40 @@
            Inscrivez-vous pour ne rien manquer des offres exclusives, promotions, événements et autres concours tout aussi excitants!
         </p>
         <div class="subscribe">
-            <input title="PRÉNOM" type="text" placeholder="PRÉNOM" id="subscribe_first_name">
-            <input title="NOM" type="text" placeholder="NOM" id="subscribe_last_name">                            
-            <input title="COURRIEL" type="text" placeholder="COURRIEL" id="subscribe_email_popup">
-            <a id="popup_btn" class="btn"> 
-                <img alt="popup image" id="subscribe_letter_btn_img" src="https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" /> 
-            </a>
+            <form action=http://mobilefringe.createsend.com/t/d/s/ykblt/ method="post" id="subForm">
+                <label for="newsletter_box_id">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    ABONNEZ-VOUS ET OBTENEZ DES NOUVELLES DE NOUS!
+                </label>                
+                <span>
+                    Abonnez-vous à notre lettre de nouvelles et obtenez des offres exclusives que vous trouverez nulle part ailleurs, directement dans votre boîte de réception.
+                </span>
+                <label for="fieldEmail" style="display:none"> subscribe email </label>
+                <input id="fieldEmail" name=cm-ykblt-ykblt type="email" required placeholder="Votre Courriel" />  
+                <span>
+                    <label style="display:none" for="agree_terms">Subscribe</label>
+                        <input type="checkbox" class="info_check" id="agree_terms" /> 
+                        J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial
+                </span>
+            	<br />						
+                <button class="btn"/>Abonnez-vous</button>                      
+                <br />
+            	<span id="success_subscribe">Merci de votre abonnement à notre lettre de nouvelles.</span>
+            </form>
+
+            <!--<input title="PRÉNOM" type="text" placeholder="PRÉNOM" id="subscribe_first_name">-->
+            <!--<input title="NOM" type="text" placeholder="NOM" id="subscribe_last_name">                            -->
+            <!--<input title="COURRIEL" type="text" placeholder="COURRIEL" id="subscribe_email_popup">-->
+            <!--<a id="popup_btn" class="btn"> -->
+            <!--    <img alt="popup image" id="subscribe_letter_btn_img" src="https://www.mallmaverick.com/system/site_images/photos/000/001/876/original/submit.png?1393866496" /> -->
+            <!--</a>-->
             
-            <span id="success_subscribe_popup">Merci de votre inscription!</span>
+            <!--<span id="success_subscribe_popup">Merci de votre inscription!</span>-->
             
-            <p style="display: block;padding-right: 0px;padding-top: 10px;">
-                <input title="checkbox " type="checkbox" id="hide_popup" />
-                Ne plus afficher ce message aujourd'hui
-            </p>
+            <!--<p style="display: block;padding-right: 0px;padding-top: 10px;">-->
+            <!--    <input title="checkbox " type="checkbox" id="hide_popup" />-->
+            <!--    Ne plus afficher ce message aujourd'hui-->
+            <!--</p>-->
         </div>        
     </div>
 </div>
@@ -54,6 +75,32 @@ $(document).ready(function(){
         });
         
     }
+    
+    $('#popupForm').submit(function (e) {
+        if ($("#agree").prop("checked") != true){
+            alert("Please agree to the term and conditions.");
+            $("#agree").focus();
+            return false;
+        }
+        e.preventDefault();
+        $.getJSON(
+            this.action + "?callback=?",
+            $(this).serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    alert("Please try again later.");
+                } else { // 200
+                    $('#popupForm').trigger('reset');
+                    $("#success").fadeIn();
+                    
+                    setTimeout(function(){ 
+                        $(".modal-backdrop").remove();
+	                    $(".popup_home").remove();
+                    }, 2000);
+                }
+            });
+    });
+    
     loadMallData(renderAll);
 });
 </script>
