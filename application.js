@@ -268,8 +268,8 @@ function renderEvents(container, template, collection){
         
         if(val.event_image_url.indexOf('missing.png') < 0){
             val.event_image_url = getImageURL(val.event_image_url);
-        }
-        // else{
+        } else {
+            val.event_image_url = "//codecloud.cdn.speedyrails.net/sites/58ebad5a6e6f6449c8000000/image/png/1491841221000/fleurdelys.png";
         //     if(val.image_url.indexOf('missing.png') < 0){
         //         val.logo = val.image_url;
         //     }
