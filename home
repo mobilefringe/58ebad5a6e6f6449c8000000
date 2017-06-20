@@ -40,7 +40,7 @@
 
 <script>
 $(document).ready(function(){
-    init();
+    init()
     function renderAll(){
         var banners = getBanners();
         renderBanner('#home_banner_template','#home_banner', banners);
@@ -48,10 +48,6 @@ $(document).ready(function(){
         $('.flexslider').flexslider({
             animation: "slide",
         });
-        
-        setTimeout(function() {
-            show_content();
-        }, 500);
     }
     loadMallData(renderAll);
 });
