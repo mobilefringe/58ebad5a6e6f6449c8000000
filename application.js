@@ -265,17 +265,17 @@ function renderEvents(container, template, collection){
         // else {
             val.store_name = mall_name;
         // }
-        if(val.event_image_url.indexOf('missing.png') > 0){
-            val.event_image_url = val.logo;
-        }
-        else{
-            if(val.image_url.indexOf('missing.png') > 0){
-                val.logo = val.image_url;
-            }
-            else{
-                val.logo = "";
-            }
-        }
+        // if(val.event_image_url.indexOf('missing.png') > 0){
+        //     val.event_image_url = val.logo;
+        // }
+        // else{
+        //     if(val.image_url.indexOf('missing.png') > 0){
+        //         val.logo = val.image_url;
+        //     }
+        //     else{
+        //         val.logo = "";
+        //     }
+        // }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
