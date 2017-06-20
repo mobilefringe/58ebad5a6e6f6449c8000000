@@ -171,7 +171,7 @@
                                 <a class="nav_a" href='/pages/fdl-accessibility' target='_self'>Accessibilité</a>
                             </li>
                             <li>
-                                <a class="nav_a" href='pages/fdl-contact-us' target='_self'>Nous joindre</a>
+                                <a class="nav_a" href='/pages/fdl-contact-us' target='_self'>Nous joindre</a>
                             </li>
                             <li>
                                 <a class="nav_a" href='/pages/fdl-carte-cadeau' target='_self'>Carte-Cadeau</a>
