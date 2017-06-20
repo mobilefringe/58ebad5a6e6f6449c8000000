@@ -410,7 +410,8 @@
     <script src="//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/58fe54076e6f6458dc010000/application/x-javascript/1493132969000/js.cookie.js"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    
     <!--MallMaverick SDK-->
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.1.js"></script>
     <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
