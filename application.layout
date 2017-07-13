@@ -455,6 +455,13 @@
     </script>
     
     <div id="fb-root"></div>
+    
+    <script>
+        $("#track_link").click( function() {
+            trackOutboundLink('https://donate.redcross.ca/ea-action/action?ea.client.id=1951&ea.campaign.id=74010&_ga=2.186858216.1395117015.1499699609-1123211371.1499699609');
+        });
+    </script> 
+    
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
