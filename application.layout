@@ -370,6 +370,7 @@
                                 <a class="site_map_submenu" href='/stores' target='_self' data-i18n="nav.subnav.store_directory"></a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/map' target='_self' data-i18n="nav.subnav.map"></a>
+                                 <a class="site_map_submenu" href='/pages/fdl-blogue' target='_self' data-i18n="nav.subnav.blog"></a>
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
