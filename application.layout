@@ -162,7 +162,7 @@
                                 <a class="nav_a" href='/map' target='_self'><span data-i18n="nav.subnav.map"></span></a>
                             </li>
                              <li>
-                                <a class="nav_a" href='/pages/fdl-blog' target='_self'><span data-i18n="nav.subnav.blog"></span></a>
+                                <a class="nav_a" href='/pages/fdl-blogue' target='_self'><span data-i18n="nav.subnav.blog"></span></a>
                             </li>
                         </ul>
                     </li>               
