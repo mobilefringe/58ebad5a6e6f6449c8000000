@@ -73,6 +73,9 @@
                         <li class="mobile_menu_item">
                             <a href='/map' data-i18n="nav.subnav.map"></a>
                         </li>
+                           <li class="mobile_menu_item">
+                            <a href='/pages/fdl-blogue' data-i18n="nav.subnav.blog"></a>
+                        </li>
                         <li class="mobile_menu_header" >
                             <a href='/promotions' data-i18n="nav.promotions"></a>
                         </li>
@@ -157,6 +160,9 @@
                             </li>
                             <li>
                                 <a class="nav_a" href='/map' target='_self'><span data-i18n="nav.subnav.map"></span></a>
+                            </li>
+                             <li>
+                                <a class="nav_a" href='/pages/fdl-blog' target='_self'><span data-i18n="nav.subnav.blog"></span></a>
                             </li>
                         </ul>
                     </li>               
