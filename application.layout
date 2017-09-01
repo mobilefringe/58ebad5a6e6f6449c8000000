@@ -173,7 +173,7 @@
                                 <a class="nav_a" href='/promotions' target='_self'><span data-i18n="nav.subnav.promotions"></span></a>             
                             </li>
                             <li>
-                                <a class="nav_a" href='/map' target='_self'><span data-i18n="nav.subnav.competition"></span></a>
+                                <a class="nav_a" href='/pages/fdl-gagnants-des-concours' target='_self'><span data-i18n="nav.subnav.competition"></span></a>
                             </li>
                         </ul>
                     </li>
