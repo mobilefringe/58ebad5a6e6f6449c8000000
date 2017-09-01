@@ -167,7 +167,7 @@
                         </ul>
                     </li>               
                     <li class="dropdown">
-                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.stores"></button>
+                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.promotions"></button>
                         <ul class="dropdown-menu">                            
                             <li>
                                 <a class="nav_a" href='/promotions' target='_self'><span data-i18n="nav.promotions"></span></a>             
