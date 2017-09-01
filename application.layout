@@ -170,7 +170,7 @@
                         <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.promotions"></button>
                         <ul class="dropdown-menu">                            
                             <li>
-                                <a class="nav_a" href='/promotions' target='_self'><span data-i18n="nav.promotions"></span></a>             
+                                <a class="nav_a" href='/promotions' target='_self'><span data-i18n="nav.subnav.promotions"></span></a>             
                             </li>
                             <li>
                                 <a class="nav_a" href='/map' target='_self'><span data-i18n="nav.subnav.map"></span></a>
