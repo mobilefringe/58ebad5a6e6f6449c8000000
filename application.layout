@@ -166,8 +166,16 @@
                             </li>
                         </ul>
                     </li>               
-                    <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/promotions'" data-i18n="nav.promotions"></button>
+                    <li class="dropdown">
+                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.stores"></button>
+                        <ul class="dropdown-menu">                            
+                            <li>
+                                <a class="nav_a" href='/promotions' target='_self'><span data-i18n="nav.promotions"></span></a>             
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/map' target='_self'><span data-i18n="nav.subnav.map"></span></a>
+                            </li>
+                        </ul>
                     </li>
                     <li>                        
                         <button class="btn-nav" onclick="window.location.href='/events'" data-i18n="nav.events"></button>
