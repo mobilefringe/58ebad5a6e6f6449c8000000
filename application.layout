@@ -77,7 +77,13 @@
                             <a href='/pages/fdl-blogue' data-i18n="nav.subnav.blog"></a>
                         </li>
                         <li class="mobile_menu_header" >
-                            <a href='/promotions' data-i18n="nav.promotions"></a>
+                            <a href='' data-i18n="nav.promotions"></a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/promotions' data-i18n="nav.subnav.promotions"></a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/pages/fdl-gagnants-des-concours' data-i18n="nav.subnav.competition"></a>
                         </li>
                         <li class="mobile_menu_header" >
                             <a href='/events' data-i18n="nav.events"></a>
