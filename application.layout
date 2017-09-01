@@ -152,7 +152,7 @@
                     <img ALT="centre_logo" src="//codecloud.cdn.speedyrails.net/sites/58ebad5a6e6f6449c8000000/image/png/1491841221000/fleurdelys.png" style="max-width:95%" />
                 </a>
                 <ul>                  
-                    <li class="dropdown ">
+                    <li class="dropdown">
                         <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.stores"></button>                                             
                         <ul class="dropdown-menu">                            
                             <li>
@@ -186,7 +186,7 @@
                     <li>                        
                         <button class="btn-nav" onclick="window.location.href='/jobs'" data-i18n="nav.careers"></button>
                     </li>             
-                    <li class="dropdown ">
+                    <li class="dropdown">
                         <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.about"></button>                                              
                         <ul class="dropdown-menu" style="right:0px; left:auto;">                            
                             <li>
