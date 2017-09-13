@@ -30,7 +30,6 @@ function renderBanner(home_banner_template, home_banner, banners){
     $.each(banners, function(key, val) {
         today = new Date();
         start = new Date (val.start_date);
-       
         start.setDate(start.getDate());
         if(val.url == "" || val.url === null){
             val.css = "style=cursor:default;";
@@ -178,8 +177,7 @@ function renderJobs(container, template, collection){
         if(val.jobable_type == "Store"){
             val.store_name = getStoreDetailsByID(val.jobable_id).name;
             val.store_slug = getStoreDetailsByID(val.jobable_id).slug;
-        }
-        else{
+        } else {
             val.store_name = mall_name;
         }
         var show_date = moment(val.show_on_web_date);
@@ -190,8 +188,7 @@ function renderJobs(container, template, collection){
         val.end_date = french_end.format("DD MMM");
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D");
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D");
         }
 
@@ -226,8 +223,7 @@ function renderJobDetails(container, template, collection){
             var store_details = getStoreDetailsByID(val.jobable_id);
             val.store_detail_btn = store_details.slug;
             val.store_name = store_details.name;
-        }
-        else{
+        } else {
             val.store_name = mall_name;
         }
         
@@ -236,8 +232,7 @@ function renderJobDetails(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
         var rendered = Mustache.render(template_html,val);
@@ -258,8 +253,7 @@ function renderEvents(container, template, collection){
             val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
             val.event_image_url = store_details.store_front_url_abs;
-        }
-        else {
+        } else {
             val.store_name = mall_name;
         }
         
@@ -276,8 +270,7 @@ function renderEvents(container, template, collection){
         var french_end = moment(end).locale('fr-ca');
         if (start.format("DMY") == end.format("DMY")){
             val.dates = french_start.format("DD MMM")
-        }
-        else{
+        } else {
             val.dates = french_start.format("DD MMM") + " - " + french_end.format("DD MMM");
         }
         var rendered = Mustache.render(template_html,val);
@@ -300,12 +293,10 @@ function renderEventDetails(container, template, collection){
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
                 val.image_url = "";
-            }
-            else{
+            } else {
                 val.image_url = store_details.store_front_url_abs;
             }
-        }
-        else{
+        } else {
             val.store_name = mall_name;
             val.image_url = "";
         }
@@ -321,8 +312,7 @@ function renderEventDetails(container, template, collection){
         var french_end = moment(end).locale('fr-ca');
         if (start.format("DMY") == end.format("DMY")){
             val.dates = french_start.format("DD MMM")
-        }
-        else{
+        } else {
             val.dates = french_start.format("DD MMM") + " - " + french_end.format("DD MMM");
         }
         var rendered = Mustache.render(template_html,val);
@@ -343,8 +333,7 @@ function renderPromotions(container, template, collection){
             val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
             val.image_url = store_details.store_front_url_abs;
-        }
-        else{
+        } else {
             val.store_name = mall_name;
         }
         
@@ -359,8 +348,7 @@ function renderPromotions(container, template, collection){
         var french_end = moment(end).locale('fr-ca');
         if (start.format("DMY") == end.format("DMY")){
             val.dates = french_start.format("DD MMM")
-        }
-        else{
+        } else {
             val.dates = french_start.format("DD MMM") + " - " + french_end.format("DD MMM")
         }
         
@@ -384,12 +372,10 @@ function renderPromoDetails(container, template, collection){
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
                 val.image_url = "";
-            }
-            else{
+            } else {
                 val.image_url = store_details.store_front_url_abs;
             }
-        }
-        else{
+        } else {
             val.store_name = mall_name;
             val.image_url = "//codecloud.cdn.speedyarils.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
         }
@@ -405,8 +391,7 @@ function renderPromoDetails(container, template, collection){
         var french_end = moment(end).locale('fr-ca');
         if (start.format("DMY") == end.format("DMY")){
             val.dates = french_start.format("DD MMM")
-        }
-        else{
+        } else {
             val.dates = french_start.format("DD MMM") + " - " + french_end.format("DD MMM")
         }
         var rendered = Mustache.render(template_html,val);
@@ -433,14 +418,12 @@ function renderStoreDetails(container, template, collection, slug){
         val.property_map = getPropertyDetails().mm_host + getPropertyDetails().map_url;
         if (val.website != null && val.website.length > 0){
             val.show = "display:inline-block";
-        }
-        else{
+        } else {
             val.show = "display:none";
         }
         if (val.phone != null && val.phone.length > 0){
             val.phone_show = "display:inline-block";
-        }
-        else{
+        } else {
             val.phone_show = "display:none";
         }
         var rendered = Mustache.render(template_html,val);
