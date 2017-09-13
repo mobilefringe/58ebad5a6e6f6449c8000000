@@ -20,12 +20,12 @@ $(document).ready(function(){
     function renderAll(){
         var stores = getStoresList();
         renderStoreList('#store_select_container','#store_select_template', stores, "stores");
-        if(getStorage().current_locale == "en-CA"){
-            $(".mapper").prepend("<option selected>Select a Store</option>");
-        }
-        if(getStorage().current_locale == "fr-CA"){
+        // if(getStorage().current_locale == "en-CA"){
+        //     $(".mapper").prepend("<option selected>Select a Store</option>");
+        // }
+        // if(getStorage().current_locale == "fr-CA"){
             $(".mapper").prepend("<option selected>Sélectionnez un magasin</option>"); 
-        }
+        // }
 
         $("#map_image").attr("src", getPNGMapURL())
 		$('#map_image').smoothZoom({
