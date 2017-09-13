@@ -1,0 +1,139 @@
+<div class="store_list">
+    <h1 class="page_title">LISTE DES BOUTIQUES</h1>
+    <hr>
+    <div class="tabbable">
+        <ul class="nav nav-tabs store_tabs">
+            <li class="active tab_colour store_tab">
+                <a href="#list" data-toggle="tab">
+                    <span>A - Z <span class="arrow-down"></span></span>                     
+                </a>
+            </li>
+            <li class="category_tab">
+                <a href="#category" data-toggle="tab">
+                    <span>CATÉGORIE<span class="arrow-down"></span></span>   
+                </a>                
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="list" class="tab-pane active">
+                <div class="alphabet_bg">
+                    <button class="btn-secondary" onClick="parent.location='#A'">A</button>
+                    <button class="btn-secondary" onClick="parent.location='#B'">B</button>
+                    <button class="btn-secondary" onClick="parent.location='#C'">C</button>
+                    <button class="btn-secondary" onClick="parent.location='#D'">D</button>
+                    <button class="btn-secondary" onClick="parent.location='#E'">E</button>
+                    <button class="btn-secondary" onClick="parent.location='#F'">F</button>
+                    <button class="btn-secondary" onClick="parent.location='#G'">G</button>
+                    <button class="btn-secondary" onClick="parent.location='#H'">H</button>
+                    <button class="btn-secondary" onClick="parent.location='#I'">I</button>
+                    <button class="btn-secondary" onClick="parent.location='#J'">J</button>
+                    <button class="btn-secondary" onClick="parent.location='#K'">K</button>
+                    <button class="btn-secondary" onClick="parent.location='#L'">L</button>
+                    <button class="btn-secondary" onClick="parent.location='#M'">M</button>
+                    <button class="btn-secondary" onClick="parent.location='#N'">N</button>
+                    <button class="btn-secondary" onClick="parent.location='#O'">O</button>
+                    <button class="btn-secondary" onClick="parent.location='#P'">P</button>
+                    <button class="btn-secondary" onClick="parent.location='#Q'">Q</button>
+                    <button class="btn-secondary" onClick="parent.location='#R'">R</button>
+                    <button class="btn-secondary" onClick="parent.location='#S'">S</button>
+                    <button class="btn-secondary" onClick="parent.location='#T'">T</button>
+                    <button class="btn-secondary" onClick="parent.location='#U'">U</button>
+                    <button class="btn-secondary" onClick="parent.location='#V'">V</button>
+                    <button class="btn-secondary" onClick="parent.location='#W'">W</button>
+                    <button class="btn-secondary" onClick="parent.location='#X'">X</button>
+                    <button class="btn-secondary" onClick="parent.location='#Y'">Y</button>
+                    <button class="btn-secondary" onClick="parent.location='#Z'">Z</button>
+                </div>
+                <div class="store_list" id="store_list_container">
+                    <script id="store_list_template" type="x-tmpl-mustache/text">
+                        <div class="store_list_content">
+                            <div class="stores_table_headers" style="{{show}}">
+                                <a id="{{initial}}"></a>{{initial}}
+                                <a href="#top" class="pull-right"><span class="arrow-up"></span><span data-i18n="pages.stores_scrolltop"></span></a>
+                            </div>
+                            <div class="stores_row store_row_name">
+                                <a href="/stores/{{slug}}">{{name}}</a>
+                            </div>
+                            <div class="pull-right stores_row stores_row_phone">
+                                <span style="{{promotion_exist}}">
+                                    <img alt="" src="//www.mallmaverick.com/system/site_images/photos/000/000/771/original/btn_promo.png?1381264332"/>
+                                </span>
+                                <span class="store_phone hidden-xs"><a href="tel:{{phone}}">{{phone}}</a></span>
+                                <span><a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}">
+                                    <img ALT="store.phone" src="//www.mallmaverick.com/system/site_images/photos/000/000/834/original/icon_call_stores.png?1381872730" />
+                                </a></span>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+            <div id="category" class="tab-pane">
+                <div class="alphabet_bg" id="categories_container">
+                    <script id="categories_template" type="x-tmpl-mustache/text">
+                        <button class="btn-secondary" onClick="parent.location='#{{name}}'" name="{{name}}">{{name}}</button>
+                        <span class="category_divider hidden-sm">|</span>
+                    </script>
+                </div>
+                <div class="store_list" id="category_list_container">
+                    <script id="category_list_template" type="x-tmpl-mustache/text">
+                        <div class="store_list_content {{block}}">
+                            <div class="stores_table_headers bold" style="{{show}}">
+                                <a id="{{header}}"></a>{{header}}
+                                <a href="#top" class="pull-right"><span class="arrow-up"></span><span data-i18n="pages.stores_scrolltop"></span></a>
+                            </div>
+                            <div class="stores_row store_row_name">
+                                <a href="/stores/{{slug}}">{{name}}</a>
+                            </div>
+                            <div class="pull-right stores_row stores_row_phone">
+                                <span style="{{promotion_exist}}">
+                                    <img alt="" src="//www.mallmaverick.com/system/site_images/photos/000/000/771/original/btn_promo.png?1381264332"/>
+                                </span>
+                                <span class="store_phone hidden-xs"><a href="tel:{{phone}}">{{phone}}</a></span>
+                                <span><a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}">
+                                    <img ALT="store.phone" src="//www.mallmaverick.com/system/site_images/photos/000/000/834/original/icon_call_stores.png?1381872730" />
+                                </a></span>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line_break"></div>
+<script>
+$(document).ready(function(){
+    init();
+    function renderAll (){
+        var stores = getStoresList();
+        var categories = getStoreCategories();
+        var category_list = [];
+        $.each( categories, function( key, val ){
+            if (val.store_ids != null) {
+                category_list.push(val);
+            } 
+        });
+        
+        renderStoreList('#store_list_container','#store_list_template', stores, "stores");
+        renderStoreListCatetories('#category_list_container','#category_list_template', category_list, stores);
+        renderGeneral('#categories_container', '#categories_template', category_list, stores);
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
+        
+        $(".store_tab").hide();
+    
+        $(".category_tab a").click(function(){
+            $(".category_tab").hide();
+            $(".store_tab").show();
+        })
+        
+        $(".store_tab a").click(function(){
+            $(".store_tab").hide();
+            $(".category_tab").show();            
+        })
+    }
+    loadMallDataCached(renderAll); 
+})
+</script>
