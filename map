@@ -13,7 +13,7 @@
 	</div>
 </div>
 <div class="mobile_line_break"></div>
-<script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>
+<!--<script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>-->
 <script>
 $(document).ready(function(){
     init();
