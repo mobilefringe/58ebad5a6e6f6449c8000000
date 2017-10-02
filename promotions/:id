@@ -1,7 +1,7 @@
 <div class="promo_page">
     <div class="row-fluid">
         <h1 class="page_title promo_header" id="promo_title"></h1>
-        <span class="promo_back"><a href="/promotions"><i class="fa fa-angle-left" aria-hidden="true"></i> retourner</a></span>    
+        <span class="promo_back"><a href="/promotions"><i class="fa fa-angle-left" aria-hidden="true"></i></a></span>    
     </div>
     <hr/>
     <div class="row-fluid social-links" style="margin-top:10px; margin-bottom:10px;">
