@@ -54,6 +54,20 @@ function renderBanner(home_banner_template, home_banner, banners){
     $(home_banner).html(item_rendered.join(''));
 }
 
+function renderContest(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+
+    collection.alt_photo_url = getImageURL(collection.photo_url);
+    collection.property_name = getPropertyDetails().name;
+    var rendered = Mustache.render(template_html,collection);
+    item_rendered.push(rendered);
+
+    $(container).html(item_rendered.join(''));
+}
+
 function renderFeatureItems(feature_item, feature_item_template, feature_items){
     var item_list = [];
     var item_rendered = [];
