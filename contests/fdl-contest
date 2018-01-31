@@ -46,9 +46,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <label for="email">Email *</label>
-                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                    <div class="col-sm-6">  
+                        <label for="zip_code">ZIP Code *</label>
+                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" tabindex="5"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="phone_number">Phone Number *</label>
@@ -56,32 +56,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">  
-                        <label for="zip_code">ZIP Code *</label>
-                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" tabindex="5"/>
+                    <div class="col-sm-12">
+                        <label for="email">Email *</label>
+                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                     </div>
-                    <div class="col-sm-6"></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6"> 
-                        <label for="age">Age</label>
-                        <input class="contest_info" id="age" name="contest[age]" type="text" tabindex="6"/>
-                    </div>
-                    <div class="col-sm-6">  
-                        <label for="gender">Gender</label>
-                        <select class="contest_info" id="gender" name="contest[gender]" tabindex="7">
-                            <option value="">Select</option>
-                            <option value="female">Female</option>
-                            <option value="male">Male</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="line_break">&nbsp;</div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <button class="submit_btn caps" tabindex="10">Submit</button>
-                    </div>
-                    <div class="col-sm-6"></div>
                 </div>
                 <div class="line_break">&nbsp;</div>
                 <div class="row">
@@ -97,6 +75,13 @@
                         </label>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="submit_btn caps" tabindex="10">Submit</button>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="line_break">&nbsp;</div>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="margin_40"></div>
