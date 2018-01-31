@@ -9,9 +9,9 @@
                 {{#img_url}}
                 <img class="contest_img" src="{{img_url}}" alt="{{name}}" />
                 {{/img_url}}
-                <div class="margin_20"></div>
+                {{#rich_description}}
                 <div class="contest_description"> {{{rich_description}}}</div>
-                <div class="margin_20"></div>
+                {{/rich_description}}
             </div>
 
             <form id="contest_form">
