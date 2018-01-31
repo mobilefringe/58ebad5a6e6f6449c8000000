@@ -37,15 +37,14 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <label for="fielddhyhih">City</label>
-                        <input  id="fielddhyhih" name="cm-f-dhyhih" type="text" class="contest_info" value=""/>
+                        <label for="city">City</label>
+                        <input class="contest_info" id="city" name="contest[city]" type="text"  value=""/>
                     </div>
                     <div class="col-md-6">
-                        <label for="fieldjyydiu">Province</label>
-                        <input id="fieldjyydiu" name="cm-f-jyydiu" type="text" class="contest_info" value="Ontario"/>
+                        <label for="province">Province</label>
+                        <input class="contest_info" id="province" name="contest[province]" type="text"  value="Ontario"/>
                     </div>
                 </div>
-            
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="email">Email *</label>
