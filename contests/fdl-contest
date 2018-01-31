@@ -99,10 +99,6 @@
         init(e);
         
         function renderAll(){
-            // var pathArray = window.location.pathname.split( '/' );
-            // var slug = pathArray[pathArray.length-1];
-            // var contest_details = getContestBySlug(slug);
-            
             var contest_details = _.filter(getContestList(), function(o) { 
                 o.img_url = "https://mallmaverick.cdn.speedyrails.net" + o.photo_url
                 return o.show_on_slug === "fdl-contest"; 
