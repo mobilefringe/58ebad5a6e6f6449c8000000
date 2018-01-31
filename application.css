@@ -2381,6 +2381,9 @@ ul, ol {
     margin-bottom: 20px;
     max-width: 100%;
 }
+.contest_description {
+    margin-bottom: 20px;
+}
 /* */
 
 @media (max-width: 979px) {
