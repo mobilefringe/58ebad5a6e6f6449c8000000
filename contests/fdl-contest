@@ -80,7 +80,7 @@ et la <a href="/pages/fdl-privacy-policy" target="_blank">Politique de confident
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <button class="submit_btn caps" tabindex="10">Envoyer</button>
+                        <button class="submit_btn caps btn" tabindex="10">Envoyer</button>
                     </div>
                     <div class="col-sm-6"></div>
                 </div>
