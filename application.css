@@ -2443,9 +2443,10 @@ ul, ol {
     }
     .contest_rules {
         margin-bottom: 30px;
+        min-height: 22px;
     }
     .contest_rules.has-error {
-        // min-height: 52px;
+        
         .help-block {
             margin-top: 0 ;
             margin-bottom: 0;
