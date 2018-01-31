@@ -2399,6 +2399,9 @@ ul, ol {
             margin-bottom: 0;
         }
     }
+    .col-sm-6.has-error, .col-sm-12.has-error {
+        min-height: 85px;
+    }
 }
 /* */
 
