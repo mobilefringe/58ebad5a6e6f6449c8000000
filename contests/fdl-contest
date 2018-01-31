@@ -6,9 +6,9 @@
     <div id="contest_container">
 	    <script id="contest_template" type="x-tmpl-mustache/text">
             <div class="mobile_padding">
-                {{#photo_url}}
-                <img src="{{photo_url}}" alt="{{name}}" />
-                {{/photo_url}}
+                {{#image_url}}
+                <img src="{{image_url}}" alt="{{name}}" />
+                {{/image_url}}
                 <div class="margin_20"></div>
                 <div class="contest_description"> {{{rich_description}}}</div>
                 <div class="margin_20"></div>
