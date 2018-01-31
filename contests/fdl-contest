@@ -32,40 +32,40 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="address">Address</label>
-                        <input class="contest_info" id="address" name="contest[address]" type="text" value=""/>
+                        <input class="contest_info" id="address" name="contest[address]" type="text" value="" tabindex="3"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <label for="city">City</label>
-                        <input class="contest_info" id="city" name="contest[city]" type="text"  value=""/>
+                        <input class="contest_info" id="city" name="contest[city]" type="text"  value="" tabindex="4"/>
                     </div>
                     <div class="col-md-6">
                         <label for="province">Province</label>
-                        <input class="contest_info" id="province" name="contest[province]" type="text"  value="Ontario"/>
+                        <input class="contest_info" id="province" name="contest[province]" type="text"  value="Ontario" tabindex="5"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">  
                         <label for="zip_code">ZIP Code *</label>
-                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" tabindex="5"/>
+                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" tabindex="6"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="phone_number">Phone Number *</label>
-                        <input class="contest_info" id="phone_number" name="contest[phone]" type="text" required data-validation="required" tabindex="4"/>
+                        <input class="contest_info" id="phone_number" name="contest[phone]" type="text" required data-validation="required" tabindex="7"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="email">Email *</label>
-                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="8"/>
                     </div>
                 </div>
                 <div class="line_break">&nbsp;</div>
                 <div class="row">
                     <div class="col-sm-12">    
                         <label>
-                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="8"/> 
+                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="9"/> 
                             I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
                         </label>
                         <div class="line_break">&nbsp;</div>
