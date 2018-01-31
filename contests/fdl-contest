@@ -102,12 +102,14 @@ et la <a href="/pages/fdl-privacy-policy" target="_blank">Politique de confident
         init(e);
         
         function renderAll(){
+            var slug = "";
             var contest_details = _.filter(getContestList(), function(o) { 
                 o.img_url = "https://mallmaverick.cdn.speedyrails.net" + o.photo_url
+                slug = o.slug
                 return o.show_on_slug === "fdl-contest"; 
             });
             console.log(contest_details)
-            var slug = contest_details.slug
+            // var slug = contest_details.slug
             console.log(slug)
             renderGeneral("#contest_container", "#contest_template", contest_details);
 
