@@ -2384,12 +2384,16 @@ ul, ol {
 .contest_description {
     margin-bottom: 20px;
 }
-#contest_form label {
-    display: block;
-}
-#contest_form input {
-    max-width: 100%;
-    width: 100%;
+.contest_container {
+    #contest_form {
+        label {
+            display: block;
+        }
+        input {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
 }
 /* */
 
