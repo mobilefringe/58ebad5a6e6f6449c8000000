@@ -214,6 +214,7 @@ function submit_contest(slug) {
     contest_data.mailing_address = $('#address').val();
     contest_data.city = $('#city').val();
     contest_data.province = $('#province').val();
+    console.log($('#province').val();)
     contest_data.postal_code = $('#zip_code').val();
     contest_data.phone = $('#phone_number').val();
     contest_data.email = $('#email').val();
