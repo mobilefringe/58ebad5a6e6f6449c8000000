@@ -36,6 +36,17 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-md-6">
+                        <label for="fielddhyhih">City</label>
+                        <input  id="fielddhyhih" name="cm-f-dhyhih" type="text" class="contest_info" value=""/>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="fieldjyydiu">Province</label>
+                        <input id="fieldjyydiu" name="cm-f-jyydiu" type="text" class="contest_info" value="Ontario"/>
+                    </div>
+                </div>
+            
+                <div class="row">
                     <div class="col-sm-6">
                         <label for="email">Email *</label>
                         <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
