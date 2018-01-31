@@ -2393,6 +2393,7 @@ ul, ol {
             margin-bottom: 30px;
             max-width: 100%;
             width: 100%;
+            border: 1px solid #000;
         }
         .help-block {
             margin-top: -30px;
