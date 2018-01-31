@@ -2382,7 +2382,7 @@ ul, ol {
     max-width: 100%;
 }
 .contest_description p {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 #contest_container {
     #contest_form {
