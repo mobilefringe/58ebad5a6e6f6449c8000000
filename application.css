@@ -2387,7 +2387,7 @@ ul, ol {
 #contest_container {
     #contest_form {
         h1.page_title {
-            padding: 20px 0 20px 0;
+            padding: 20px 0;
             font-weight: bold;
         }
         label {
