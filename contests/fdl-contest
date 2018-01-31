@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-md-6">
                         <label for="province">Province</label>
-                        <input class="contest_info" id="province" name="contest[state]" type="text"  value="Québec" tabindex="5"/>
+                        <input class="contest_info" id="province" name="contest[province]" type="text"  value="Québec" tabindex="5"/>
                     </div>
                 </div>
                 <div class="row">
