@@ -2381,6 +2381,9 @@ ul, ol {
     margin-bottom: 20px;
     max-width: 100%;
 }
+.contest_description p {
+    margin-bottom: 20px;
+}
 #contest_container {
     #contest_form {
         h1.page_title {
