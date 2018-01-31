@@ -6,8 +6,7 @@
     <div id="contest_container">
 	    <script id="contest_template" type="x-tmpl-mustache/text">
             <div class="mobile_padding">
-                <h3 class="hours_header" id="mm_page_title">{{name}}</h3>
-                <div class="margin_20"></div>
+
                 <img id="page_image" alt="Contest Image" src="{{alt_photo_url}}"/>
                 <div class="margin_20"></div>
                 <div class="contest_description"> {{{rich_description}}}</div>
