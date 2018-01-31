@@ -2376,6 +2376,12 @@ ul, ol {
     width: 300px
 }
 
+/* *** CONTEST *** */
+.contest_img {
+    max-width: 100%;
+}
+/* */
+
 @media (max-width: 979px) {
     .popup_newsletter{
         width: initial;
