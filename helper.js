@@ -186,7 +186,7 @@ function submit_contest(slug) {
     contest_data.birthday = $('#birthday').val();
     contest_data.newsletter = $('#newsletter_signup').prop("checked");
     contest_entry.contest = contest_data;
-
+    console.log(contest_entry)
     var propertyDetails = getPropertyDetails();
     var host = propertyDetails.mm_host.replace("http:", "");
     var action = host + "/contests/" + slug + "/create_js_entry"
