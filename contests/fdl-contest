@@ -110,7 +110,9 @@ et la <a href="/pages/fdl-privacy-policy" target="_blank">Politique de confident
 
             renderGeneral("#contest_container", "#contest_template", contest_details);
 
-            $.validate();
+            $.validate({
+                lang : 'fr'
+            });
             
             $('#contest_form').submit(function(e){
                 e.preventDefault();
