@@ -2443,8 +2443,10 @@ ul, ol {
     }
     .contest_rules.has-error {
         .help-block {
-                margin-top: 0 ;
-            }    
+            margin-top: 0 ;
+            margin-bottom: 0;
+            font-size: 14px;
+        }    
     }
 }
 /* */
