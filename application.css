@@ -2395,9 +2395,10 @@ ul, ol {
             width: 100%;
             border: 1px solid #000;
         }
-        #newsletter_signup {
+        #newsletter_signup, #agree_terms {
             margin: 0;
-            width: 30px !important;
+            margin-right: 10px;
+            width: auto;
         }
         .help-block {
             margin-top: -30px;
