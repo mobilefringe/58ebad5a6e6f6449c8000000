@@ -2442,7 +2442,7 @@ ul, ol {
         }
     }
     .contest_rules.has-error {
-        min-height: 42px;
+        min-height: 52px;
         .help-block {
             margin-top: 0 ;
             margin-bottom: 0;
