@@ -71,7 +71,7 @@
                         <div class="line_break">&nbsp;</div>
                         <label class="contest_rules">
                             <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="9"/> 
-                            J'ai lu et compris le <a href="/pages/fdl-contest-rules" target="_blank">Règlements du concours et conditions</a> 
+                            J'ai lu et compris le <a href="/pages/fdl-reglement-du-concours" target="_blank">Règlements du concours et conditions</a> 
 et la <a href="/pages/fdl-privacy-policy" target="_blank">Politique de confidentialité</a>. 
                         </label>
                     </div>
