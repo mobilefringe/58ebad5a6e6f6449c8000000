@@ -2398,6 +2398,7 @@ ul, ol {
         .help-block {
             margin-top: -30px;
             margin-bottom: 0;
+            font-size: 14px;
         }
     }
     .col-sm-6.has-error, .col-sm-12.has-error {
