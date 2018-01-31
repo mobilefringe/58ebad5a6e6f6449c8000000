@@ -2384,7 +2384,7 @@ ul, ol {
 .contest_description {
     margin-bottom: 20px;
 }
-.contest_container {
+#contest_container {
     #contest_form {
         label {
             display: block;
