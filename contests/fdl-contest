@@ -18,14 +18,18 @@
                 <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
                 <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
                 <input type="hidden" name="cm-name" id="cm-name" />
-                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1 class="page_title">Inscription au concours</h1>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="first_name">Prénom *</label>
                         <input class="contest_info" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
                     </div>
                     <div class="col-sm-6">
-                        <label for="last_name">Nom de famille *</label>
+                        <label for="last_name">Nom *</label>
                         <input class="contest_info" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
                     </div>
                 </div>
