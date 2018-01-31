@@ -65,16 +65,22 @@
                         <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Merci de renseigner une adresse e-mail valide" data-validation="custom" tabindex="8"/>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="note">Résponse</label>
+                        <input class="contest_info" id="note" name="contest[note]" type="email" tabindex="9"/>
+                    </div>
+                </div>
                 <div class="line_break">&nbsp;</div>
                 <div class="row">
                     <div class="col-sm-12">    
                         <label>
-                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="9"/> 
+                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="10"/> 
                             Oui, j’ai lu la <a href="/pages/fdl-privacy-policy" target="_blank">politique de confidentialité</a> et accepte de recevoir des infolettres électroniques de Fleur de Lys centre commercial.
                         </label>
                         <div class="line_break">&nbsp;</div>
                         <label class="contest_rules">
-                            <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="9"/> 
+                            <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="11"/> 
                             Oui, j’ai lu et j’accepte le <a href="/pages/fdl-reglement-du-concours" target="_blank">règlement du concours</a>.
                         </label>
                         <div class="line_break">&nbsp;</div>
@@ -82,7 +88,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <button class="submit_btn caps btn" tabindex="10">Envoyer</button>
+                        <button class="submit_btn caps btn" tabindex="12">Envoyer</button>
                     </div>
                     <div class="col-sm-6"></div>
                 </div>
