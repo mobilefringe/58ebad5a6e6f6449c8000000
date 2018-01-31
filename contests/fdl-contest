@@ -108,6 +108,7 @@ et la <a href="/pages/fdl-privacy-policy" target="_blank">Politique de confident
             });
             console.log(contest_details)
             var slug = contest_details.slug
+            console.log(slug)
             renderGeneral("#contest_container", "#contest_template", contest_details);
 
             $.validate();
