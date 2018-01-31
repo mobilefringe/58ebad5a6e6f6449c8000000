@@ -2414,7 +2414,7 @@ ul, ol {
         }
         .contest_rules.has_error {
             .help-block {
-                
+                margin-top: 0 ;
             }
         }
         .submit_btn {
