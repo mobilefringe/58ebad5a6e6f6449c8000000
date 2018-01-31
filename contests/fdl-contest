@@ -5,7 +5,7 @@
     <h3 id="no_contest" class="hidden_now">Fleur de Lys fera un autre concours prochainement. Restez à l’affût pour plus de détails!</h3> 
     <div id="contest_container">
 	    <script id="contest_template" type="x-tmpl-mustache/text">
-            <div class="mobile_padding">
+            <div>
                 {{#img_url}}
                 <img class="contest_img" src="{{img_url}}" alt="{{name}}" />
                 {{/img_url}}
