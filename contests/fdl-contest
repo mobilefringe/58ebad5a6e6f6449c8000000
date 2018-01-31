@@ -42,12 +42,12 @@
                     </div>
                     <div class="col-md-6">
                         <label for="province">Province</label>
-                        <input class="contest_info" id="province" name="contest[province]" type="text"  value="Ontario" tabindex="5"/>
+                        <input class="contest_info" id="province" name="contest[province]" type="text"  value="Québec" tabindex="5"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">  
-                        <label for="zip_code">ZIP Code *</label>
+                        <label for="zip_code">Postal Code *</label>
                         <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" tabindex="6"/>
                     </div>
                     <div class="col-sm-6">
