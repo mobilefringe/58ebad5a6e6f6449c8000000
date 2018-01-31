@@ -66,13 +66,13 @@
                     <div class="col-sm-12">    
                         <label>
                             <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="9"/> 
-                            I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
+                            J'accepte de recevoir des communications de Fleur de Lys.
                         </label>
                         <div class="line_break">&nbsp;</div>
                         <label class="contest_rules">
                             <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="9"/> 
-                            J'ai lu et compris le <a href="/pages/northside-contest-rules" target="_blank">Règlements du concours et règlements</a> 
-et le <a href="/pages/northside-privacy-policy" target="_blank">Politique de confidentialité</a>. 
+                            J'ai lu et compris le <a href="/pages/fdl-contest-rules" target="_blank">Règlements du concours et règlements</a> 
+et le <a href="/pages/fdl-privacy-policy" target="_blank">Politique de confidentialité</a>. 
                         </label>
                     </div>
                 </div>
