@@ -2,7 +2,7 @@
     <h1 class="page_title">Fleur de Lys Contest</h1> <!-- Contests -->
     <hr>
     <!-- No Contest Message -->
-    <h3 id="no_contest" class="hidden_now">Fleur de Lys présentera un événement sous peu. Restez à l’affût pour plus de détails!</h3> 
+    <h3 id="no_contest" class="hidden_now">Fleur de Lys présentera un contest sous peu. Restez à l’affût pour plus de détails!</h3> 
     <div id="contest_container">
 	    <script id="contest_template" type="x-tmpl-mustache/text">
             <div class="mobile_padding">
@@ -71,7 +71,8 @@
                         <div class="line_break">&nbsp;</div>
                         <label class="contest_rules">
                             <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="9"/> 
-                            I have read and understand the <a href="/pages/northside-contest-rules" target="_blank">Contest Rules and Regulations</a> as well as the <a href="/pages/northside-privacy-policy" target="_blank">Privacy Policy</a>. 
+                            J'ai lu et compris le <a href="/pages/northside-contest-rules" target="_blank">Règlements du concours et règlements</a> 
+et le <a href="/pages/northside-privacy-policy" target="_blank">Politique de confidentialité</a>. 
                         </label>
                     </div>
                 </div>
