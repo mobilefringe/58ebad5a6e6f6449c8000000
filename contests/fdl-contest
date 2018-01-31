@@ -30,6 +30,12 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-sm-12">
+                        <label for="address">Address</label>
+                        <input class="contest_info" id="address" name="contest[address]" type="text" value=""/>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-sm-6">
                         <label for="email">Email *</label>
                         <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
