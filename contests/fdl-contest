@@ -1,0 +1,120 @@
+<div class="promo_page">
+    <h1 class="page_title">Contests</h1> <!-- Contests -->
+    <hr>
+    <!-- No Contest Message -->
+    <h3 id="no_contest" class="hidden_now">Fleur de Lys présentera un événement sous peu. Restez à l’affût pour plus de détails!</h3> 
+    <div id="contest_container">
+	    <script id="contest_template" type="x-tmpl-mustache/text">
+            <div class="mobile_padding">
+                <h3 class="hours_header" id="mm_page_title">{{name}}</h3>
+                <div class="margin_20"></div>
+                <img id="page_image" alt="Contest Image" src="{{alt_photo_url}}"/>
+                <div class="margin_20"></div>
+                <div class="contest_description"> {{{rich_description}}}</div>
+                <div class="margin_20"></div>
+            </div>
+
+            <form id="contest_form">
+                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                <input type="hidden" name="cm-name" id="cm-name" />
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="first_name">First Name *</label>
+                        <input class="contest_info" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="last_name">Last Name *</label>
+                        <input class="contest_info" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="email">Email *</label>
+                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="phone_number">Phone Number *</label>
+                        <input class="contest_info" id="phone_number" name="contest[phone]" type="text" required data-validation="required" tabindex="4"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">  
+                        <label for="zip_code">ZIP Code *</label>
+                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" tabindex="5"/>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6"> 
+                        <label for="age">Age</label>
+                        <input class="contest_info" id="age" name="contest[age]" type="text" tabindex="6"/>
+                    </div>
+                    <div class="col-sm-6">  
+                        <label for="gender">Gender</label>
+                        <select class="contest_info" id="gender" name="contest[gender]" tabindex="7">
+                            <option value="">Select</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="submit_btn caps" tabindex="10">Submit</button>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-12">    
+                        <label>
+                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="8"/> 
+                            I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
+                        </label>
+                        <div class="line_break">&nbsp;</div>
+                        <label class="contest_rules">
+                            <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="9"/> 
+                            I have read and understand the <a href="/pages/northside-contest-rules" target="_blank">Contest Rules and Regulations</a> as well as the <a href="/pages/northside-privacy-policy" target="_blank">Privacy Policy</a>. 
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="margin_40"></div>
+                        <p class="hidden_now" id="succes_msg">Thank you! Your entry has been received.</p>
+                    </div>
+                    <div class="col-sm-6">
+                </div>
+            </form>
+        </script>
+    </div>
+</div>
+
+<div class="margin_40"></div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var contest_details = getContestBySlug(slug);
+            renderContest("#contest_container", "#contest_template", contest_details);
+
+            $.validate();
+            
+            $('#contest_form').submit(function(e){
+                e.preventDefault();
+                $('.submit_btn').prop('disabled', true);
+                submit_contest(slug);
+            });
+            
+            show_content();
+        }
+        
+        loadMallDataCached(renderAll); 
+    });
+</script>
