@@ -2,7 +2,7 @@
     <h1 class="page_title">Fleur de Lys Contest</h1> <!-- Contests -->
     <hr>
     <!-- No Contest Message -->
-    <h3 id="no_contest" class="hidden_now">Fleur de Lys présentera un contest sous peu. Restez à l’affût pour plus de détails!</h3> 
+    <h3 id="no_contest" class="hidden_now">Fleur de Lys fera un autre concours prochainement. Restez à l’affût pour plus de détails!</h3> 
     <div id="contest_container">
 	    <script id="contest_template" type="x-tmpl-mustache/text">
             <div class="mobile_padding">
