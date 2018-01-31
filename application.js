@@ -61,6 +61,7 @@ function renderContest(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
 
     collection.image_url = getImageURL(collection.photo_url);
+    console.log(collection.image_url)
     collection.property_name = getPropertyDetails().name;
     var rendered = Mustache.render(template_html,collection);
     item_rendered.push(rendered);
