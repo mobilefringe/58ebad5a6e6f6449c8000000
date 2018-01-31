@@ -2442,7 +2442,6 @@ ul, ol {
         }
     }
     .contest_rules {
-        margin-bottom: 30px;
         min-height: 42px;
     }
     .contest_rules.has-error {
