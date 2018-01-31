@@ -68,7 +68,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="note">Résponse</label>
-                        <input class="contest_info" id="note" name="contest[note]" type="email" tabindex="9"/>
+                        <input class="contest_info" id="note" name="contest[note]" type="text" tabindex="9"/>
                     </div>
                 </div>
                 <div class="line_break">&nbsp;</div>
