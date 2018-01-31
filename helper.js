@@ -223,6 +223,7 @@ function submit_contest(slug) {
     var propertyDetails = getPropertyDetails();
     var host = propertyDetails.mm_host.replace("http:", "");
     var action = host + "/contests/" + slug + "/create_js_entry"
+    console.log(action)
     $.ajax({
         url : action,
         type: "POST",
