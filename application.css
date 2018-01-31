@@ -2441,8 +2441,11 @@ ul, ol {
             font-size: 14px;
         }
     }
+    .contest_rules {
+        margin-bottom: 30px;
+    }
     .contest_rules.has-error {
-        min-height: 52px;
+        // min-height: 52px;
         .help-block {
             margin-top: 0 ;
             margin-bottom: 0;
