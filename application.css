@@ -2392,6 +2392,8 @@ ul, ol {
         input {
             margin-bottom: 30px;
             max-width: 100%;
+            padding: 4px 6px;
+            height: 40px;
             width: 100%;
             border-radius: 3px;
             border: 1px solid #cccccc;
