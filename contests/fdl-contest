@@ -104,7 +104,7 @@
             
             var contest_details = _.filter(getContestList(), function(o) { return o.show_on_slug === "fdl-contest"; });
             console.log(contest_details[0])
-            renderContest("#contest_container", "#contest_template", contest_details);
+            renderContest("#contest_container", "#contest_template", contest_details[0]);
 
             $.validate();
             
