@@ -2390,8 +2390,13 @@ ul, ol {
             display: block;
         }
         input {
+            margin-bottom: 30px;
             max-width: 100%;
             width: 100%;
+        }
+        .help-block {
+            margin-top: -30px;
+            margin-bottom: 0;
         }
     }
 }
