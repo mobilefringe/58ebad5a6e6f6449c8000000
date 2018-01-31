@@ -66,7 +66,7 @@
                     <div class="col-sm-12">    
                         <label>
                             <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="9"/> 
-                            J'accepte de recevoir des communications de Fleur de Lys.
+                            J'accepte de recevoir des communications de Fleur de Lys centre commercial.
                         </label>
                         <div class="line_break">&nbsp;</div>
                         <label class="contest_rules">
