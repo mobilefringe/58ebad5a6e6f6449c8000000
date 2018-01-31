@@ -59,13 +59,14 @@ function renderContest(container, template, collection){
     var item_rendered = [];
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
-
-    console.log(collection)
-    collection.img_url = "https://mallmaverick.cdn.speedyrails.net" + collection.photo_url;
-    collection.property_name = getPropertyDetails().name;
-    var rendered = Mustache.render(template_html,collection);
-    item_rendered.push(rendered);
-
+    $.each(collection, function(key, val) {
+        console.log(collection)
+        collection.img_url = "https://mallmaverick.cdn.speedyrails.net" + collection.photo_url;
+        collection.property_name = getPropertyDetails().name;
+        
+        var rendered = Mustache.render(template_html,collection);
+        item_rendered.push(rendered);
+    });
     $(container).html(item_rendered.join(''));
 }
 function renderFeatureItems(feature_item, feature_item_template, feature_items){
