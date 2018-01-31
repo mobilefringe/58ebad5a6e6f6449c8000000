@@ -61,7 +61,7 @@ function renderContest(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     // $.each(collection, function(key, val) {
         console.log(collection.photo_url)
-        val.img_url = "https://mallmaverick.cdn.speedyrails.net" + collection.photo_url;
+        collection.img_url = "https://mallmaverick.cdn.speedyrails.net" + collection.photo_url;
         console.log(collection.img_url)
         collection.property_name = getPropertyDetails().name;
         
