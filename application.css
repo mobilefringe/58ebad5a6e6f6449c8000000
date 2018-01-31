@@ -2387,7 +2387,10 @@ ul, ol {
 #contest_form label {
     display: block;
 }
-
+#contest_form input {
+    max-width: 100%;
+    width: 100%;
+}
 /* */
 
 @media (max-width: 979px) {
