@@ -97,9 +97,12 @@
         init(e);
         
         function renderAll(){
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            var contest_details = getContestBySlug(slug);
+            // var pathArray = window.location.pathname.split( '/' );
+            // var slug = pathArray[pathArray.length-1];
+            // var contest_details = getContestBySlug(slug);
+            
+            var contest_details = _.filter(getContestList(), function(o) { return o.show_on_slug === "fdl-contest"; });
+            console.log(contest_details)
             renderContest("#contest_container", "#contest_template", contest_details);
 
             $.validate();
