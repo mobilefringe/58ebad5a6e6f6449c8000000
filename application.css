@@ -2472,3 +2472,10 @@ ul, ol {
         font-size: 1em;
     }
 }
+@media (max-width: 480px) {
+    #contest_container {
+        .contest_rules {
+            min-height: 42px;
+        }
+    }
+}
