@@ -2402,7 +2402,7 @@ ul, ol {
         }
     }
     .col-sm-6.has-error, .col-sm-12.has-error {
-        min-height: 85px;
+        min-height: 83px;
     }
 }
 /* */
