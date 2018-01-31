@@ -106,7 +106,7 @@ et la <a href="/pages/fdl-privacy-policy" target="_blank">Politique de confident
                 slug = o.slug
                 return o.show_on_slug === "fdl-contest"; 
             });
-
+                console.log(slug)
             renderGeneral("#contest_container", "#contest_template", contest_details);
 
             $.validate({
