@@ -2407,11 +2407,11 @@ ul, ol {
             height: auto;
             box-shadow: none;
         }
-        .help-block {
-            margin-top: -30px;
-            margin-bottom: 0;
-            font-size: 14px;
-        }
+        // .help-block {
+        //     margin-top: -30px;
+        //     margin-bottom: 0;
+        //     font-size: 14px;
+        // }
         .submit_btn {
             border-color: rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
             display: inline-block;
@@ -2435,6 +2435,11 @@ ul, ol {
     }
     .col-sm-6.has-error, .col-sm-12.has-error {
         min-height: 97px;
+        .help-block {
+            margin-top: -30px;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
     }
     .contest_rules.has-error {
         .help-block {
