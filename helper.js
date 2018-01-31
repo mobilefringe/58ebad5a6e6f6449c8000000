@@ -182,7 +182,7 @@ function submit_contest(slug) {
     contest_data.phone = $('#phone_number').val();
     contest_data.mailing_address = $('#address').val();
     contest_data.city = $('#city').val();
-    contest_data.postal_code = $('#postal_code').val();
+    contest_data.postal_code = $('#zip_code').val();
     contest_data.birthday = $('#birthday').val();
     contest_data.newsletter = $('#newsletter_signup').prop("checked");
     contest_entry.contest = contest_data;
