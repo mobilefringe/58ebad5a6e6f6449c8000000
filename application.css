@@ -2412,6 +2412,11 @@ ul, ol {
             margin-bottom: 0;
             font-size: 14px;
         }
+        .contest_rules.has_error {
+            .help-block {
+                
+            }
+        }
         .submit_btn {
             border-color: rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
             display: inline-block;
