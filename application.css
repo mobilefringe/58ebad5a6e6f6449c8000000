@@ -2418,7 +2418,7 @@ ul, ol {
             margin-bottom: 0;
             padding: 10px 20px;
             display: inline-block;
-            border: none;
+            border: 1px solid #ef3423;
             border-radius: 0;
             background: #ef3423;
             box-shadow: none;
@@ -2431,6 +2431,11 @@ ul, ol {
             text-shadow: none;
             vertical-align: middle;
             cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+                background: #FFF;
+                color: #ef3423;
+            }
         }
     }
     .col-sm-6.has-error, .col-sm-12.has-error {
