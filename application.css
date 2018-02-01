@@ -2457,6 +2457,9 @@ ul, ol {
             font-size: 14px;
         }    
     }
+    a {
+        color: #ef3423;
+    }
 }
 /* */
 
