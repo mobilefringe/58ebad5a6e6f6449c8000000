@@ -1,5 +1,5 @@
 <div class="promo_page">
-    <h1 class="page_title">Fleur de Lys Contest</h1> <!-- Contests -->
+    <h1 class="page_title">Fleur de Lys concours</h1> <!-- Contests -->
     <hr>
     <!-- No Contest Message -->
     <h3 id="no_contest" class="hidden_now">Fleur de Lys fera un autre concours prochainement. Restez à l’affût pour plus de détails!</h3> 
@@ -12,6 +12,7 @@
                 {{#rich_description}}
                 <div class="contest_description"> {{{rich_description}}}</div>
                 {{/rich_description}}
+                <div class="line_break">&nbsp;</div>
             </div>
 
             <form id="contest_form">
