@@ -67,8 +67,8 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <label for="note">Résponse</label>
-                        <input class="contest_info" id="note" name="contest[notes]" type="text" tabindex="9"/>
+                        <label for="note">Résponse *</label>
+                        <textarea class="contest_info" id="note" name="contest[notes]" type="text" required data-validation="required" tabindex="9"/></textarea>
                     </div>
                 </div>
                 <div class="line_break">&nbsp;</div>
@@ -103,7 +103,7 @@
         </script>
     </div>
 </div>
-
+<!--<input class="contest_info" id="note" name="contest[notes]" type="text" required data-validation="required" tabindex="9"/>-->
 <script>
     $(document).ready(function(e){
         init(e);
