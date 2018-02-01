@@ -72,7 +72,7 @@
                         <textarea class="contest_info" id="note" name="contest[notes]" type="text" required data-validation="required" tabindex="9"/></textarea>
                     </div>
                 </div>
-                // <div class="line_break">&nbsp;</div>
+
                 <div class="row">
                     <div class="col-sm-12">    
                         <label>
