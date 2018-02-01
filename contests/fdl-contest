@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 textarea">
                         <label for="note">Résponse *</label>
                         <textarea class="contest_info" id="note" name="contest[notes]" type="text" required data-validation="required" tabindex="9"/></textarea>
                     </div>
