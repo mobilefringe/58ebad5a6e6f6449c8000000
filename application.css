@@ -2424,6 +2424,7 @@ ul, ol {
             line-height: 20px;
             color: #FFF;
             text-align: center;
+            text-transform: uppercase;
             text-shadow: none;
             vertical-align: middle;
             cursor: pointer;
