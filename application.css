@@ -2422,6 +2422,7 @@ ul, ol {
             display: inline-block;
             border: none;
             border-radius: 0;
+            background: #ef3423;
             box-shadow: none;
             font-family: inherit;
             font-size: 14px;
