@@ -2393,7 +2393,7 @@ ul, ol {
         label {
             display: block;
         }
-        input {
+        input, textarea {
             margin-bottom: 30px;
             max-width: 100%;
             padding: 4px 6px;
