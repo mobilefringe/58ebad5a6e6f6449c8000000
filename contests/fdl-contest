@@ -163,7 +163,7 @@
             
             // main_post.twitter_title = main_post.title + " via @ShopTheGateway";
             
-            var rendered = Mustache.render(template_html, main_post);
+            var rendered = Mustache.render(template_html, contest);
             item_list.push(rendered);
             $(container).html(item_list.join(''));
         }
