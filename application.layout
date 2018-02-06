@@ -83,6 +83,9 @@
                             <a href='/promotions' data-i18n="nav.subnav.promotions"></a>
                         </li>
                         <li class="mobile_menu_item">
+                            <a href='/contests/fdl-contest' data-i18n="nav.subnav.contest"></a>             
+                        </li>
+                        <li class="mobile_menu_item">
                             <a href='/pages/fdl-gagnants-des-concours' data-i18n="nav.subnav.competition"></a>
                         </li>
                         <li class="mobile_menu_header" >
