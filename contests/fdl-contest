@@ -115,7 +115,7 @@
                 slug = o.slug
                 return o.show_on_slug === "fdl-contest"; 
             });
-            contest_details = contest_details[0]
+            contest_details = contest_details[0];
             console.log(contest_details)
             renderSingle("#contest_container", "#contest_template", contest_details);
 
