@@ -1,0 +1,68 @@
+{
+	"app": {
+		"name": "i18next",
+		"privacy_policy": "Politique de confidentialité"
+	},
+	"nav": {
+		"stores": "STORES",
+        "promotions": "PROMOTIONS",
+        "events": "EVENTS",
+        "services": "GUEST SERVICES",
+        "careers": "CAREERS",
+        "about": "ABOUT US",
+		"subnav": {
+			"store_directory": "Store Directory",
+			"map": "Shopping Map",
+			"blog": "Blog",
+			"promotions": "Promotions",
+			"contest": "Contest",
+			"competition": "Competition Winners",
+            "hours": "Shopping Hours",
+            "leasing": "Leasing",
+            "mall_info": "Mall Info",
+            "contact": "Contact Us"
+		}
+	},
+	"days_of_week": {
+		"0": "Sunday",
+		"1": "Monday",
+		"2": "Tuesday",
+		"3": "Wednesday",
+		"4": "Thursday",
+		"5": "Friday",
+		"6": "Saturday"
+	},
+	"pages": {
+	    "stores_title": "STORE LIST",
+	    "stores_category": "CATEGORIES",
+	    "stores_scrolltop": "Go to Top",
+	    "storedetail_website": "WEBSITE",
+	    "storedetail_promos": "STORE PROMOTIONS",
+	    "storedetail_jobs": "CAREERS",
+	    "map_title": "Centre Map",
+	    "promotions_mall_title": "Mall Promotions",
+	    "promotions_store_title": "Store Promotions",
+	    "promotions_mall_none": "Please return soon for more mall promotions.",
+	    "promotions_store_none": "Please return soon for more store promotions.",
+	    "events_title": "Events",
+	    "events_none": "Please check back soon for centre events.",
+	    "jobs_title": "Careers",
+	    "jobs_none": "There are currently no job postings available. Please check back soon.",
+	    "hours_title": "Hours",
+	    "hours_holiday_title": "Holiday Hours",
+	    "directions_title": "Parking & Directions",
+	    "address_title": "Address",
+	    "directions_subtitle": "Directions",
+	    "contact_us_title": "Contact Us",
+	    "about_email": "Email Us"
+	},
+	"general": {
+	    "hours": "HOURS TODAY",
+	    "telephone": "Call",
+	    "holiday_hours": "Check Holiday Hours"
+	},
+	"footer": {
+        "privacy": "PRIVACY POLICY",
+		"power": "Propulsé par"
+	}
+}
