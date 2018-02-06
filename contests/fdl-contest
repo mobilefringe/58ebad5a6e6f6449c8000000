@@ -115,7 +115,7 @@
                 slug = o.slug
                 return o.show_on_slug === "fdl-contest"; 
             });
-                console.log(slug)
+            console.log(contest_details)
             renderGeneral("#contest_container", "#contest_template", contest_details);
 
             $.validate({
