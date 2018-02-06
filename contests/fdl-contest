@@ -139,30 +139,6 @@
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
         
-            // if (contest.image_url.indexOf('missing.png') > 0) {
-            //     contest.post_image = "//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/image/jpeg/1502470554000/EventsPlaceholder@2x.jpg";
-            // } else {
-            //     contest.post_image = main_post.image_url;
-            // }
-            
-            // if(main_post.title.length > 45){
-            //     main_post.title_short = main_post.title.substring(0, 44) + "...";
-            // } else {
-            //     main_post.title_short = main_post.title;
-            // }
-                
-            // if(main_post.body.length > 175){
-            //     main_post.description_short = main_post.body.substring(0,175) + "...";
-            // } else {
-            //     main_post.description_short = main_post.body;
-            // }
-            
-            // main_post.description_short = main_post.description_short.replace("&amp;", "&");
-            
-            // main_post.slug = "posts/" + main_post.slug;
-            
-            // main_post.twitter_title = main_post.title + " via @ShopTheGateway";
-            
             var rendered = Mustache.render(template_html, contest);
             item_list.push(rendered);
             $(container).html(item_list.join(''));
