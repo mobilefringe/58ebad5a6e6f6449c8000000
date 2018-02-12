@@ -111,14 +111,16 @@
         
         function renderAll(){
             var slug = "";
+            var contest_name = "";
             var contest_details = _.filter(getContestList(), function(o) { 
                 o.img_url = "https://mallmaverick.cdn.speedyrails.net" + o.photo_url
                 slug = o.slug
+                contest_name = o.name
                 return o.show_on_slug === "fdl-contest"; 
             });
             contest_details = contest_details[0];
             renderSingle("#contest_container", "#contest_template", contest_details);
-
+            $("#contest.name").html()
             $.validate({
                 lang : 'fr'
             });
