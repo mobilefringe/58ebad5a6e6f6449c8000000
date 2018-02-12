@@ -120,6 +120,7 @@
             });
             contest_details = contest_details[0];
             renderSingle("#contest_container", "#contest_template", contest_details);
+            console.log(contest_name)
             $("#contest.name").html(contest_name);
             $.validate({
                 lang : 'fr'
