@@ -1,5 +1,5 @@
 <div class="promo_page">
-    <h1 id="contestName" class="page_title">Fleur de Lys concours</h1> <!-- Contests -->
+    <h1 id="contestName" class="page_title"></h1> <!-- Contests -->
     <hr>
     <!-- No Contest Message -->
     <h3 id="no_contest" class="hidden_now">Fleur de Lys fera un autre concours prochainement. Restez à l’affût pour plus de détails!</h3> 
@@ -120,8 +120,9 @@
             });
             contest_details = contest_details[0];
             renderSingle("#contest_container", "#contest_template", contest_details);
-            console.log(contest_name)
+
             $("#contestName").html(contest_name);
+            
             $.validate({
                 lang : 'fr'
             });
