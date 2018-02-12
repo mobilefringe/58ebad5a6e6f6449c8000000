@@ -2385,11 +2385,11 @@ ul, ol {
     margin-bottom: 0;
 }
 #contest_container {
+    h1.page_title {
+        padding: 20px 0;
+        font-weight: bold;
+    }
     #contest_form {
-        h1.page_title {
-            padding: 20px 0;
-            font-weight: bold;
-        }
         label {
             display: block;
         }
