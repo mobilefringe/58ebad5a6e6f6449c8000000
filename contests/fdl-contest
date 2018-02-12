@@ -9,7 +9,6 @@
                 {{#img_url}}
                 <img class="contest_img" src="{{img_url}}" alt="{{name}}" />
                 {{/img_url}}
-                <h1 class="page_title"> {{ name }}</h1>
                 {{#rich_description}}
                 <div class="contest_description"> {{{rich_description}}}</div>
                 {{/rich_description}}
