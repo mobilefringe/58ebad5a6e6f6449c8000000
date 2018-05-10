@@ -269,6 +269,10 @@ h1 {
     font-family: ChronicleTextG1-Roman;
     margin: 10px 0;
 }
+#instafeed img {
+    width: 130px;
+    margin: 2px;
+}
 @media only screen and (min-width: 900px) { 
     .left_pad{
         padding-left: 58px;
