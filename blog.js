@@ -87,7 +87,8 @@ function renderPosts2(container, template, collection){
         } else {
             val.description_short = val.body;
         }
-    
+        val.post_title = post.title;
+        val.post_slug = post.slug;
         val.counter = counter;
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
         val.published_on = date_blog.format('MMM DD, YYYY');
