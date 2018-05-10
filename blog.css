@@ -25,3 +25,10 @@
     color: #EF1851;
     text-decoration:none;
 }
+.hstc{
+    font-family: CircularStd-Bold !important;
+    font-size: 14px !important;
+    min-height: 27px !important;
+    color: #EF1851 !important;
+    letter-spacing: 2px !important;
+}
