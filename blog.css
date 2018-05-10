@@ -5,6 +5,9 @@
     width:100%;
     margin-bottom:10px;
     height:230px;
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .trending_box{
