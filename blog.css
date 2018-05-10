@@ -180,6 +180,67 @@ h1 {
     max-width:100%;
 }
 
+.feature_header{
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    font-size:14px;
+    font-family: CircularStd-Bold;
+    letter-spacing: 2;
+    text-align: center;
+    color: #EF1851;
+    padding: 14.5px 0px;
+    margin: 0px 0px 10px 0px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.feature_text{
+    font-family:ChronicleDisplay-Light;
+    font-size:32px;
+    text-align:center;
+    margin-top: 25px;
+}
+
+.feature_read_more{
+    font-family:CircularStd-Book;
+    font-size: 12px;
+    border-bottom:1px solid;
+    letter-spacing: 2;
+    color: #000;
+    padding-bottom: 2px;
+}
+.feature_read_more:hover,.feature_read_more:focus{
+    text-decoration: none;
+    color:#BFBEBD;
+}
+
+.feature_hours{
+    height:244px;
+    background: #3fb4c8;
+    text-align: center;
+}
+.feature_hours_img{
+    width: 50px !important;
+    margin: 35px 0;
+}
+
+.feature_hours p{
+    color: #fff;
+    font-family: CircularStd-Book;
+    letter-spacing: 2;
+    font-size:16px;
+}
+.feature_box img{
+    width:100%;
+}
+.left_page_div{
+    padding-right:30px;    
+}
+.left_page_div img{
+    width:100%;
+}
+
+
 @media only screen and (min-width: 900px) { 
     .left_pad{
         padding-left: 58px;
