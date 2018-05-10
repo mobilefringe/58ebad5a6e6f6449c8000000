@@ -190,3 +190,7 @@ function load_more_2(num, l){
     }
     $('#num_loaded').val(i);
 }
+
+function render_instagram(data){
+        $('#instafeed').html(data)
+    }
