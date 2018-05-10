@@ -5,7 +5,7 @@
         <script id="trending_template" type="x-tmpl-mustache/text">
             <div class="col-md-4 trending_box">
                 <a href="/posts/{{post_slug}}" class="trending_link">
-                    <img class="trending_image" style="background-image:url({{image_url}})" src="{{post_image}}" />
+                    <img class="trending_image" style="background-image:url({{post_image}})" src="{{post_image}}" />
                     <p class="no_margin"><span class="new_store_subheading hstc">{{name}}</span> <span class="description"><br>{{post_title}}</span></p>
                 </a>
             </div>
