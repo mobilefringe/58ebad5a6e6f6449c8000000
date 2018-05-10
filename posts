@@ -48,7 +48,7 @@
             <hr class="separator2 show_phone"/>
             <div class="margin_15px show_phone"></div>
             <!--<img style="margin-top: -5px !important;" class="share_img site_icons no_margin" alt="fb share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" />-->
-            <span class="new_store_subheading hstc">@fleurdelys_qc</span>
+            <span class="new_store_subheading hstc text-uppercase">@fleurdelys_qc</span>
             <div class="margin_15px"></div>
             
             <div id="instafeed"></div>
