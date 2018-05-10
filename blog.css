@@ -1,3 +1,6 @@
+.no_margin{
+    margin: 0 !important;
+}
 .trending_image{
     width:100%;
     margin-bottom:10px;
