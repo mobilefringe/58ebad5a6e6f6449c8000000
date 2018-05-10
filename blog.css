@@ -7,5 +7,21 @@
 }
 
 .trending_box{
-        margin-bottom:30px;
-    }
+    margin-bottom:30px;
+}
+.new_store_subheading{
+    font-family: CircularStd-Book;
+    font-size: 14px;
+    letter-spacing: 2;
+    color: #EF1851;
+    margin-top:40px;
+    text-transform:uppercase;
+}
+
+.new_store_subheading i{
+    margin-top:36px
+}
+.new_store_subheading:hover, .new_store_subheading:active, .new_store_subheading:focus{
+    color: #EF1851;
+    text-decoration:none;
+}
