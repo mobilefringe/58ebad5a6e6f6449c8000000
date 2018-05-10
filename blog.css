@@ -260,6 +260,12 @@ h1 {
     margin:15px 0;
     text-transform:uppercase;
 }
+.description{
+    font-size: 18px;
+    line-height: 27px;
+    font-family: ChronicleTextG1-Roman;
+    margin: 10px 0;
+}
 @media only screen and (min-width: 900px) { 
     .left_pad{
         padding-left: 58px;
