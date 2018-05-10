@@ -13,6 +13,13 @@
 .margin_20{
     margin-top:20px;
 }
+h1 {
+  font-family: ChronicleDisplay-Light;
+  font-size: 32px;
+  letter-spacing: 0;
+  margin-top:0;
+}
+
 .trending_image{
     width:100%;
     margin-bottom:10px;
