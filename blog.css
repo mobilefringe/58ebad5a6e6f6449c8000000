@@ -241,7 +241,25 @@ h1 {
     width:100%;
 }
 
+.left_side_blog{
+    width:818px;
+    padding-right:58px;
+    border-right: 1px solid #ccc;
+}
+.blog_description{
+    width: 75%;
+    margin: 0 auto !important;
+    text-align: center;
+}
 
+.publish_date{
+    font-family: CircularStd-Book;
+    font-size: 12px;
+    letter-spacing: 2;
+    color: #BFBEBD;
+    margin:15px 0;
+    text-transform:uppercase;
+}
 @media only screen and (min-width: 900px) { 
     .left_pad{
         padding-left: 58px;
