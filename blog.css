@@ -26,6 +26,7 @@
 .chevron_line{
     margin-bottom: 0;
     margin-top:10px;
+    border-bottom : none;
     border-top:1px solid #ccc;
 }
 .triangle-down { 
