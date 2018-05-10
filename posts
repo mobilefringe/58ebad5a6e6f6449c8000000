@@ -3,7 +3,7 @@
     <div class="line"></div>
     <div class="row" id="trending_container">
         <script id="trending_template" type="x-tmpl-mustache/text">
-            <div class="col-md-4 trending_box">
+            <div class="col-sm-4 trending_box">
                 <a href="/posts/{{post_slug}}" class="trending_link">
                     <div class="trending_image" style="background-image:url({{post_image}})"></div>
                     <p class="no_margin"><span class="new_store_subheading hstc">{{name}}</span> <span class="description"><br>{{title}}</span></p>
@@ -15,7 +15,7 @@
     <div class="line_top "></div>
     <div class="margin_30 "></div>
     <div class="row">
-        <div class="col-md-8 right_pad">
+        <div class="col-sm-8 right_pad">
             <div class="blog_parent" id="blog_container">
                 <script id="blog_template" type="x-tmpl-mustache/text">
                     <div class="blog_box hidden_now" id="show_{{counter}}">
@@ -41,10 +41,10 @@
                 </a>
             </p>
         </div>
-        <!--<div class="col-md-1 hidden_phone">-->
+        <!--<div class="col-sm-1 hidden_phone">-->
         <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
         <!--</div>-->
-        <div class="col-md-3">
+        <div class="col-sm-3">
             <hr class="separator2 show_phone"/>
             <div class="margin_15px show_phone"></div>
             <!--<img style="margin-top: -5px !important;" class="share_img site_icons no_margin" alt="fb share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" />-->
