@@ -82,6 +82,47 @@ h1 {
 .show_phone{
     display: none;
 }
+.blog_box{
+    padding-top: 10px;
+    border-top: 1px solid #BFBEBD;
+    margin-bottom: 60px;
+}
+
+.blog_nav{
+    width:200px;
+    text-align:center;
+}
+
+.description_blog_nav{
+    color: #BFBEBD;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: ChronicleTextG1-Roman;
+}
+.trending_side_link{
+    color: #000;
+    border-bottom: 1px solid #000;
+    font-size:18px;
+    font-family: ChronicleTextG1-Roman;
+}
+
+.trending_side_link:hover{
+    text-decoration: none;
+    color:#000;
+}
+.results_div{
+    display:none;
+    max-height: 500px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    overflow-x: hidden;
+}
+
+
+#post_container img{
+    max-width:100%;
+}
 
 @media only screen and (min-width: 900px) { 
     .left_pad{
