@@ -44,18 +44,18 @@ function renderPosts(container, template, collection){
         // var lb = getBlogDataBySlug("stc-lookbook");
         // var contest = getBlogDataBySlug("stc-contest");
         // var out_blog = lb.posts.concat(contest.posts);
-        var id = val.id;
-        if(id != null){
-            try {
-                var result = $.grep(out_blog, function(e){ return e.id == id; });
-            } catch(err) {
-                // console.log(err);
-            }
-        }
-        // var result = $.grep(out_blog, function(e){ return e.id == id; });
-        if(result != null){
-            val.slug = val.video_link;
-        }
+        // var id = val.id;
+        // if(id != null){
+        //     try {
+        //         var result = $.grep(out_blog, function(e){ return e.id == id; });
+        //     } catch(err) {
+        //         // console.log(err);
+        //     }
+        // }
+        // // var result = $.grep(out_blog, function(e){ return e.id == id; });
+        // if(result != null){
+        //     val.slug = val.video_link;
+        // }
         val.counter = counter;
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
         val.published_on = date_blog.format('MMM DD, YYYY');
