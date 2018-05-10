@@ -469,6 +469,7 @@
     
     <script src="/application.js" type="text/javascript"></script>
     <script src="/helper.js" type="text/javascript"></script>
+    <script src="/blog.js" type="text/javascript"></script>
 
     <script>
         setEndPoint('//fdl.mallmaverick.com/api/v4/fdl/all.json');
