@@ -102,6 +102,7 @@
                 load_more(i);
                 e.preventDefault();
             });
+            get_instagram("//stc.mallmaverick.com/api/v2/stc/social.json", 10, 'thumbnail', render_instagram)
         }
 
         loadMallDataCached(renderAll); 
