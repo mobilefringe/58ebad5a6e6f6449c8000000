@@ -1,0 +1,83 @@
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<div class="container-fluid container_60">
+    <h1>Trending</h1>
+    <div class="line"></div>
+    <div class="margin_30"></div>
+    <div class="line_top"></div>
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-8 right_pad">
+            <div class="blog_parent" id="blog_container">
+                <script id="blog_template" type="x-tmpl-mustache/text">
+                    <div class="blog_box hidden_now" id="show_{{counter}}">
+                        <a href="/{{slug}}"><img class="width_100" src="{{post_image}}" /></a>
+                        <hr class="chevron_line" />
+                        <div class="triangle-down"></div>
+                        <div class="triangle-down-inside"></div>
+                        <h3 class="feature_text"><a href="/{{slug}}">{{title}}</a></h3>
+                        <p class="blog_description description">{{description_short}}</p>
+                        <p class="publish_date text-center">{{published_on}}</p>
+                        <p class="text-center"><a class="feature_read_more text-center" href="/{{slug}}">READ MORE</a></p>
+                    </div>
+                </script>
+            </div>
+            <div class="margin_15px"></div>
+            <input type="hidden" value="1" id="num_loaded" />
+            <p class="new_store_subheading text-center hidden_now" id = all_loaded>NO MORE POSTS</p>
+            <p class="text-center" id="loaded_posts">
+                <a href="#" class="new_store_subheading" id="load_more_posts">
+                    LOAD MORE POSTS
+                    <br/>
+                    <i class="fa fa-long-arrow-down"></i>    
+                </a>
+            </p>
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
+        <!--</div>-->
+        <div class="col-md-3">
+            <!--<img class="share_img site_icons no_margin" alt="fb share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" />-->
+            <span class="new_store_subheading">@SHOPSTC</span>
+            <div class="margin_15px"></div>
+            <div id="instafeed"></div>
+            <p class="new_store_subheading">RECENT POSTS</p>
+            <div id="side_links_container">
+                <script id="side_links_template" type="x-tmpl-mustache/text">
+                    <p><a href="/posts/{{slug}}" class="trending_side_link">{{title}}</a></p>
+                </script>
+            </div>
+            <p class="new_store_subheading">CATEGORIES</p>
+            <div id="blog_links_container">
+                <script id="blog_links_template" type="x-tmpl-mustache/text">
+                    <p><a href="/trending_categories/{{slug}}" class="trending_side_link">{{name}}</a></p>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            var blogs = getBlogList().sortBy(function(o){ return o.name });
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var posts = getBlogDataBySlug(slug).posts;
+            var published_posts = posts.sortBy(function(o){ return o.publish_date }).reverse();
+            var side_posts = getAllPublishedPosts().sortBy(function(o){ return o.publish_date }).reverse();
+            renderPosts("#blog_container", "#blog_template", published_posts);
+            renderPosts2("#side_links_container", "#side_links_template", side_posts.slice(0,3));
+            renderBlogs("#blog_links_container", "#blog_links_template", blogs);
+            init_home_hours();
+            show_content();
+            load_more_2(1, published_posts.length);
+            
+            $('#load_more_posts').click(function(e){
+                var i = $('#num_loaded').val();
+                load_more(i);
+                e.preventDefault();
+            });
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
