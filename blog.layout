@@ -463,6 +463,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/application/x-javascript/1404372988000/instagram.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
     <!--MallMaverick SDK-->
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
     <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
