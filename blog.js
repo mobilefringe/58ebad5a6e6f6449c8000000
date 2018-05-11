@@ -192,5 +192,7 @@ function load_more_2(num, l){
 }
 
 function render_instagram(data){
-        $('#instafeed').html(data)
-    }
+    $('#instafeed').html(data)
+}
+
+getTagCategoris(posts)
