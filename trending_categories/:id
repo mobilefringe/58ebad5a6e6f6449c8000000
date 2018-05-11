@@ -61,7 +61,7 @@
         function renderAll (){
             var blogs = getBlogList().sortBy(function(o){ return o.name });
             var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
+            var slug = pathArray[pathArray.length-1].replace("%20"," ");
             console.log("slug", slug);
             var posts = getBlogDataBySlug(slug).posts;
             var published_posts = posts.sortBy(function(o){ return o.publish_date }).reverse();
