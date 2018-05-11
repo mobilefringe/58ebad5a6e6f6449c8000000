@@ -296,4 +296,7 @@ h1 {
     .blog_nav {
         margin-bottom: 30px;
     }
+    .long_feature_label {
+        top: 61%;
+    }
 }
