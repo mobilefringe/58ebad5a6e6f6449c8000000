@@ -94,6 +94,7 @@
             renderPosts("#blog_container", "#blog_template", published_posts);
             renderPosts2("#side_links_container", "#side_links_template", published_posts.slice(0,3));
             renderBlogs("#blog_links_container", "#blog_links_template", blogs);
+            }
             // init_home_hours();
             show_content();
             load_more(1);
