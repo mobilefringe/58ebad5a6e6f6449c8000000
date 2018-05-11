@@ -1162,8 +1162,8 @@ a.btn-prime {
 
 .long_feature_label{
     position: absolute;
-    top: 81%;
-    height: 100%;
+    top: 78%;
+    height: 45px;
     // opacity: .5;  
 }
 
