@@ -3,7 +3,7 @@
     <div class="line"></div>
     <div class="row" id="trending_container">
         <script id="trending_template" type="x-tmpl-mustache/text">
-            <div class="col-sm-4 trending_box">
+            <div class="col-md-4 trending_box">
                 <a href="/posts/{{post_slug}}" class="trending_link">
                     <div class="trending_image" style="background-image:url({{post_image}})"></div>
                     <p class="no_margin"><span class="new_store_subheading hstc">{{tag_name}}</span> <span class="description"><br>{{title}}</span></p>
