@@ -88,6 +88,7 @@
             // top_blogs.push(blog_lifestyle);
             // top_blogs.push(blog_mens);
             var posts = getBlogDataBySlug('fdl-shop-the-look');//getAllPublishedPosts();
+            console.log(posts);
             if(posts !== null && posts !== undefined && posts.length > 0) {
                 posts = posts.posts;
                 var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
