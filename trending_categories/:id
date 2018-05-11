@@ -65,7 +65,6 @@
             console.log("slug", slug);
             var posts = getBlogDataBySlug('fdl-shop-the-look');//getBlogDataBySlug(slug).posts;
             if(posts !== null && posts !== undefined) {
-                // var posts_by_tag = getPostsByTag(slug, posts);
                 var published_posts = posts.sortBy(function(o){ return o.publish_date }).reverse();
                 var side_posts = getAllPublishedPosts().sortBy(function(o){ return o.publish_date }).reverse();
                 renderPostsByTag("#blog_container", "#blog_template", published_posts, slug);
