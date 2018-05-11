@@ -71,7 +71,7 @@
                 renderPosts2("#side_links_container", "#side_links_template", side_posts.slice(0,3));
                 var categories = getTagCategoris(published_posts);
                 var posts_length = renderTags("#blog_links_container", "#blog_links_template", categories);
-                load_more_2(1);
+                load_more_2(1. posts_length);
             }
             show_content();
             
