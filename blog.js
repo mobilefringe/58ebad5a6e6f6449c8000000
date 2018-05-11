@@ -196,5 +196,5 @@ function render_instagram(data){
 }
 
 function getTagCategoris(posts) {
-    
+    _.map(users, 'user');
 }
