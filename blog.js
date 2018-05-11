@@ -195,4 +195,6 @@ function render_instagram(data){
     $('#instafeed').html(data)
 }
 
-getTagCategoris(posts)
+function getTagCategoris(posts) {
+    
+}
