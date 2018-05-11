@@ -236,60 +236,7 @@
             <div class="col-sm-12">
                 {{yield}}
             </div>
-    
-        <!--    <div class="mobile_container">-->
-        <!--        <div class="col-md-3">-->
-        <!--            <div class="hour_box">  -->
-        <!--                <div class="hour_info">-->
-        <!--                    <label for="hours_today" class="feature_label" data-i18n="general.hours"></label>-->
-        <!--                    <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>-->
-        <!--                    <div id="home_hours_container" class="home_hours_info">-->
-        <!--                        <script id="home_hours_template" type="x-tmpl-mustache/text">-->
-        <!--                            {%raw%}-->
-        <!--                            <span class="hour_title">{{weekday}}</span>-->
-        <!--                            <span class="hour_info">{{h}}</span>-->
-        <!--                            {%endraw%}-->
-        <!--                        </script>-->
-        <!--                    </div>-->
-        <!--                    <div class="home_hours_info" id="prop_phone_container">-->
-        <!--                        <script id="prop_phone_template" type="x-tmpl-mustache/text">-->
-        <!--                            {%raw%}-->
-        <!--                            <span class="hour_title" data-i18n="general.telephone"></span>-->
-        <!--                            <span class="hour_info hidden-xs">{{contact_phone}}</span>-->
-        <!--                            <span class="hour_info visible-xs-inline-block">-->
-        <!--                                <a href="tel:{{contact_phone}}">{{contact_phone}}</a>    -->
-        <!--                            </span>-->
-        <!--                            {%endraw%}-->
-        <!--                        </script>-->
-        <!--                    </div>-->
-        <!--                    <a href="/hours" class="check_hours" data-i18n="general.holiday_hours"></a>-->
-        <!--                </div>-->
-        <!--            </div> -->
-        <!--            <div class="right_feature_box">-->
-        <!--                <div class="feature_box" id="feature_item">-->
-        <!--                    <script id="feature_item_template" type="x-tmpl-mustache/text">-->
-        <!--                        {%raw%}-->
-        <!--                        <span class="feature_label">{{name}}</span>-->
-        <!--                        <a href="{{url}}">-->
-        <!--                            <img alt="feature_image" src="{{image_url}}" />-->
-        <!--                        </a>-->
-        <!--                        {%endraw%}-->
-        <!--                    </script>-->
-        <!--                </div>-->
-        <!--                <div class="feature_box" id="feature_item_fr">-->
-        <!--                    <script id="feature_item_template_fr" type="x-tmpl-mustache/text">-->
-        <!--                        {%raw%}-->
-        <!--                        <span class="feature_label">{{name}}</span>-->
-        <!--                        <a href="{{url}}">-->
-        <!--                            <img alt="feature_image" src="{{image_url}}" />-->
-        <!--                        </a>-->
-        <!--                        {%endraw%}-->
-        <!--                    </script>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div> -->
-        <!--    </div>-->
-        <!--</div>-->
+        </div>
     </div>
     
     <div class="line_break"></div>
