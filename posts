@@ -89,7 +89,8 @@
             // top_blogs.push(blog_mens);
             var posts = getBlogDataBySlug('fdl-shop-the-look');//getAllPublishedPosts();
             if(posts !== null && posts !== undefined && posts.length > 0) {
-            var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
+                posts = posts.posts
+                var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
                 renderPosts2("#trending_container", "#trending_template", published_posts.slice(0,3));
                 renderPosts("#blog_container", "#blog_template", published_posts);
                 renderPosts2("#side_links_container", "#side_links_template", published_posts.slice(0,3));
