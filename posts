@@ -15,7 +15,7 @@
     <div class="line_top "></div>
     <div class="margin_30 "></div>
     <div class="row">
-        <div class="col-md-8 right_pad">
+        <div class="col-sm-8 right_pad">
             <div class="blog_parent" id="blog_container">
                 <script id="blog_template" type="x-tmpl-mustache/text">
                     <div class="blog_box hidden_now" id="show_{{counter}}">
@@ -44,7 +44,7 @@
         <!--<div class="col-sm-1 hidden_phone">-->
         <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
         <!--</div>-->
-        <div class="col-md-3">
+        <div class="col-sm-3">
             <hr class="separator2 show_phone"/>
             <div class="margin_15px show_phone"></div>
             <span class="new_store_subheading hstc text-uppercase">@fleurdelys_qc</span>
