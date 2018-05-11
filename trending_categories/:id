@@ -33,7 +33,7 @@
             </p>
         </div>
         <div class="col-md-3">
-        <span class="new_store_subheading hstc text-uppercase">@fleurdelys_qc</span>
+            <span class="new_store_subheading hstc text-uppercase">@fleurdelys_qc</span>
             <div class="margin_15px"></div>
             <div id="instafeed"></div>
             <p class="new_store_subheading">RECENT POSTS</p>
