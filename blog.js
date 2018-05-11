@@ -197,5 +197,5 @@ function render_instagram(data){
 
 function getTagCategoris(posts) {
     var tags = _.map(posts, 'tag');
-    console.log("tags", _.map(posts, 'tag'));
+    console.log("tags", _tags);
 }
