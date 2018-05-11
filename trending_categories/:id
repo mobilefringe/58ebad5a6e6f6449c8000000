@@ -63,7 +63,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1].replace("%20"," ");
             console.log("slug", slug);
-            var posts = getPostByTag(slug);//getBlogDataBySlug(slug).posts;
+            var posts = getPostsByTag(slug);//getBlogDataBySlug(slug).posts;
             var published_posts = posts.sortBy(function(o){ return o.publish_date }).reverse();
             var side_posts = getAllPublishedPosts().sortBy(function(o){ return o.publish_date }).reverse();
             renderPosts("#blog_container", "#blog_template", published_posts);
