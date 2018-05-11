@@ -279,9 +279,7 @@ h1 {
     width: 110px;
     margin: 2px;
 }
-.fb_iframe_widget_fluid span {
-    width: 100%!important;
-}
+
 @media only screen and (min-width: 900px) { 
     .left_pad{
         padding-left: 58px;
