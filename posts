@@ -94,7 +94,7 @@
                 load_more(i);
                 e.preventDefault();
             });
-            get_instagram("//stc.mallmaverick.com/api/v2/stc/social.json", 10, 'thumbnail', render_instagram)
+            get_instagram("//fdl.mallmaverick.com/api/v2/fdl/social.json", 10, 'thumbnail', render_instagram)
             // http://fdl.mallmaverick.com/api/v2/fdl/social.json
         }
 
