@@ -95,7 +95,6 @@
                 e.preventDefault();
             });
             get_instagram("//fdl.mallmaverick.com/api/v2/fdl/social.json", 10, 'thumbnail', render_instagram);
-            // http://fdl.mallmaverick.com/api/v2/fdl/social.json
         }
 
         loadMallDataCached(renderAll); 
