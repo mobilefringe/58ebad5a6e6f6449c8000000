@@ -437,7 +437,7 @@
         </div>
         <div class="footer trim_screen">
             <span>
-                &copy; <span id="current_year" style="padding:0"></span> FLEUR DE LYS CENTRE COMMERCIAL | <a href="/pages/fdl-privacy-policy" target="_blank" data-i18n="footer.privacy"></a> | <a data-i18n="footer.power"></a><a href="http://www.mallmaverick.com/" target="_blank"> Mall Maverick</a>     
+                &copy; <span id="current_year" style="padding:0"></span> FLEUR DE LYS CENTRE COMMERCIAL | <a href="/pages/fdl-privacy-policy" target="_blank" data-i18n="footer.privacy"></a> | <a data-i18n="footer.power"></a><a href="//www.mallmaverick.com/" target="_blank"> Mall Maverick</a>     
             </span>
             <a href="http://www.cushmanwakefield.ca/fr/" target="_blank">
                 <!--<img ALT="20vic_logo" class="pull-right" src="//mallmaverick.com/system/site_images/photos/000/000/775/original/20vic_logo.png?1381341465" />-->
