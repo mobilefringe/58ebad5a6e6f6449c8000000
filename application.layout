@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Update each web pages SEO to set values for {{meta_title}}, {{meta_description}}, {{meta_keywords}} -->
+    <meta property="og:title" content="{{meta_title}}">
+    <meta property="og:description" content="{{meta_description}}">
+    <meta property="og:image" content="{{meta_image}}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,initial-scale=1">
+    <meta name="description" content="{{meta_description}}">
+    <meta name="keywords" content="{{meta_keywords}}">
+    <meta name="author" content="">
+    <title>{{meta_title}}</title>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-40014802-32', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+    <script>
+        /**
+        * Function that tracks a click on an outbound link in Analytics.
+        * This function takes a valid URL string as an argument, and uses that URL string
+        * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+        * using 'navigator.sendBeacon' in browser that support it.
+        */
+        var trackOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon'
+            });
+        }
+    </script>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: //bootswatch.com/flatly/ -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        
+    <!--CSS-->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" >
+    <link href="//codecloud.cdn.speedyrails.net/sites/5841df6b6e6f640488010000/text/css/1478472594000/lightbox.min.css" rel="stylesheet">
+    <link href="//codecloud.cdn.speedyrails.net/sites/582e04fa6e6f644b9c000000/text/css/1432640222000/smoothzoom.css" rel="stylesheet">
+    <link href="/application.css" rel="stylesheet">
+    
+    <!--Javascript-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--Header -->
+        <div class="header">
+            <!-- iphone header -->
+            <div class="visible-xs-block mobile_header top_nav row-fluid" >                
+                <div class="background_bar"></div>
+                    <button type="button" data-toggle="dropdown" class="pull-right">
+                        <i class="fa fa-align-justify fa-lg"></i>
+                    </button>
+                    <ul class="dropdown-menu bottom">                                
+                        <li class="mobile_menu_header" >
+                            <a href='' data-i18n="nav.stores"></a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/stores' data-i18n="nav.subnav.store_directory"></a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/map' data-i18n="nav.subnav.map"></a>
+                        </li>
+                           <li class="mobile_menu_item">
+                            <a href='/pages/fdl-blogue' data-i18n="nav.subnav.blog"></a>
+                        </li>
+                        <li class="mobile_menu_header" >
+                            <a href='' data-i18n="nav.promotions"></a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/promotions' data-i18n="nav.subnav.promotions"></a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/contests/fdl-contest' data-i18n="nav.subnav.contest"></a>             
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/pages/fdl-gagnants-des-concours' data-i18n="nav.subnav.competition"></a>
+                        </li>
+                        <li class="mobile_menu_header" >
+                            <a href='/events' data-i18n="nav.events"></a>
+                        </li>
+                        <li class="mobile_menu_header" >
+                            <a href='/pages/fdl-guest-services' data-i18n="nav.services"></a>
+                        </li>      
+                        <li class="mobile_menu_header" >
+                            <a href='/jobs' data-i18n="nav.careers"></a>
+                        </li>         
+                        <li class="mobile_menu_header" >
+                            <a href='' data-i18n="nav.about"></a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/hours' data-i18n="nav.subnav.hours"></a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/pages/fdl-mall-info' data-i18n="nav.subnav.mall_info"></a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/pages/fdl-accessibility'>Accessibilité</a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/pages/fdl-contact-us'>Nous joindre</a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/pages/fdl-carte-cadeau'>Carte-Cadeau</a>
+                        </li>
+                        <li class="mobile_menu_item">
+                          <a href='/pages/fdl-location'>Location</a>
+                        </li>
+                        <li class="mobile_menu_item">
+                          <a href='/pages/fdl-point-de-depot-de-produits-electroniques'>Espace vert</a>
+                        </li>
+                    </ul>
+                    <a id="mobile_logo" href="/">
+                        <img class="mobile_logo" ALT="mobile_logo" src="//codecloud.cdn.speedyrails.net/sites/58ebad5a6e6f6449c8000000/image/png/1491841221000/fleurdelys.png" />
+                    </a>
+                </div>
+                <!-- iphone header END --> 
+                <!--Top Nav Dynamic-->
+                <div class="hidden-xs top_nav custom_dropdown full_header">
+                    <div class="brand_nav">
+                        <div class ="row-fluid">
+                            <div class="trim_screen">
+                                <!--<div class="select_locale_parent pull-right">-->
+                                <!--    <label for="locale_select" style="display:none"></label>-->
+                                <!--    <select id="locale_select">                        -->
+                                <!--        <option value="fr">Français</option>-->
+                                <!--        <option value="en">English</option>-->
+                                <!--    </select>                    -->
+                                <!--</div>-->
+                                <div class="select_parent pull-right">
+                                    <label for="brand_select" style="display:none">select brand</label>
+                                    <select id="brand_select">
+                                        <script id="brand_select_template" type="x-tmpl-mustache/text">
+                                            {%raw%}
+                                            <option value="{{slug}}">{{name}}</option>
+                                            {%endraw%}
+                                        </script>
+                                    </select>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-xs row-fluid">
+	  	    <div class="trim_screen nav_container" id="site_nav">              
+                <a id="centre_logo" href="/">
+                    <img ALT="centre_logo" src="//codecloud.cdn.speedyrails.net/sites/58ebad5a6e6f6449c8000000/image/png/1491841221000/fleurdelys.png" style="max-width:95%" />
+                </a>
+                <ul>                  
+                    <li class="dropdown">
+                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.stores"></button>                                             
+                        <ul class="dropdown-menu">                            
+                            <li>
+                                <a class="nav_a" href='/stores' target='_self'><span data-i18n="nav.subnav.store_directory"></span></a>             
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/map' target='_self'><span data-i18n="nav.subnav.map"></span></a>
+                            </li>
+                             <li>
+                                <a class="nav_a" href='/pages/fdl-blogue' target='_self'><span data-i18n="nav.subnav.blog"></span></a>
+                            </li>
+                        </ul>
+                    </li>               
+                    <li class="dropdown">
+                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.promotions"></button>
+                        <ul class="dropdown-menu">                            
+                            <li>
+                                <a class="nav_a" href='/promotions' target='_self'><span data-i18n="nav.subnav.promotions"></span></a>             
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/contests/fdl-contest' target='_self'><span data-i18n="nav.subnav.contest"></span></a>             
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/fdl-gagnants-des-concours' target='_self'><span data-i18n="nav.subnav.competition"></span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>                        
+                        <button class="btn-nav" onclick="window.location.href='/events'" data-i18n="nav.events"></button>
+                    </li>
+                    <li>                        
+                        <button class="btn-nav" onclick="window.location.href='/pages/fdl-guest-services'" data-i18n="nav.services"></button>
+                    </li>            
+                    <li>                        
+                        <button class="btn-nav" onclick="window.location.href='/jobs'" data-i18n="nav.careers"></button>
+                    </li>             
+                    <li class="dropdown">
+                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.about"></button>                                              
+                        <ul class="dropdown-menu" style="right:0px; left:auto;">                            
+                            <li>
+                                <a class="nav_a" href='/hours' target='_self'>Heures</a>
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/fdl-mall-info' target='_self'>A propos du centre</a>
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/fdl-accessibility' target='_self'>Accessibilité</a>
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/fdl-contact-us' target='_self'>Nous joindre</a>
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/fdl-carte-cadeau' target='_self'>Carte-Cadeau</a>
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/fdl-location' target='_self'>Location</a>
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/fdl-point-de-depot-de-produits-electroniques' target='_self'>Espace vert</a> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+		   	</div>                 
+		</div>          
+    </header>
+    
+    <div class="trim_screen">
+        <div class=" main_content row-fluid">
+            <div class="col-md-9">
+                {{yield}}
+            </div>
+    
+            <div class="mobile_container">
+                <div class="col-md-3">
+                    <div class="hour_box">  
+                        <div class="hour_info">
+                            <label for="hours_today" class="feature_label" data-i18n="general.hours"></label>
+                            <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                            <div id="home_hours_container" class="home_hours_info">
+                                <script id="home_hours_template" type="x-tmpl-mustache/text">
+                                    {%raw%}
+                                    <span class="hour_title">{{weekday}}</span>
+                                    <span class="hour_info">{{h}}</span>
+                                    {%endraw%}
+                                </script>
+                            </div>
+                            <div class="home_hours_info" id="prop_phone_container">
+                                <script id="prop_phone_template" type="x-tmpl-mustache/text">
+                                    {%raw%}
+                                    <span class="hour_title" data-i18n="general.telephone"></span>
+                                    <span class="hour_info hidden-xs">{{contact_phone}}</span>
+                                    <span class="hour_info visible-xs-inline-block">
+                                        <a href="tel:{{contact_phone}}">{{contact_phone}}</a>    
+                                    </span>
+                                    {%endraw%}
+                                </script>
+                            </div>
+                            <a href="/hours" class="check_hours" data-i18n="general.holiday_hours"></a>
+                        </div>
+                    </div> 
+                    <div class="right_feature_box">
+                        <div class="feature_box" id="feature_item">
+                            <script id="feature_item_template" type="x-tmpl-mustache/text">
+                                {%raw%}
+                                <span class="feature_label">{{name}}</span>
+                                <a href="{{url}}">
+                                    <img alt="feature_image" src="{{image_url}}" />
+                                </a>
+                                {%endraw%}
+                            </script>
+                        </div>
+                        <div class="feature_box" id="feature_item_fr">
+                            <script id="feature_item_template_fr" type="x-tmpl-mustache/text">
+                                {%raw%}
+                                <span class="feature_label">{{name}}</span>
+                                <a href="{{url}}">
+                                    <img alt="feature_image" src="{{image_url}}" />
+                                </a>
+                                {%endraw%}
+                            </script>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+    <div class="line_break"></div>
+    <div class="row-fluid">
+        <div class="trim_screen">
+            <div class="feature_links" id="home_feature">
+                <script id="home_feature_template" type="x-tmpl-mustache/text">
+                    {%raw%}
+                    <div class="col-sm-6">
+                        <div class="img_container feature_box long_feature_box">
+                            <a href="{{url}}">
+                                <img class="feature_image" alt="" src="{{image_url}}">
+                                <div class="long_feature_label">
+                                    {{name}}
+                                </div>
+                            </a>
+                        </div>
+                    </div> 
+                    {%endraw%}
+                </script>   
+            </div>
+            <div class="feature_links" id="home_feature_fr">
+                <script id="home_feature_template_fr" type="x-tmpl-mustache/text">
+                    {%raw%}
+                    <div class="col-sm-6">
+                        <div class="img_container feature_box long_feature_box">
+                            <a href="{{url}}">
+                                <img class="feature_image" alt="" src="{{image_url}}">
+                                <div class="long_feature_label">
+                                    {{name}}
+                                </div>
+                            </a>
+                        </div>
+                    </div> 
+                    {%endraw%}
+                </script>   
+            </div>
+        </div>
+    </div>
+    <div class="line_break"></div>
+    
+    <!-- Rohingya Crisis BANNER -->
+    <!--<div class="trim_screen">-->
+    <!--    <a id="track_link" href="https://secure.humanitariancoalition.ca/index.php?lang=fr&source_form=20vic/" target="_blank">-->
+    <!--        <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/5af4852c6e6f6403090b0000/image/jpeg/1510252748000/Rohingya_fr.jpg" alt=""/>-->
+    <!--    </a>-->
+    <!--</div>-->
+
+    <footer>
+        <div class="bottom_nav trim_screen">
+        	<div class="row-fluid">
+                <div class="col-sm-4">
+                    <div class="hidden-xs special_box">
+                        <div>
+                            <label for="facebook_image_id">                     
+                                <i class="fa fa-facebook-official social_icon" aria-hidden="true"></i>
+                                FACEBOOK
+                            </label>
+                        </div>
+                        <div class="fb-page" data-href="https://www.facebook.com/centrecommercialfdl/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/centrecommercialfdl/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/centrecommercialfdl/">Fleur de Lys centre commercial</a></blockquote></div>
+                    </div>
+                    <div class="social_links_mobile visible-xs-block">
+                        <a href="https://www.facebook.com/centrecommercialfdl" target="_blank">
+                            <i class="fa fa-facebook-official social_icon" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="newsletter_box">
+                        <form action=https://mobilefringe.createsend.com/t/d/s/ykblt/ method="post" id="subForm">
+                            <label for="newsletter_box_id">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                ABONNEZ-VOUS ET OBTENEZ DES NOUVELLES DE NOUS!
+                            </label>                
+                            <span>
+                                Abonnez-vous à notre lettre de nouvelles et obtenez des offres exclusives que vous trouverez nulle part ailleurs, directement dans votre boîte de réception.
+                            </span>
+                            <label for="fieldEmail" style="display:none"> subscribe email </label>
+                            <input id="fieldEmail" name=cm-ykblt-ykblt type="email" required placeholder="Votre Courriel" />  
+                            <span>
+                                <label style="display:none" for="agree_terms">Subscribe</label>
+                                    <input type="checkbox" class="info_check" id="agree_terms" /> 
+                                    J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial
+                            </span>
+            				<br />						
+                            <button class="btn"/>Abonnez-vous</button>                      
+                            <br />
+            				<span id="success_subscribe">Merci de votre abonnement à notre lettre de nouvelles.</span>
+                        </form>
+                    </div>
+                </div>
+        		<div class="col-sm-4">   
+                    <div class="nav_site_map pull-right hidden-xs">
+                        <label for="nav_site_map_link_id" >NAVIGATION</label>
+                        <div class="site_map_cols">
+                            <div class="nav_sitemap_item">
+                                <span class="site_map_title" data-i18n="nav.stores"></span>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/stores' target='_self' data-i18n="nav.subnav.store_directory"></a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/map' target='_self' data-i18n="nav.subnav.map"></a>
+                                 <a class="site_map_submenu" href='/pages/fdl-blogue' target='_self' data-i18n="nav.subnav.blog"></a>
+                            </div>
+                            <div class="nav_sitemap_item">
+                                <span class="site_map_title">
+                                    <a href="/promotions" data-i18n="nav.promotions"></a>  
+                                </span>                                 
+                            </div>
+                            <div class="nav_sitemap_item">
+                                <span class="site_map_title">
+                                    <a href="/events" data-i18n="nav.events"></a>                                
+                                </span>
+                            </div>
+                            <div class="nav_sitemap_item">
+                                <span class="site_map_title">
+                                    <a href="/pages/fdl-guest-services" data-i18n="nav.services"></a>                                
+                                </span>
+                            </div>
+                            <div class="nav_sitemap_item">
+                                <span class="site_map_title">
+                                    <a href="/jobs" data-i18n="nav.careers"></a>
+                                </span>
+                            </div>
+                            <div class="nav_sitemap_item">
+                                <span class="site_map_title" data-i18n="nav.about"></span>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/hours' target='_self' data-i18n="nav.subnav.hours"></a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/fdl-mall-info' target='_self' data-i18n="nav.subnav.mall_info"></a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/fdl-accessibility' target='_self'>Accessibilité</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='pages/fdl-contact-us' target='_self'>Nous joindre</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/fdl-carte-cadeau' target='_self'>Carte-Cadeau</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/fdl-location' target='_self'>Location</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/fdl-point-de-depot-de-produits-electroniques' target='_self'>Espace vert</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line_break hidden-xs"></div>
+        	</div>
+        </div>
+        <div class="footer trim_screen">
+            <span>
+                &copy; <span id="current_year" style="padding:0"></span> FLEUR DE LYS CENTRE COMMERCIAL | <a href="/pages/fdl-privacy-policy" target="_blank" data-i18n="footer.privacy"></a> | <a data-i18n="footer.power"></a><a href="http://www.mallmaverick.com/" target="_blank"> Mall Maverick</a>     
+            </span>
+            <a href="http://www.cushmanwakefield.ca/fr/" target="_blank">
+                <!--<img ALT="20vic_logo" class="pull-right" src="//mallmaverick.com/system/site_images/photos/000/000/775/original/20vic_logo.png?1381341465" />-->
+                <img src="//codecloud.cdn.speedyrails.net/sites/5af4852c6e6f6403090b0000/image/png/1510070372000/CW Logos-_CW_Blackredlogo1.png" class="" alt="" style="width:140px;">
+            </a>
+        </div>
+    </footer>
+    
+    <!--Javascript-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/i18next/1.6.3/i18next-1.6.3.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>
+    <script src="//www.google.com/recaptcha/api.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5841df6b6e6f640488010000/text/javascript/1478472594000/lightbox.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/text/javascript/1485895011000/moment-with-locales.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/58fe54076e6f6458dc010000/application/x-javascript/1493132969000/js.cookie.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    
+    <!--MallMaverick SDK-->
+    <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
+    <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
+    
+    <script src="/application.js" type="text/javascript"></script>
+    <script src="/helper.js" type="text/javascript"></script>
+
+    <script>
+        setEndPoint('//fdl.mallmaverick.com/api/v4/fdl/all.json');
+
+        Cookies.set('primary_locale', 'fr-CA');
+        Cookies.set('secondary_locale', 'en-CA');
+
+        if(getRequestParam('locale') == 'fr'){
+            setCurrentLocale(Cookies.get('primary_locale'));
+        } else if(getRequestParam('locale') == 'en'){
+            setCurrentLocale(Cookies.get('secondary_locale'));
+        }
+    </script>
+    
+    <div id="fb-root"></div>
+ 
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!--<script>-->
+    <!--    $("#track_link").click( function() {-->
+    <!--        trackOutboundLink('https://secure.humanitariancoalition.ca/index.php?lang=fr&source_form=20vic/');-->
+    <!--    });-->
+    <!--</script>-->
+
+</body>
+
+</html>
