@@ -54,7 +54,7 @@
 
             <div class="margin_15px show_phone"></div>
             <hr class="separator2 show_phone"/>
-            <p class="new_store_subheading hstc">RECENT POSTS</p>
+            <p class="new_store_subheading hstc">ARTICLES RÉCENTS</p>
             <div id="side_links_container">
                 <script id="side_links_template" type="x-tmpl-mustache/text">
                     <p><a href="/{{slug}}" class="trending_side_link">{{title}}</a></p>
