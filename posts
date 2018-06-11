@@ -1,5 +1,5 @@
 <div class="container-fluid container_60">
-    <h1>Trending</h1>
+    <h1>Tendances</h1>
     <div class="line"></div>
     <div class="row" id="trending_container">
         <script id="trending_template" type="x-tmpl-mustache/text">
