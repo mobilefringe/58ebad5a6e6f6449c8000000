@@ -26,7 +26,7 @@
             <p class="new_store_subheading text-center hidden_now" id = all_loaded>NO MORE POSTS</p>
             <p class="text-center" id="loaded_posts">
                 <a href="#" class="new_store_subheading" id="load_more_posts">
-                    LOAD MORE POSTS
+                    EN LIRE ENCORE PLUS
                     <br/>
                     <i class="fa fa-long-arrow-down"></i>    
                 </a>
