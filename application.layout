@@ -77,7 +77,7 @@
                             <a href='/jobs' data-i18n="nav.careers"></a>
                         </li> 
                         <li class="mobile_menu_header">
-                            <a href='/pages/fdl-blogue' data-i18n="nav.subnav.blog"></a>
+                            <a href='/posts' data-i18n="nav.subnav.blog"></a>
                         </li>
                         <li class="mobile_menu_header" >
                             <a href='' data-i18n="nav.promotions"></a>
