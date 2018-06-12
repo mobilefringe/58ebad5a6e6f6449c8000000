@@ -65,6 +65,7 @@
                 var posts_length = renderPostsByTag("#blog_container", "#blog_template", published_posts, slug);
                 renderPosts2("#side_links_container", "#side_links_template", side_posts.slice(0,3));
                 var categories = getTagCategoris(published_posts);
+                console.log(categories);
                 renderTags("#blog_links_container", "#blog_links_template", categories);
                 console.log(posts_length);
                 load_more_2(1, posts_length);
