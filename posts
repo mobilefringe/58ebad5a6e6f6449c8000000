@@ -63,7 +63,7 @@
             <p class="new_store_subheading hstc">CATÉGORIES</p>
             <div id="blog_links_container">
                 <script id="blog_links_template" type="x-tmpl-mustache/text">
-                    <p><a href="/trending_categories/{{name}}" class="trending_side_link">{{name}}</a></p>
+                    <p><a href="/trending_categories/{{slug}}" class="trending_side_link">{{name}}</a></p>
                 </script>
             </div>
         </div>
