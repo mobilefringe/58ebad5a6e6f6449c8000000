@@ -396,6 +396,11 @@
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
+                                    <a href="/jobs" data-i18n="nav.careers"></a>
+                                </span>
+                            </div>
+                            <div class="nav_sitemap_item">
+                                <span class="site_map_title">
                                     <a href="/promotions" data-i18n="nav.promotions"></a>  
                                 </span>                                 
                             </div>
@@ -409,11 +414,7 @@
                                     <a href="/pages/fdl-guest-services" data-i18n="nav.services"></a>                                
                                 </span>
                             </div>
-                            <div class="nav_sitemap_item">
-                                <span class="site_map_title">
-                                    <a href="/jobs" data-i18n="nav.careers"></a>
-                                </span>
-                            </div>
+                            
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title" data-i18n="nav.about"></span>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
