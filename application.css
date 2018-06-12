@@ -448,6 +448,7 @@ legend{
     display: block;
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 11pt;
+    text-transform:capitalize;
 }
 #site_nav ul.dropdown-menu>li>a {
     margin: 3px;
