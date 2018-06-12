@@ -57,10 +57,7 @@
         function renderAll (){
             var blogs = getBlogList().sortBy(function(o){ return o.name });
             var pathArray = window.location.pathname.split( '/' );
-            console.log(decodeURI(pathArray[pathArray.length-1]));
-            // escape
             var slug = decodeURI(pathArray[pathArray.length-1].replace(/%20/g," "));
-            // _.replace(pathArray[pathArray.length-1],"%20"," ");
             console.log(slug);
             var posts = getBlogDataBySlug('fdl-shop-the-look');//getBlogDataBySlug(slug).posts;
             if(posts !== null && posts !== undefined) {
