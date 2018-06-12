@@ -423,6 +423,7 @@ legend{
     font-size:1.4em;
     font-size: 0.95em\9;
     border-radius: 5px;
+    text-transform:uppercase;
 }
 #site_nav li button.btn_nav:last-child{
     padding-right: 0px;
