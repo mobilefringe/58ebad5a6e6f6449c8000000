@@ -604,7 +604,7 @@ legend{
     font-weight: bolder;
     display:block;
     text-align: left;
-    text-decoration:uppercase;
+    text-transform: uppercase;
 }
 .bottom_nav .nav_site_map .site_map_submenu{
     font-family: futura_light, futura_light_ie;
