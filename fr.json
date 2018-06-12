@@ -1,0 +1,63 @@
+{
+	"app": {
+		"name": "i18next",
+		"privacy_policy": "Politique de confidentialité"
+	},
+	"nav": {
+		"stores": "BOUTIQUES",
+        "promotions": "PROMOTIONS",
+        "events": "ÉVÉNEMENTS",
+        "services": "TOUS LES SERVICES",
+        "careers": "Carrière",
+        "about": "A PROPOS DE NOUS",
+		"subnav": {
+			"store_directory": "Liste des boutiques",
+			"map": "Plan du centre",
+			"blog": "Blogue",
+			"promotions": "Promotions",
+			"contest": "Concours",
+			"competition": "Gagnants des concours",
+            "hours": "Heures",
+            "leasing": "Information de location",
+            "mall_info": "A propos du centre",
+            "contact": "Nous Joindre"
+		}
+	},
+	"days_of_week": {
+		"0": "Sunday",
+		"1": "Monday",
+		"2": "Tuesday",
+		"3": "Wednesday",
+		"4": "Thursday",
+		"5": "Friday",
+		"6": "Saturday"
+	},
+	"pages": {
+	    "stores_title": "LISTE DES BOUTIQUES",
+	    "stores_category": "CATÉGORIE",
+	    "stores_scrolltop": "Aller en Haut",
+	    "storedetail_website": "SITE",
+	    "storedetail_promos": "PROMOTIONS DE MAGASIN",
+	    "storedetail_jobs": "CARRIÈRES",
+	    "map_title": "Plan du Centre",
+	    "promotions_mall_title": "Promotions du centre",
+	    "promotions_store_title": "Boutique Promotions",
+	    "promotions_mall_none": "S'il vous plaît revenir bientôt pour plus de promotions mall.",
+	    "promotions_store_none": "S'il vous plaît revenir bientôt pour plus de promotions de la boutique.",
+	    "events_title": "Événements",
+	    "events_none": "Veuillez revenir bientôt pour les événements du centre",
+	    "jobs_title": "Carrières",
+	    "jobs_none": "Il n'y a actuellement aucune offre d'emploi disponible. Veuillez revenir bientôt.",
+	    "hours_title": "Heures",
+	    "hours_holiday_title": "Heures de fête"
+	},
+	"general": {
+	    "hours": "HEURES",
+	    "telephone": "Téléphone",
+	    "holiday_hours": "Horaires des Fériés"
+	},
+	"footer": {
+        "privacy": "POLITIQUE DE CONFIDENTIALITÉ",
+		"power": "Propulsé par"
+	}
+}
