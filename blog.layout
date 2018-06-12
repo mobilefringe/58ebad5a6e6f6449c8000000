@@ -324,7 +324,7 @@
                                     J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial
                             </span>
             				<br />						
-                            <button class="btn"/>Abonnez-vous</button>                      
+                            <button class="btn">Abonnez-vous</button>                      
                             <br />
             				<span id="success_subscribe">Merci de votre abonnement à notre lettre de nouvelles.</span>
                         </form>
