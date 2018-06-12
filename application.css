@@ -1799,6 +1799,7 @@ td.stores_pin{
 .mobile_menu_header {
     font-size: 13pt;
     font-weight: bold;
+    text-transform: uppercase;
     color: #000000;
     margin: 0px;
     padding: 7px;
