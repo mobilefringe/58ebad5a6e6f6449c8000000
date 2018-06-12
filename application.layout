@@ -73,12 +73,12 @@
                         <li class="mobile_menu_item">
                             <a href='/map' data-i18n="nav.subnav.map"></a>
                         </li>
-                        <li class="mobile_menu_header" >
+                        <li class="mobile_menu_item" >
                             <a href='/jobs' data-i18n="nav.careers"></a>
                         </li> 
-                           <li class="mobile_menu_item">
-                            <a href='/pages/fdl-blogue' data-i18n="nav.subnav.blog"></a>
-                        </li>
+                        <!--   <li class="mobile_menu_item">-->
+                        <!--    <a href='/pages/fdl-blogue' data-i18n="nav.subnav.blog"></a>-->
+                        <!--</li>-->
                         <li class="mobile_menu_header" >
                             <a href='' data-i18n="nav.promotions"></a>
                         </li>
