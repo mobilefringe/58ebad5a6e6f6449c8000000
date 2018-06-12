@@ -67,7 +67,7 @@
                 var categories = getTagCategoris(published_posts);
                 renderTags("#blog_links_container", "#blog_links_template", categories);
                 console.log(posts_length);
-                // load_more_2(1, posts_length);
+                load_more_2(1, posts_length);
                 
                 $('#load_more_posts').click(function(e){
                     var i = $('#num_loaded').val();
