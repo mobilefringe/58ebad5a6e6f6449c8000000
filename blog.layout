@@ -338,7 +338,12 @@
                                 <a class="site_map_submenu" href='/stores' target='_self' data-i18n="nav.subnav.store_directory"></a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/map' target='_self' data-i18n="nav.subnav.map"></a>
-                                 <a class="site_map_submenu" href='/pages/fdl-blogue' target='_self' data-i18n="nav.subnav.blog"></a>
+                                 <a class="site_map_submenu" href='/jobs' target='_self' data-i18n="nav.careers"></a>
+                            </div>
+                            <div class="nav_sitemap_item">
+                                <span class="site_map_title">
+                                    <a href="/posts" data-i18n="nav.subnav.blog"></a>
+                                </span>
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
@@ -355,11 +360,7 @@
                                     <a href="/pages/fdl-guest-services" data-i18n="nav.services"></a>                                
                                 </span>
                             </div>
-                            <div class="nav_sitemap_item">
-                                <span class="site_map_title">
-                                    <a href="/jobs" data-i18n="nav.careers"></a>
-                                </span>
-                            </div>
+                            
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title" data-i18n="nav.about"></span>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
