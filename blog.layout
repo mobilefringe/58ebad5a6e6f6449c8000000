@@ -74,8 +74,11 @@
                         <li class="mobile_menu_item">
                             <a href='/map' data-i18n="nav.subnav.map"></a>
                         </li>
-                           <li class="mobile_menu_item">
-                            <a href='/pages/fdl-blogue' data-i18n="nav.subnav.blog"></a>
+                        <li class="mobile_menu_item" >
+                            <a href='/jobs' data-i18n="nav.careers"></a>
+                        </li> 
+                        <li class="mobile_menu_header">
+                            <a href='/posts' data-i18n="nav.subnav.blog"></a>
                         </li>
                         <li class="mobile_menu_header" >
                             <a href='' data-i18n="nav.promotions"></a>
@@ -95,9 +98,7 @@
                         <li class="mobile_menu_header" >
                             <a href='/pages/fdl-guest-services' data-i18n="nav.services"></a>
                         </li>      
-                        <li class="mobile_menu_header" >
-                            <a href='/jobs' data-i18n="nav.careers"></a>
-                        </li>         
+                                
                         <li class="mobile_menu_header" >
                             <a href='' data-i18n="nav.about"></a>
                         </li>
@@ -171,11 +172,14 @@
                             <li>
                                 <a class="nav_a" href='/map' target='_self'><span data-i18n="nav.subnav.map"></span></a>
                             </li>
-                             <li>
-                                <a class="nav_a" href='/pages/fdl-blogue' target='_self'><span data-i18n="nav.subnav.blog"></span></a>
+                            <li>
+                                <a class="nav_a" href='/jobs' target='_self'><span data-i18n="nav.careers"></span></a>
                             </li>
                         </ul>
-                    </li>               
+                    </li>   
+                    <li>                        
+                        <button class="btn-nav" onclick="window.location.href='/posts'" data-i18n="nav.subnav.blog"></button>
+                    </li> 
                     <li class="dropdown">
                         <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.promotions"></button>
                         <ul class="dropdown-menu">                            
@@ -196,9 +200,7 @@
                     <li>                        
                         <button class="btn-nav" onclick="window.location.href='/pages/fdl-guest-services'" data-i18n="nav.services"></button>
                     </li>            
-                    <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/jobs'" data-i18n="nav.careers"></button>
-                    </li>             
+                                
                     <li class="dropdown">
                         <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.about"></button>                                              
                         <ul class="dropdown-menu" style="right:0px; left:auto;">                            
