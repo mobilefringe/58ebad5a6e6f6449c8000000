@@ -395,7 +395,7 @@
                                  <a class="site_map_submenu" href='/jobs' target='_self' data-i18n="nav.careers"></a>
                             </div>
                             <div class="nav_sitemap_item">
-                                <span class="site_map_submenu">
+                                <span class="site_map_title">
                                     <a href="/posts" data-i18n="nav.subnav.blog"></a>
                                 </span>
                             </div>
