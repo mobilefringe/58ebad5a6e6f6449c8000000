@@ -396,7 +396,7 @@
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
-                                    <a href="/pages/fdl-blogue" data-i18n="nav.subnav.blog"></a>
+                                    <a href="/posts" data-i18n="nav.subnav.blog"></a>
                                 </span>
                             </div>
                             <div class="nav_sitemap_item">
