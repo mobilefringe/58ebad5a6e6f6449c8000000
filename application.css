@@ -665,6 +665,7 @@ legend{
 .fb_iframe_widget {
     display: inline-block;
     position: relative;
+        width: 100%;
 }
 .fb_iframe_widget_fluid span {
     width: 100%!important;
