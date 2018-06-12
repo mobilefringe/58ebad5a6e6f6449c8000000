@@ -177,7 +177,7 @@
                         </ul>
                     </li>   
                     <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/pages/fdl-blogue'" data-i18n="nav.subnav.blog"></button>
+                        <button class="btn-nav" onclick="window.location.href='/posts'" data-i18n="nav.subnav.blog"></button>
                     </li> 
                     <li class="dropdown">
                         <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.promotions"></button>
