@@ -173,39 +173,39 @@ function show_content(){
     }
 }
 
-function submit_contest(slug) {
-    var contest_entry = {};
-    var contest_data = {};
-    contest_data.first_name = $('#first_name').val();
-    contest_data.last_name = $('#last_name').val();
-    contest_data.email = $('#email').val();
-    contest_data.phone = $('#phone_number').val();
-    contest_data.mailing_address = $('#mailing_address').val();
-    contest_data.city = $('#city').val();
-    contest_data.postal_code = $('#postal_code').val();
-    contest_data.birthday = $('#birthday').val();
-    contest_data.newsletter = $('#newsletter_signup').prop("checked");
-    contest_entry.contest = contest_data;
+// function submit_contest(slug) {
+//     var contest_entry = {};
+//     var contest_data = {};
+//     contest_data.first_name = $('#first_name').val();
+//     contest_data.last_name = $('#last_name').val();
+//     contest_data.email = $('#email').val();
+//     contest_data.phone = $('#phone_number').val();
+//     contest_data.mailing_address = $('#mailing_address').val();
+//     contest_data.city = $('#city').val();
+//     contest_data.postal_code = $('#postal_code').val();
+//     contest_data.birthday = $('#birthday').val();
+//     contest_data.newsletter = $('#newsletter_signup').prop("checked");
+//     contest_entry.contest = contest_data;
     
-    var propertyDetails = getPropertyDetails();
-    var host = propertyDetails.mm_host.replace("http:", "");
-    var action = host + "/contests/" + slug + "/create_js_entry"
-    $.ajax({
-        url : action,
-        type: "POST",
-        data : contest_entry,
-        success: function(data){
-            // $('#succes_msg').show();
-            // $('.contest_btn').prop('disabled', false);
-            // $('#contest_form').trigger('reset');
-            // $('html, body').animate({scrollTop : 0},800);
-            window.location("/concours_merci");
-        },
-        error: function (data){
-            alert('An error occured while processing your request. Please try again later!')
-        }
-    });
-}
+//     var propertyDetails = getPropertyDetails();
+//     var host = propertyDetails.mm_host.replace("http:", "");
+//     var action = host + "/contests/" + slug + "/create_js_entry"
+//     $.ajax({
+//         url : action,
+//         type: "POST",
+//         data : contest_entry,
+//         success: function(data){
+//             // $('#succes_msg').show();
+//             // $('.contest_btn').prop('disabled', false);
+//             // $('#contest_form').trigger('reset');
+//             // $('html, body').animate({scrollTop : 0},800);
+//             window.location("/concours_merci");
+//         },
+//         error: function (data){
+//             alert('An error occured while processing your request. Please try again later!')
+//         }
+//     });
+// }
 
 function submit_contest(slug) {
     var contest_entry = {};
@@ -231,9 +231,10 @@ function submit_contest(slug) {
         type: "POST",
         data : contest_entry,
         success: function(data){
-           $('#succes_msg').show();
-           $('.submit_btn').prop('disabled', false);
-           $('#contest_form').trigger('reset');
+        //   $('#succes_msg').show();
+        //   $('.submit_btn').prop('disabled', false);
+        //   $('#contest_form').trigger('reset');
+           window.location("/concours_merci");
         },
         error: function (data){
             alert('An error occured while processing your request. Please try again later!')
