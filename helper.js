@@ -234,7 +234,7 @@ function submit_contest(slug) {
         //   $('#succes_msg').show();
         //   $('.submit_btn').prop('disabled', false);
         //   $('#contest_form').trigger('reset');
-           window.location("/concours_merci");
+           window.location.replace("/concours_merci");
         },
         error: function (data){
             alert('An error occured while processing your request. Please try again later!')
