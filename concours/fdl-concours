@@ -96,7 +96,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="margin_40"></div>
-                        <p class="hidden_now" id="succes_msg" style="color: #ef3423;">Merci pour votre participation.</p>
+                        <p class="hidden_now" id="succes_msg" style="color: #ef3423;">Merci pour votre participation!</p>
                     </div>
                 </div>
             </form>
