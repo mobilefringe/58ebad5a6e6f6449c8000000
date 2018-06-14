@@ -1,0 +1,16 @@
+<div class="promo_page">
+    <h1 class="page_title">Concours</h1> 
+    <hr>
+    <h2 style="color: #ef3423;">Merci pour votre participation!</h2>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        
+        function renderAll(){
+            show_content();
+        }
+        
+        loadMallDataCached(renderAll);
+    });
+</script>
