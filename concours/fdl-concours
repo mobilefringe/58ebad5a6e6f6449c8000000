@@ -1,0 +1,150 @@
+<div class="promo_page">
+    <h1 id="contestName" class="page_title"></h1> <!-- Contests -->
+    <hr>
+    <!-- No Contest Message -->
+    <h3 id="no_contest" class="hidden_now">Fleur de Lys fera un autre concours prochainement. Restez à l’affût pour plus de détails!</h3> 
+    <div id="contest_container">
+	    <script id="contest_template" type="x-tmpl-mustache/text">
+            <div>
+                {{#img_url}}
+                <img class="contest_img" src="{{img_url}}" alt="{{name}}" />
+                {{/img_url}}
+                {{#rich_description}}
+                <div class="contest_description"> {{{rich_description}}}</div>
+                {{/rich_description}}
+                <div class="line_break">&nbsp;</div>
+            </div>
+
+            <form id="contest_form">
+                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                <input type="hidden" name="cm-name" id="cm-name" />
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1 class="page_title">Inscription au concours</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="first_name">Prénom *</label>
+                        <input class="contest_info" id="first_name" name="contest[first_name]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="1"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="last_name">Nom *</label>
+                        <input class="contest_info" id="last_name" name="contest[last_name]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="2"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="address">Adresse</label>
+                        <input class="contest_info" id="address" name="contest[mailing_address]" type="text" value="" tabindex="3"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="city">Ville</label>
+                        <input class="contest_info" id="city" name="contest[city]" type="text"  value="" tabindex="4"/>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="province">Province</label>
+                        <input class="contest_info" id="province" name="contest[province]" type="text"  value="Québec" tabindex="5"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">  
+                        <label for="zip_code">Code Postal *</label>
+                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="6"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="phone_number">Téléphone *</label>
+                        <input class="contest_info" id="phone_number" name="contest[phone]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="7"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="email">Courriel *</label>
+                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Merci d’inscrire un courriel valide" data-validation="custom" tabindex="8"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 textarea">
+                        <label for="note">Réponse *</label>
+                        <textarea class="contest_info" id="note" name="contest[notes]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="9"/></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">    
+                        <label>
+                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="10"/> 
+                            Oui, j’ai lu la <a href="/pages/fdl-privacy-policy" target="_blank">politique de confidentialité</a> et accepte de recevoir des infolettres électroniques de Fleur de Lys centre commercial.
+                        </label>
+                        <div class="line_break">&nbsp;</div>
+                        <label class="contest_rules">
+                            <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="11"/> 
+                            Oui, j’ai lu et j’accepte le <a href="/pages/fdl-reglement-du-concours" target="_blank">règlement du concours</a>.
+                        </label>
+                        <div class="line_break">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="submit_btn caps btn" tabindex="12">Envoyer</button>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="margin_40"></div>
+                        <p class="hidden_now" id="succes_msg" style="color: #ef3423;">Merci pour votre participation.</p>
+                    </div>
+                </div>
+            </form>
+        </script>
+    </div>
+</div>
+<!--<input class="contest_info" id="note" name="contest[notes]" type="text" required data-validation="required" tabindex="9"/>-->
+<script>
+    $(document).ready(function(e){
+        init(e);
+        
+        function renderAll(){
+            var slug = "";
+            var contest_name = "";
+            var contest_details = _.filter(getContestList(), function(o) { 
+                o.img_url = "https://mallmaverick.cdn.speedyrails.net" + o.photo_url
+                slug = o.slug
+                contest_name = o.name
+                return o.show_on_slug === "fdl-contest"; 
+            });
+            contest_details = contest_details[0];
+            renderSingle("#contest_container", "#contest_template", contest_details);
+
+            $("#contestName").html(contest_name);
+            
+            $.validate({
+                lang : 'fr'
+            });
+            
+            $('#contest_form').submit(function(e){
+                e.preventDefault();
+                $('.submit_btn').prop('disabled', true);
+                submit_contest(slug);
+            });
+            
+            show_content();
+        }
+        
+        loadMallDataCached(renderAll); 
+        
+        function renderSingle(container, template, contest){
+            var item_list = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+        
+            var rendered = Mustache.render(template_html, contest);
+            item_list.push(rendered);
+            $(container).html(item_list.join(''));
+        }
+    });
+</script>
