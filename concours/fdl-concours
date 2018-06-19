@@ -38,22 +38,22 @@
                         <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="6"/>
                     </div>
                 </div>
-                // <div class="row">
-                //     <div class="col-sm-12">
-                //         <label for="address">Adresse</label>
-                //         <input class="contest_info" id="address" name="contest[mailing_address]" type="text" value="" tabindex="3"/>
-                //     </div>
-                // </div>
-                // <div class="row">
-                //     <div class="col-md-6">
-                //         <label for="city">Ville</label>
-                //         <input class="contest_info" id="city" name="contest[city]" type="text"  value="" tabindex="4"/>
-                //     </div>
-                //     <div class="col-md-6">
-                //         <label for="province">Province</label>
-                //         <input class="contest_info" id="province" name="contest[province]" type="text"  value="Québec" tabindex="5"/>
-                //     </div>
-                // </div>
+                <!--<div class="row">
+                    <div class="col-sm-12">
+                        <label for="address">Adresse</label>
+                        <input class="contest_info" id="address" name="contest[mailing_address]" type="text" value="" tabindex="3"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="city">Ville</label>
+                        <input class="contest_info" id="city" name="contest[city]" type="text"  value="" tabindex="4"/>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="province">Province</label>
+                        <input class="contest_info" id="province" name="contest[province]" type="text"  value="Québec" tabindex="5"/>
+                    </div>
+                </div>-->
                 <div class="row">
                     
                     <div class="col-sm-6">
