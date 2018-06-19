@@ -33,9 +33,9 @@
                         <label for="last_name">Nom *</label>
                         <input class="contest_info" id="last_name" name="contest[last_name]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="2"/>
                     </div>
-                    <div class="col-sm-6">  
-                        <label for="zip_code">Code Postal *</label>
-                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="6"/>
+                    <div class="col-sm-6">
+                        <label for="phone_number">Téléphone *</label>
+                        <input class="contest_info" id="phone_number" name="contest[phone]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="7"/>
                     </div>
                 </div>
                 <!--<div class="row">
@@ -56,10 +56,7 @@
                 </div>-->
                 <div class="row">
                     
-                    <div class="col-sm-6">
-                        <label for="phone_number">Téléphone *</label>
-                        <input class="contest_info" id="phone_number" name="contest[phone]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="7"/>
-                    </div>
+                    
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
