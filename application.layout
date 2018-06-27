@@ -372,7 +372,7 @@
                             <input id="fieldEmail" name=cm-ykblt-ykblt type="email" required placeholder="Votre Courriel" />  
                             <span>
                                 <label style="display:none" for="agree_terms">Subscribe</label>
-                                    <input type="checkbox" class="info_check" id="agree_terms" /> 
+                                    <input type="checkbox" required class="info_check" id="agree_terms" /> 
                                     J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial
                             </span>
             				<br />						
