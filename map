@@ -1,7 +1,7 @@
 <div>
 	<h1 class="page_title">PLAN DU CENTRE</h1> <!-- Centre Map -->
+	<label for="store_select_container" style="display: none">Select a Store</label>
 	<select class="mapper" id="store_select_container">
-	    <label for="store_select_container" style="display: none">Select a Store</label>
 	    <script id="store_select_template" type="x-tmpl-mustache/text">
             <option value="{{x_coordinate}},{{y_coordinate}},{{id}}" data-value="{{name}}">{{name}}</option>
         </script>
