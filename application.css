@@ -1226,6 +1226,11 @@ a.btn-prime {
     color: #000;
     // display: block;
     font-family: inherit;
+    .feature_label {
+        display: inline-block;
+        max-width: 100%;
+        font-weight: 700;
+    }
 }
 
 .hour_info a {
