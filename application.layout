@@ -60,7 +60,7 @@
             <!-- iphone header -->
             <div class="visible-xs-block mobile_header top_nav row-fluid" >                
                 <div class="background_bar"></div>
-                    <button type="button" data-toggle="dropdown" class="pull-right">
+                    <button type="button" data-toggle="dropdown" class="pull-right" aria-label="dropdown">
                         <i class="fa fa-align-justify fa-lg"></i>
                     </button>
                     <ul class="dropdown-menu bottom">                                
