@@ -25,7 +25,7 @@
                         <img src="//www.mallmaverick.com/system/site_images/photos/000/000/771/original/btn_promo.png?1381264332" alt="Button Promo" />
                     </a>
                     <a href="#job" class="pull-right hidden_now" id="job_show">
-                        <img src="//www.mallmaverick.com/system/site_images/photos/000/000/770/original/btn_job.png?1381264320" />
+                        <img src="//www.mallmaverick.com/system/site_images/photos/000/000/770/original/btn_job.png?1381264320" alt="Button Job"/>
                     </a> 
                 </h1>
                 <hr>
