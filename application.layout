@@ -384,7 +384,7 @@
                 </div>
         		<div class="col-sm-4">   
                     <div class="nav_site_map pull-right hidden-xs">
-                        <label for="nav_site_map_link_id" >NAVIGATION</label>
+                        <span class="heading" >NAVIGATION</span>
                         <div class="site_map_cols">
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title" data-i18n="nav.stores"></span>
