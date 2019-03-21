@@ -474,7 +474,7 @@ legend{
     padding: 0px 15px 15px;
 }
 
-.bottom_nav span{
+.bottom_nav label{
     color: black;
     font-size:1.5em;
     line-height:1.5em;
