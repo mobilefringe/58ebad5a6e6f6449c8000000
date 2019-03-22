@@ -80,8 +80,8 @@
                             Oui, j’ai lu la <a href="/pages/fdl-privacy-policy" target="_blank">politique de confidentialité</a> et accepte de recevoir des infolettres électroniques de Fleur de Lys centre commercial.
                         </label>
                         <div class="line_break">&nbsp;</div>
-                        <label for="agree_terms" class="contest_rules">
-                            <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" /> 
+                        <label for="agree_terms_letter" class="contest_rules">
+                            <input id="agree_terms_letter" type="checkbox" name="contest[contest_rules]" required data-validation="required" /> 
                             Oui, j’ai lu et j’accepte le <a href="/pages/fdl-reglement-du-concours" target="_blank">règlement du concours</a>.
                         </label>
                         <div class="line_break">&nbsp;</div>
