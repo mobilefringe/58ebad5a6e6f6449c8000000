@@ -293,10 +293,10 @@
                 <div class="col-sm-4">
                     <div class="hidden-xs special_box">
                         <div>
-                            <label for="facebook_image_id">                     
+                            <span class="heading"></span>                    
                                 <i class="fa fa-facebook-official social_icon" aria-hidden="true"></i>
                                 FACEBOOK
-                            </label>
+                            </span>
                         </div>
                         <div class="fb-page" data-href="https://www.facebook.com/centrecommercialfdl/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/centrecommercialfdl/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/centrecommercialfdl/">Fleur de Lys centre commercial</a></blockquote></div>
                     </div>
@@ -309,10 +309,10 @@
                 <div class="col-sm-4">
                     <div class="newsletter_box">
                         <form action=https://mobilefringe.createsend.com/t/d/s/ykblt/ method="post" id="subForm">
-                            <label for="newsletter_box_id">
+                            <span class="heading">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                                 ABONNEZ-VOUS ET OBTENEZ DES NOUVELLES DE NOUS!
-                            </label>                
+                            </span>                
                             <span>
                                 Abonnez-vous à notre lettre de nouvelles et obtenez des offres exclusives que vous trouverez nulle part ailleurs, directement dans votre boîte de réception.
                             </span>
@@ -332,7 +332,7 @@
                 </div>
         		<div class="col-sm-4">   
                     <div class="nav_site_map pull-right hidden-xs">
-                        <label for="nav_site_map_link_id" >NAVIGATION</label>
+                        <span class="heading">NAVIGATION</span>
                         <div class="site_map_cols">
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title" data-i18n="nav.stores"></span>
