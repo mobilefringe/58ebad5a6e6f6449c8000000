@@ -76,7 +76,7 @@
                 <div class="row">
                     <div class="col-sm-12">    
                         <label>
-                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="10"/> 
+                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> 
                             Oui, j’ai lu la <a href="/pages/fdl-privacy-policy" target="_blank">politique de confidentialité</a> et accepte de recevoir des infolettres électroniques de Fleur de Lys centre commercial.
                         </label>
                         <div class="line_break">&nbsp;</div>
