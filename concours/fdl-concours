@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="email">Courriel *</label>
-                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Merci d’inscrire un courriel valide" data-validation="custom" tabindex="8"/>
+                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Merci d’inscrire un courriel valide" data-validation="custom" />
                     </div>
                 </div>
                 <div class="row">
