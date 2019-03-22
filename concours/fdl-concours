@@ -89,7 +89,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <button class="submit_btn caps btn" tabindex="12">Envoyer</button>
+                        <button class="submit_btn caps btn" >Envoyer</button>
                     </div>
                     <div class="col-sm-6"></div>
                 </div>
