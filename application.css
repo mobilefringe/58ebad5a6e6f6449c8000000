@@ -1436,7 +1436,7 @@ hr{
     font-family: futura_condensed;
     font-size: 18pt;
     text-transform: uppercase;
-    p a {
+    p span {
         color: #e52919;
     }
 }
