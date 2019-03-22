@@ -1436,6 +1436,9 @@ hr{
     font-family: futura_condensed;
     font-size: 18pt;
     text-transform: uppercase;
+    p a {
+        color: #e52919;
+    }
 }
 .promo_img {
     max-width: 100%;
