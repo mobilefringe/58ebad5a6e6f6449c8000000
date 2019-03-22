@@ -1657,6 +1657,9 @@ td.stores_pin{
 #contest_form input#age{
     width:35px;
 }
+#contest_form a {
+    color: #e52919;
+}
 
 /******** pages **********/
 .page_body h1{
