@@ -1454,7 +1454,7 @@ hr{
     // width:72%;
 }
 
-.promo_info a {
+.promo_info a span {
     color: #e52919 !important;
     text-decoration: none;   
 }
