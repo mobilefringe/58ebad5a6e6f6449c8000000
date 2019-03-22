@@ -1436,9 +1436,6 @@ hr{
     font-family: futura_condensed;
     font-size: 18pt;
     text-transform: uppercase;
-    p span {
-        color: #e52919;
-    }
 }
 .promo_img {
     max-width: 100%;
@@ -1458,7 +1455,7 @@ hr{
 }
 
 .promo_info a {
-    color: inherit;
+    color: #e52919 !important;
     text-decoration: none;   
 }
 
