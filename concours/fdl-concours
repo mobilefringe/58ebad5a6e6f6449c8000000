@@ -70,7 +70,7 @@
                 <div class="row">
                     <div class="col-sm-12 textarea">
                         <label for="note">Réponse *</label>
-                        <textarea class="contest_info" id="note" name="contest[notes]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="9"/></textarea>
+                        <textarea class="contest_info" id="note" name="contest[notes]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" /></textarea>
                     </div>
                 </div>
                 <div class="row">
