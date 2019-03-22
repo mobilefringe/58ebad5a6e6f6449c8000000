@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-sm-6">  
                         <label for="zip_code">Code Postal *</label>
-                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" tabindex="6"/>
+                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" data-validation-error-msg="Ce champs est obligatoire" />
                     </div>
                     
                 </div>
