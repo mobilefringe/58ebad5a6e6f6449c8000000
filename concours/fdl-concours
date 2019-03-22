@@ -41,7 +41,7 @@
                 <!--<div class="row">
                     <div class="col-sm-12">
                         <label for="address">Adresse</label>
-                        <input class="contest_info" id="address" name="contest[mailing_address]" type="text" value="" tabindex="3"/>
+                        <input class="contest_info" id="address" name="contest[mailing_address]" type="text" value="" />
                     </div>
                 </div>
                 <div class="row">
