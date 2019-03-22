@@ -1657,9 +1657,6 @@ td.stores_pin{
 #contest_form input#age{
     width:35px;
 }
-#contest_form a {
-    color: #e52919;
-}
 
 /******** pages **********/
 .page_body h1{
@@ -2478,7 +2475,7 @@ ul, ol {
         }    
     }
     a {
-        color: #ef3423;
+        color: #e52919;
     }
 }
 /* */
