@@ -81,7 +81,7 @@
                         </label>
                         <div class="line_break">&nbsp;</div>
                         <label class="contest_rules">
-                            <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="11"/> 
+                            <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" /> 
                             Oui, j’ai lu et j’accepte le <a href="/pages/fdl-reglement-du-concours" target="_blank">règlement du concours</a>.
                         </label>
                         <div class="line_break">&nbsp;</div>
