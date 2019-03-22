@@ -31,7 +31,7 @@
                 <div class="row-fluid store_promo">
                     <div class="col-sm-3">
                         <a  href="{{promo_image_url_abs}}" data-lightbox="{{name}}">
-                            <img src="{{promo_image_url_abs}}" alt="promo">
+                            <img src="{{promo_image_url_abs}}" alt="{{name}}">
                         </a>     
                     </div>
                     <div class="col-sm-9">
