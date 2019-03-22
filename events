@@ -1,0 +1,54 @@
+<div class="promo_page">
+    <h1 class="page_title">ÉVÉNEMENTS</h1> <!-- Events -->
+    <hr>
+    <!-- No Events Message -->
+    <h3 id="no_events" class="hidden_now">Fleur de Lys présentera un événement sous peu. Restez à l’affût pour plus de détails!</h3> 
+    <div id="events_container">
+        <script id="events_template" type="x-tmpl-mustache/text">
+            <div class="row store_promo">
+                <div class="col-sm-3">
+                    <a  href="{{event_image_url}}" data-lightbox="{{name}}">
+                        <img src="{{event_image_url}}" alt="{{name}}">
+                    </a>
+                </div>
+                <div class="col-sm-9">
+                    <div class="promo_info">
+                        <a href="/events/{{slug}}"><h2>{{name}}</h2></a>
+                        <span class="promo_date">{{dates}}</span>
+                        <div><p>{{{rich_description}}}</p></div>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <div class="line_break"></div>
+    </div>
+</div>
+<scipt src="//codecloud.cdn.speedyrails.net/sites/582e04fa6e6f644b9c000000/text/javascript/1478472594000/lightbox.min.js"></scipt>
+<script>
+$(document).ready(function(){
+    init();
+    function renderAll(){
+        var events = getEventsList().sortBy(function(o){ return o.start_date });
+        var prop = getPropertyDetails();
+        var published_events = [];
+        $.each(events, function(key, val){
+            today = moment();
+            webDate = moment(val.show_on_web_date)
+            if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                published_events.push(val);
+            } 
+        });
+        if(published_events.length > 0){
+            renderEvents("#events_container","#events_template", published_events);
+        }
+        else{
+            $('#no_events').show()
+        }
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
+    }
+    loadMallDataCached(renderAll); 
+})
+</script>
