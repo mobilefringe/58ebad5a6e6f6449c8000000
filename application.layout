@@ -495,11 +495,11 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     
-    <!--<script>-->
-    <!--    $("#track_link").click( function() {-->
-    <!--        trackOutboundLink('https://secure.humanitariancoalition.ca/index.php?lang=fr&source_form=20vic/');-->
-    <!--    });-->
-    <!--</script>-->
+    <script>
+        $("#track_link").click( function() {
+            trackOutboundLink('http://bit.ly/cyclone-idai-cushman-wakefield-f');
+        });
+    </script>
 
 </body>
 
