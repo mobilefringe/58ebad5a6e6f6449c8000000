@@ -29,15 +29,15 @@ $(document).ready(function(){
         var hours = getPropertyRegularHours();
         renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
         var holiday_hours = getPropertyHolidayHours();
-        $.each(holiday_hours, function(key, val) {
-            var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
-            var french_holiday = moment(holiday).locale('fr-ca');
-            val.formatted_date = french_holiday.format("DD MMM");
-        });
-        console.log("holiday_hours", holiday_hours);
-        sorted_hours = holiday_hours.sortBy(function(o){ return o.formatted_date });
+        // $.each(holiday_hours, function(key, val) {
+        //     var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
+        //     var french_holiday = moment(holiday).locale('fr-ca');
+        //     val.formatted_date = french_holiday.format("DD MMM");
+        // });
+        // console.log("holiday_hours", holiday_hours);
+        // sorted_hours = holiday_hours.sortBy(function(o){ return o.formatted_date });
  
-        renderHours('#holiday_hours_container','#holiday_hours_template', sorted_hours, 'holiday_hours');
+        renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
         
         setTimeout(function() {
             show_content();
