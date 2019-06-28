@@ -151,6 +151,7 @@ function renderHours(container, template, collection, type){
             }
              console.log("date", val.formatted_date )
             var sorted_list = item_list.sortBy(function(o){ return o.formatted_date });
+            console.log("sorted_list", sorted_list)
         });
        
         // var sorted_list = item_list.sortBy(function(o){ return o.formatted_date });
