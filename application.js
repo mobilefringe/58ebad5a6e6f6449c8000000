@@ -152,7 +152,7 @@ function renderHours(container, template, collection, type){
             }
         });
        
-        var sorted_list = item_list.sortBy(function(o){ return o.month });
+        var sorted_list = item_list.sortBy(function(o){ return o.formatted_date }).sortBy(function(o){ return o.month });
         collection = [];
         collection = sorted_list;
     }
