@@ -151,13 +151,12 @@ function renderHours(container, template, collection, type){
                 item_list.push(val);
             }
              console.log("date", val.month )
-            var sorted_list = item_list.sortBy(function(o){ return o.month });
-            console.log("sorted_list", sorted_list)
+
         });
        
-        // var sorted_list = item_list.sortBy(function(o){ return o.formatted_date });
+        var sorted_list = item_list.sortBy(function(o){ return o.month });
         collection = [];
-        // collection = sorted_list;
+        collection = sorted_list;
     }
     $.each( collection , function( key, val ) {
         var rendered = Mustache.render(template_html,val);
