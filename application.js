@@ -140,7 +140,7 @@ function renderHours(container, template, collection, type){
                 holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
                 var french_holiday = moment(holiday).locale('fr-ca');
                 val.formatted_date = french_holiday.format("DD MMM, YYYY");
-                val.month = french_holiday.format("M");
+                val.month = french_holiday.format("MM");
                 if (val.open_time && val.close_time && val.is_closed == false){
                     var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                     var close_time = moment(val.close_time).tz(getPropertyTimeZone());
