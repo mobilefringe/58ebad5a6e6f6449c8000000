@@ -150,6 +150,7 @@ function renderHours(container, template, collection, type){
                 item_list.push(val);
             }
         });
+        item_list = item_list.sortBy(function(o){ return o.formatted_date });
         collection = [];
         collection = item_list;
     }
