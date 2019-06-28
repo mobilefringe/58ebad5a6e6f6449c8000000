@@ -156,7 +156,7 @@ function renderHours(container, template, collection, type){
        
         // var sorted_list = item_list.sortBy(function(o){ return o.formatted_date });
         collection = [];
-        collection = sorted_list;
+        // collection = sorted_list;
     }
     $.each( collection , function( key, val ) {
         var rendered = Mustache.render(template_html,val);
