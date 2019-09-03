@@ -446,13 +446,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/i18next/1.6.3/i18next-1.6.3.min.js"></script>
-    <script src="//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5af4852c6e6f6403090b0000/text/javascript/1567530909373/instafeed.min.js"></script>
     <script src="//www.google.com/recaptcha/api.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/5841df6b6e6f640488010000/text/javascript/1478472594000/lightbox.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/text/javascript/1485895011000/moment-with-locales.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5af4852c6e6f6403090b0000/text/javascript/1567530906729/jquery.cookie.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/58fe54076e6f6458dc010000/application/x-javascript/1493132969000/js.cookie.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
