@@ -1,56 +1,58 @@
 <div class="promo_page">
     <div>
-        
-        <h1 class="page_title">PROMOTIONS DU CENTRE</h1>
-        <hr>
-        <!--<h3 id="mall_promos" class="hidden_now" data-i18n="pages.promotions_mall_none"></h3> -->
-        <!-- No Mall Promotions Message -->
-        <div id="mall_promo_container">
-            <script id="mall_promo_template" type="x-tmpl-mustache/text">
-                <div class="row-fluid store_promo">
-                    <div class="col-sm-3">
-                        <a  href="{{promo_image_url_abs}}" data-lightbox="{{name}}">
-                            <img src="{{promo_image_url_abs}}">
-                        </a> 
-                    </div>
-                    <div class="col-sm-9">
-                        <div class="promo_info">
-                            <a href="/promotions/{{slug}}"><h2>{{name}}</h2></a>
-                            <span class="promo_date">{{dates}}</span>
-                            <div><p>{{{rich_description}}}</p></div>
+        <div class="has_mall_promos">
+            <h1 class="page_title">PROMOTIONS DU CENTRE</h1>
+            <hr>
+            <!--<h3 id="mall_promos" class="hidden_now" data-i18n="pages.promotions_mall_none"></h3> -->
+            <!-- No Mall Promotions Message -->
+            <div id="mall_promo_container">
+                <script id="mall_promo_template" type="x-tmpl-mustache/text">
+                    <div class="row-fluid store_promo">
+                        <div class="col-sm-3">
+                            <a  href="{{promo_image_url_abs}}" data-lightbox="{{name}}">
+                                <img src="{{promo_image_url_abs}}">
+                            </a> 
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="promo_info">
+                                <a href="/promotions/{{slug}}"><h2>{{name}}</h2></a>
+                                <span class="promo_date">{{dates}}</span>
+                                <div><p>{{{rich_description}}}</p></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="line_break"></div>
-            </script>
+                    <div class="line_break"></div>
+                </script>
+            </div>
         </div>
         
-        
-        <div class="line_break"></div>
-        <h1 class="page_title" id="store_promos">PROMOTIONS</h1> <!-- Store Promotions -->
-        <hr>
-        <h3 id="store_promo" class="hidden_now" data-i18n="pages.promotions_store_none"></h3> <!-- No Store Promotions Message -->
-        <div id="store_promo_container"> 
-            <script id="store_promo_template" type="x-tmpl-mustache/text">
-                <div class="row-fluid store_promo">
-                    <div class="col-sm-3">
-                        <a  href="{{promo_image_url_abs}}" data-lightbox="{{name}}">
-                            <img src="{{promo_image_url_abs}}">
-                        </a>     
-                    </div>
-                    <div class="col-sm-9">
-                        <div class="promo_info">
-                            <a href="/promotions/{{slug}}"><h2>{{name}}</h2></a>
-                            <a href="/stores/{{store_detail_btn}}"><h2>{{store_name}}</h2></a>
-                            <span class="promo_date">{{dates}}</span>
-                            <div><p>{{{rich_description}}}</p></div>
+        <div class="has_store_promos">
+            <div class="line_break"></div>
+            <h1 class="page_title" id="store_promos">PROMOTIONS</h1> <!-- Store Promotions -->
+            <hr>
+            <h3 id="store_promo" class="hidden_now" data-i18n="pages.promotions_store_none"></h3> <!-- No Store Promotions Message -->
+            <div id="store_promo_container"> 
+                <script id="store_promo_template" type="x-tmpl-mustache/text">
+                    <div class="row-fluid store_promo">
+                        <div class="col-sm-3">
+                            <a  href="{{promo_image_url_abs}}" data-lightbox="{{name}}">
+                                <img src="{{promo_image_url_abs}}">
+                            </a>     
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="promo_info">
+                                <a href="/promotions/{{slug}}"><h2>{{name}}</h2></a>
+                                <a href="/stores/{{store_detail_btn}}"><h2>{{store_name}}</h2></a>
+                                <span class="promo_date">{{dates}}</span>
+                                <div><p>{{{rich_description}}}</p></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="line_break"></div>
-            </script>
+                    <div class="line_break"></div>
+                </script>
+            </div>
+            <div class="line_break"></div>
         </div>
-        <div class="line_break"></div>
     </div>
 </div>
 
