@@ -30,7 +30,6 @@
             <div class="line_break"></div>
             <h1 class="page_title" id="store_promos">PROMOTIONS</h1> <!-- Store Promotions -->
             <hr>
-            <h3 id="store_promo" class="hidden_now" data-i18n="pages.promotions_store_none"></h3> <!-- No Store Promotions Message -->
             <div id="store_promo_container"> 
                 <script id="store_promo_template" type="x-tmpl-mustache/text">
                     <div class="row-fluid store_promo">
@@ -79,19 +78,16 @@ $(document).ready(function(){
             } 
         });
         if(mall_published_promos.length > 0){
+            $(".has_mall_promos").show();
             renderPromotions("#mall_promo_container","#mall_promo_template", mall_published_promos);
             
         }
-        else{
-            $("#mall_promos").show();
-        }
+
         if(store_published_promos.length > 0){
             $(".has_store_promos").show();
             renderPromotions("#store_promo_container","#store_promo_template", store_published_promos);
         }
-        else{
-            $("#store_promo").show();
-        }
+        
         
         setTimeout(function() {
             show_content();
