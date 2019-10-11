@@ -80,11 +80,13 @@ $(document).ready(function(){
         });
         if(mall_published_promos.length > 0){
             renderPromotions("#mall_promo_container","#mall_promo_template", mall_published_promos);
+            
         }
         else{
             $("#mall_promos").show();
         }
         if(store_published_promos.length > 0){
+            .has_store_promos.show();
             renderPromotions("#store_promo_container","#store_promo_template", store_published_promos);
         }
         else{
