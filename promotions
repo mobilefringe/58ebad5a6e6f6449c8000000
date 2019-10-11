@@ -74,6 +74,8 @@ $(document).ready(function(){
                 }     
             } 
         });
+        console.log(store_published_promo)
+        
         if(mall_published_promos.length > 0){
             $(".has_mall_promos").show();
             renderPromotions("#mall_promo_container","#mall_promo_template", mall_published_promos);
