@@ -3,8 +3,6 @@
         <div class="has_mall_promos">
             <h1 class="page_title">PROMOTIONS DU CENTRE</h1>
             <hr>
-            <!--<h3 id="mall_promos" class="hidden_now" data-i18n="pages.promotions_mall_none"></h3> -->
-            <!-- No Mall Promotions Message -->
             <div id="mall_promo_container">
                 <script id="mall_promo_template" type="x-tmpl-mustache/text">
                     <div class="row-fluid store_promo">
