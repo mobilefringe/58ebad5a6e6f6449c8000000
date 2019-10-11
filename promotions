@@ -25,7 +25,6 @@
         </div>
         
         <div class="has_store_promos">
-            <div class="line_break"></div>
             <h1 class="page_title" id="store_promos">PROMOTIONS</h1> <!-- Store Promotions -->
             <hr>
             <div id="store_promo_container"> 
@@ -80,14 +79,10 @@ $(document).ready(function(){
             renderPromotions("#mall_promo_container","#mall_promo_template", mall_published_promos);
             
         }
-
         if(store_published_promos.length > 0){
             $(".has_store_promos").show();
-            
             renderPromotions("#store_promo_container","#store_promo_template", store_published_promos);
         }
-        
-        
         setTimeout(function() {
             show_content();
         }, 500);
