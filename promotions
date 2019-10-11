@@ -86,7 +86,7 @@ $(document).ready(function(){
             $("#mall_promos").show();
         }
         if(store_published_promos.length > 0){
-            .has_store_promos.show();
+            $(".has_store_promos").show();
             renderPromotions("#store_promo_container","#store_promo_template", store_published_promos);
         }
         else{
