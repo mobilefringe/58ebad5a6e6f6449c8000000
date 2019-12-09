@@ -427,7 +427,7 @@ function renderStoreDetails(container, template, collection, slug){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//www.mallmaverick.com/photos/original/missing.png";
+            val.alt_store_front_url = "//assets.mallmaverick.com/photos/original/missing.png";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
