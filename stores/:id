@@ -18,14 +18,14 @@
             <div class="row-fluid">
                 <h1 class="store_page">
                     <a href="/stores" class="back_to">
-                        <img src="//www.mallmaverick.com/system/site_images/photos/000/000/769/original/back_btn.png?1381264220" alt="Back Button" />
+                        <img src="//assets.mallmaverick.com/system/site_images/photos/000/000/769/original/back_btn.png?1381264220" alt="Back Button" />
                     </a>
                     {{name}} 
                     <a href="#promo" class="pull-right hidden_now" id="promo_show">
-                        <img src="//www.mallmaverick.com/system/site_images/photos/000/000/771/original/btn_promo.png?1381264332" alt="Button Promo" />
+                        <img src="//assets.mallmaverick.com/system/site_images/photos/000/000/771/original/btn_promo.png?1381264332" alt="Button Promo" />
                     </a>
                     <a href="#job" class="pull-right hidden_now" id="job_show">
-                        <img src="//www.mallmaverick.com/system/site_images/photos/000/000/770/original/btn_job.png?1381264320" alt="Button Job"/>
+                        <img src="//assets.mallmaverick.com/system/site_images/photos/000/000/770/original/btn_job.png?1381264320" alt="Button Job"/>
                     </a> 
                 </h1>
                 <hr>
