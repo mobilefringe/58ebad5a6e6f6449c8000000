@@ -28,6 +28,7 @@ function renderBanner(home_banner_template, home_banner, banners){
     var banner_template_html = $(home_banner_template).html();
     Mustache.parse(banner_template_html);   // optional, speeds up future uses
     $.each(banners, function(key, val) {
+        console.log('val', val)
         today = new Date();
         start = new Date (val.start_date);
         start.setDate(start.getDate());
