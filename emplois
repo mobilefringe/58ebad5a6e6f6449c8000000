@@ -8,7 +8,7 @@
                 <div class="accordion-group">
                     <div class="accordion-heading">            
                         <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{id}}" href="#collapse{{id}}">
-                            <img ALT="arrow_down" class="pull-right" src="//mallmaverick.com/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994" />
+                            <img ALT="arrow_down" class="pull-right" src="//assets.mallmaverick.com/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994" />
                             <h2 class="job_title"><span class="store_name">{{store_name}}</span> - {{name}}</h2>
                             <h2 class="job_close_date">Échéance: {{end_date}}</h2>
                         </div>
@@ -39,7 +39,7 @@
                 <div class="accordion-group">
                     <div class="accordion-heading">            
                         <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{id}}" href="#collapse{{id}}">
-                            <img ALT="arrow_down" class="pull-right" src="//mallmaverick.com/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994" />
+                            <img ALT="arrow_down" class="pull-right" src="//assets.mallmaverick.com/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994" />
                             <h2 class="job_title"><span class="store_name">{{store_name}}</span> - {{name}}</h2>
                             <h2 class="job_close_date">Échéance: {{end_date}}</h2>
                         </div>
