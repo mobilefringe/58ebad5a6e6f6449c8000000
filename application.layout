@@ -353,11 +353,14 @@
                 <div class="col-sm-4">
                     <div class="newsletter_box">
                         <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A7B97375EF37B83FF7F497102478A26EBA2B31060FAD906367825ECE501F44E1D566A949CD836E2FA79F3B37667EC4708">
-                            <label for="fieldEmail">
+                            <label for="newsletter_box_id">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                                 ABONNEZ-VOUS ET OBTENEZ DES NOUVELLES DE NOUS!
-                            </label>  
-                            <label>Email </label>
+                            </label>                
+                            <span>
+                                Abonnez-vous à notre lettre de nouvelles et obtenez des offres exclusives que vous trouverez nulle part ailleurs, directement dans votre boîte de réception.
+                            </span>
+                            <label for="fieldEmail">Email </label>
                             <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-ykblt-ykblt" required="" type="email">
                                 
                             <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">
