@@ -352,23 +352,6 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="newsletter_box">
-                    <!--<form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A7B97375EF37B83FF7F497102478A26EBA2B31060FAD906367825ECE501F44E1D566A949CD836E2FA79F3B37667EC4708">-->
-                    
-                    <!--<div><div><label>Adresse électronique </label>-->
-                    <!--<input autocomplete="Email" aria-label="Adresse électronique" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-ykblt-ykblt" placeholder="Adresse électronique" required="" type="email">-->
-                        
-                    <!--</div><div><div><div>-->
-                    <!--<input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">-->
-                    <!--<label for="cm-privacy-consent">I agree to be emailed</label>-->
-                        
-                    <!--</div>-->
-                    <!--<input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true"></div></div></div>-->
-                    
-                    <!--<button type="submit">Subscribe</button>-->
-                        
-                    <!--</form></div>-->
-                    <!--<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>-->
-                    
                         <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A7B97375EF37B83FF7F497102478A26EBA2B31060FAD906367825ECE501F44E1D566A949CD836E2FA79F3B37667EC4708">
                             <label for="newsletter_box_id">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
