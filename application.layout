@@ -365,11 +365,11 @@
                                 
                             
                             <span>
-                                <label for="cm-privacy-consent">
-                                    <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">
-                                    J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial
+                                <label for="cm-privacy-consent" class="visuallyhidden">J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial</label>
+                                <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">
+                                J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial 
                                     
-                                </label>
+                                
                             </span>
                             
                             
