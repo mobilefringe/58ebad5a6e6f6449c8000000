@@ -363,13 +363,20 @@
                             <label for="fieldEmail">Email </label>
                             <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-ykblt-ykblt" required="" type="email">
                                 
-                            <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">
-                            <label for="cm-privacy-consent" class="visuallyhidden">I agree to be emailed</label>
+                            
+                            <span>
+                                <label for="cm-privacy-consent">
+                                    <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">
+                                    J'accepte de recevoir des e-mails à partir de Fleur de Lys centre commercial
+                                    
+                                </label>
+                            </span>
+                            
                             
                             <input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true">
                                 
                             <br />
-                            <button class="btn" type="submit">Subscribe</button>
+                            <button class="btn" type="submit">Abonnez-vous</button>
                         </form>
                         <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
                         <br>
