@@ -364,13 +364,12 @@
                             <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-ykblt-ykblt" required="" type="email">
                                 
                             <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">
-                            <label for="cm-privacy-consent">I agree to be emailed</label>
+                            <label for="cm-privacy-consent" class="visuallyhidden">I agree to be emailed</label>
                             
                             <input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true">
                                 
-                                
-                            <button type="submit">Subscribe</button>
-                                
+                            <br />
+                            <button class="btn" type="submit">Subscribe</button>
                         </form>
                         <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
                         <br>
